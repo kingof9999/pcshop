@@ -22,7 +22,7 @@
 				<div class="col-xs-12 col-sm-12 col-md-6 top-search-holder">
 					<div class="contact-row">
     <div class="phone inline">
-        <i class="icon fa fa-phone"></i> (400) 888 888 868
+        <i class="icon fa fa-phone"></i> (+84) 122 404 2443
     </div>
     <div class="contact inline">
         <i class="icon fa fa-envelope"></i> saleradmin@pcshop.com
