@@ -1,4 +1,3 @@
-
 <div class="col-md-12 col-sm-12 shopping-cart-table ">
 	<div class="table-responsive">
 		<table class="table table-bordered">
@@ -98,8 +97,7 @@
                                         ';
                                     echo'</tr>';
                                     $_SESSION['tongtien']=$tongtien;
-                        }
-                                    
+                        }            
                  ?>
 			</tbody><!-- /tbody -->
             <tfoot>
@@ -139,5 +137,6 @@
 		</tbody><!-- /tbody -->
 	</table><!-- /table -->
 </div><!-- /.cart-shopping-total -->
+
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/cart.js"></script>
