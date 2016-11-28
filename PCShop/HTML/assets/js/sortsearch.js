@@ -1,0 +1,15 @@
+$(document).ready(function(){
+   $(".sortquality").change(function(){
+        sls=$(this).val();
+        mar=$(this).attr("data-mar");
+        $.ajax({
+            url:"assets/js/xuly_search2.php",
+            type:"post",
+            data:"sls="+sls+"&mar="+mar,
+            async:true,
+            success:function(kq){
+                location.reload();
+            }
+        });
+   }); 
+});

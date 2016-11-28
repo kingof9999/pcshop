@@ -1,0 +1,25 @@
+#quick-results{   
+    position: absolute;
+    width: 360px;
+    background: #fdfdfd;
+    border: 1px solid #cbcfe2;
+    border-radius: 3px;
+}
+#quick-results li a{
+    padding-left: 10px;
+    font-weight: 500;
+    text-shadow: 0 1px #FFF;
+}
+.quick-results{
+    display: none;
+}
+
+.confirm-pay{
+    border-radius: 18px 18px 18px 18px;
+    -moz-border-radius: 18px 18px 18px 18px;
+    -webkit-border-radius: 18px 18px 18px 18px;
+    border: 2px ridge #5e1b5e;
+    background-color: #dedede;
+    height: 200px;
+    width: 35%;
+}
