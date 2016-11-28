@@ -377,7 +377,7 @@
                                     <form class="form-horizontal">
                                         <!-- Status -->
                                         <div class="form-group">
-                                            <label class="control-label col-lg-2" for="title">Status</label>
+                                            <label class="control-label col-lg-2" for="title">Role</label>
                                             <div class="">
                                                 <select name="status">
                                                     <option value="1">Admin</option>
@@ -399,13 +399,7 @@
                                                 <input type="text" placeholder="Enter username" name="user_name" class="form-control" id="user_name"/>
                                             </div>
                                         </div>
-                                        <!-- Email -->
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-2">Email</label>
-                                            <div class="col-lg-10">
-                                                <input type="email" placeholder="Enter Email" name="email" class="form-control" id="email"/>
-                                            </div>
-                                        </div>
+
                                         <!-- Password -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">Password</label>
@@ -413,15 +407,22 @@
                                                 <input type="text" placeholder="Enter Pass" name="password" class="form-control" id="password"/>
                                             </div>
                                         </div>
-                                        
+
+                                        <!-- Email -->
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-2">Email</label>
+                                            <div class="col-lg-10">
+                                                <input type="email" placeholder="Enter Email" name="email" class="form-control" id="email"/>
+                                            </div>
+                                        </div>
+
 
                                         <!-- Buttons -->
                                         <div class="form-group">
                                             <!-- Buttons -->
                                             <div class="col-lg-offset-2 col-lg-9">
-                                                <input type="submit" value="Submit" name="submit" id="submit"/>
-                                                <button type="submit" class="btn btn-danger">Save Draft</button>
-                                                <button type="reset" class="btn btn-default">Reset</button>
+                                                <input type="submit" value="Submit" name="submit" id="submit" class="btn btn-danger"/>
+                                                <button type="button" class="btn btn-default">Cancel</button>
                                             </div>
                                         </div>
                                     </form>

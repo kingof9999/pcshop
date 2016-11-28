@@ -385,9 +385,8 @@
                                         <div class="form-group">
                                             <!-- Buttons -->
                                             <div class="col-lg-offset-2 col-lg-9">
-                                                <input type="submit" value="Submit" name="submit" id="submit"/>
-                                                <button type="submit" class="btn btn-danger">Save Draft</button>
-                                                <button type="reset" class="btn btn-default">Reset</button>
+                                                <input type="submit" value="Submit" name="submit" id="submit" class="btn btn-danger"/>
+                                                <button type="button" class="btn btn-default">Cancel</button>
                                             </div>
                                         </div>
                                     </form>

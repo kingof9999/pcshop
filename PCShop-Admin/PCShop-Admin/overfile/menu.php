@@ -21,23 +21,23 @@
                 <li class="sub-menu">
                     <a href="javascript:;" class="">
                         <i class="icon_table"></i>
-                        <span>Catalog</span>
+                        <span>Category</span>
                         <span class="menu-arrow arrow_carrot-right"></span>
                     </a>
                     <ul class="sub">
                         <li><a class="" href="catalog_manager.php">Manager</a></li>
-                        <li><a class="active" href="input_catalog.php">New Catalog</a></li>
+                        <li><a class="active" href="input_catalog.php">New Category</a></li>
                     </ul>
                 </li>
                 <li class="sub-menu">
                     <a href="javascript:;" class="">
                         <i class="icon_table"></i>
-                        <span>Manufacturer</span>
+                        <span>Brand</span>
                         <span class="menu-arrow arrow_carrot-right"></span>
                     </a>
                     <ul class="sub">
                         <li><a class="" href="manufacturer_manager.php">Manager</a></li>
-                        <li><a class="active" href="input_manufacturer.php">New Manufacturer</a></li>
+                        <li><a class="active" href="input_manufacturer.php">New Brand</a></li>
                     </ul>
                 </li>
 
@@ -68,12 +68,12 @@
                 <li class="sub-menu">
                     <a href="javascript:;" class="">
                         <i class="icon_documents_alt"></i>
-                        <span>Customer</span>
+                        <span>User</span>
                         <span class="menu-arrow arrow_carrot-right"></span>
                     </a>
                     <ul class="sub">
                         <li><a class="" href="customer_manager.php">Manager</a></li>
-                        <li><a class="" href="input_customer.php"><span>New Customer</span></a></li>
+                        <li><a class="" href="input_customer.php"><span>New User</span></a></li>
                     </ul>
                 </li>
                 

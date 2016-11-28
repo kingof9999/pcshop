@@ -425,7 +425,7 @@
                                     
                                         <!-- Manufacturer -->
                                         <div class="form-group">
-                                            <label class="control-label col-lg-2" for="tags">Manufacturer</label>
+                                            <label class="control-label col-lg-2" for="tags">Brand</label>
                                             <div class="col-lg-12">
                                                <select name="manufacturer" id="manufacturer">
                     								<?php
@@ -444,7 +444,7 @@
                                         </div>
                                         <!-- Date Improve -->
                                         <div class="form-group">
-                                            <label class="control-label col-lg-2" for="tags">Time Improve</label>
+                                            <label class="control-label col-lg-2" for="tags">Create At</label>
                                             <div class="col-lg-12">
                                                 <input type="date" name="day"/>
                                             </div>
@@ -465,7 +465,7 @@
                                         </div>
                                         <!-- Quantity -->
                                         <div class="form-group">
-                                            <label class="control-label col-lg-2" for="content">Quantity</label>
+                                            <label class="control-label col-lg-2" for="content">Amount</label>
                                             <div class="col-lg-10">
                                                 <input type="text" placeholder="Enter Quantity" name="quantity" class="form-control" id="quantity"/>
                                             </div>
@@ -505,23 +505,32 @@
                                                 <input type="text" placeholder="Enter VGA" name="vga" class="form-control" id="vga"/>
                                             </div>
                                         </div>
+                                        <!--HDD/SSD-->
+
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-2">HDD/SSD</label>
+                                            <div class="col-lg-10">
+                                                <input type="text" placeholder="Enter hdd or ssd" name="hdd" class="form-control" id="hdd"/>
+                                            </div>
+                                        </div>
+
                                         <!-- HDH -->
                                         <div class="form-group">
-                                            <label class="control-label col-lg-2">HDH</label>
+                                            <label class="control-label col-lg-2">OS</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter HDH" name="hdh" class="form-control" id="hdh"/>
+                                                <input type="text" placeholder="Enter OS" name="hdh" class="form-control" id="hdh"/>
                                             </div>
                                         </div>
                                         <!-- PIN -->
                                         <div class="form-group">
-                                            <label class="control-label col-lg-2">PIN</label>
+                                            <label class="control-label col-lg-2">Battery</label>
                                             <div class="col-lg-10">
                                                 <input type="text" placeholder="Enter PIN" name="pin" class="form-control" id="pin"/>
                                             </div>
                                         </div>
                                         <!-- Decription -->
                                         <div class="form-group">
-                                            <label class="control-label col-lg-2">Decription</label>
+                                            <label class="control-label col-lg-2">Description</label>
                                             <div class="col-lg-10">
                                                 <textarea name="description" value="" rows="10" cols="100" class="input-medium" id="description"></textarea>
                                             </div>
@@ -531,9 +540,8 @@
                                         <div class="form-group">
                                             <!-- Buttons -->
                                             <div class="col-lg-offset-2 col-lg-9">
-                                                <input type="submit" value="Submit" name="submit" id="submit"/>
-                                                <button type="submit" class="btn btn-danger">Save Draft</button>
-                                                <button type="reset" class="btn btn-default">Reset</button>
+                                                <input type="submit" value="Submit" name="submit" id="submit" class="btn btn-danger"/>
+                                                <button type="button" class="btn btn-default">Cancel</button>
                                             </div>
                                         </div>
                                     </form>
