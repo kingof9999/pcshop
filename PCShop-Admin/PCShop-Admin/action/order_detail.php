@@ -325,7 +325,7 @@
                         <span class="menu-arrow arrow_carrot-right"></span>
                     </a>
                     <ul class="sub">
-                        <li><a class="" href="../accessories_manager.php">Manager</a></li>
+                        <li><a class="" href="../html/accessories_manager.php">Manager</a></li>
                         <li><a class="active" href="../input_accessories.php">New Accessories</a></li>
                     </ul>
                 </li>
@@ -360,7 +360,7 @@
                     </a>
                     <ul class="sub">
                         <li><a class="" href="../basic_table.php">Manager</a></li>
-                        <li><a class="active" href="../input_product.php">New Product</a></li>
+                        <li><a class="active" href="input_product.php">New Product</a></li>
                     </ul>
                 </li>
 

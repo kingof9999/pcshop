@@ -347,6 +347,12 @@ if(isset($_GET["hid"])){
             case "catalog":
                 include "html/catalog.php";
                 break;
+            case "accessories_product":
+                include "html/accessories_product.php";
+                break;
+            case "accessories":
+                include "html/accessories.php";
+                break;
         }
     ?>
     

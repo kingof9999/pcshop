@@ -1,5 +1,5 @@
 <?php
-include_once("overfile/connect.php"); 
+
 
 class Setting{
     static function adminProd(){
@@ -197,7 +197,6 @@ class Setting{
                 <tr>
                   <th><i class=""></i> ID</th>
                   <th><i class=""></i> Name</th>
-                  <th><i class=""></i> Parent ID</th>
                   <th><i class="icon_cogs"></i> Action</th>
                 </tr>
         ';
@@ -206,7 +205,6 @@ class Setting{
                 <tr>
                     <td>'.$row["id_catalog"].'</td>
                     <td>'.$row["name_catalog"].'</td>
-                    <td>'.$row["parent_id"].'</td>
                     <td>
                         <div class="btn-group">
                             <a class="btn btn-primary" href="action/update_catalog.php?id='.$row["id_catalog"].'"><i class="icon_plus_alt2"></i></a>

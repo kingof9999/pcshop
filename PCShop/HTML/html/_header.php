@@ -251,10 +251,10 @@
                 <h2 class="title">Laptop <br /> Type</h2>
                 <ul class="links">
                     <?php 
-                        $query	= "SELECT * FROM type_product";
+                        $query	= "SELECT * FROM catalog";
     					$result = mysqli_query($con,$query) or die("Error:" .mysqli_error($con));
     					while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
-    						echo '<li><a href="index.php?url=search&hid='.$row["id_type"].'&checkpr=2">'.$row["type_name"].'</a></li>';
+    						echo '<li><a href="index.php?url=search&hid='.$row["id_catalog"].'&checkpr=2">'.$row["name_catalog"].'</a></li>';
     					}
                     ?>
                 </ul>

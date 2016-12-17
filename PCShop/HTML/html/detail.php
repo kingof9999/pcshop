@@ -38,7 +38,9 @@ if(isset($_POST["btn_comment"])){
 <!-- ============================================== CATEGORY : END ============================================== -->
 
 <!-- ============================================== HOT DEALS ============================================== -->
-<!-- ============================================== HOT DEALS: END ============================================== -->					<!-- ============================================== COLOR============================================== -->
+<!-- ============================================== HOT DEALS: END ============================================== -->
+
+<!-- ============================================== COLOR============================================== -->
 <div class="sidebar-widget  wow fadeInUp outer-top-vs ">
 	<div id="advertisement" class="advertisement">
         <div class="item bg-color">
@@ -116,19 +118,19 @@ if(isset($_POST["btn_comment"])){
 
             <div id="owl-single-product-thumbnails">
                 <div class="item">
-                    <a class="horizontal-thumb active" data-target="#owl-single-product" data-slide="1" href="#slide1">
+                    <a class="horizontal-thumb active" data-target="#owl-single-product" data-slide="0" href="#slide1">
                         <img class="img-responsive" width="85" alt="" src="assets/images/blank.gif" data-echo="../../PCShop-Admin/PCShop-Admin/images/<?php echo $row["image"];?>" />
                     </a>
                 </div>
 
                 <div class="item">
-                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="2" href="#slide2">
+                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="1" href="#slide2">
                         <img class="img-responsive" width="85" alt="" src="assets/images/blank.gif" data-echo="../../PCShop-Admin/PCShop-Admin/images/<?php echo $row["image1"];?>"/>
                     </a>
                 </div>
                 <div class="item">
 
-                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="3" href="#slide3">
+                    <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="2" href="#slide3">
                         <img class="img-responsive" width="85" alt="" src="assets/images/blank.gif" data-echo="../../PCShop-Admin/PCShop-Admin/images/<?php echo $row["image2"];?>" />
                     </a>
                 </div>

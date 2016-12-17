@@ -9,8 +9,8 @@
 			
 <!-- ================================== TOP NAVIGATION ================================== -->
 <!-- ================================== TOP NAVIGATION : END ================================== -->
-			<!-- ============================================== SPECIAL OFFER ============================================== -->
 
+<!-- ============================================== SPECIAL OFFER ============================================== -->
 <div class="sidebar-widget outer-bottom-small wow fadeInUp">
 	<h3 class="section-title">Accessories</h3>
 	<div class="sidebar-widget-body outer-top-xs">
@@ -1547,7 +1547,7 @@
                                 }else if(strtotime($date)== strtotime($newdate)){
                                     $new = "New";
                                 }
-                                echo'
+                                echo '
                                     <div class="col-sm-6 col-md-4 wow fadeInUp">
                                         <div class="products">
             

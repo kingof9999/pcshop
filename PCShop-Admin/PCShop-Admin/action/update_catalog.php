@@ -8,7 +8,6 @@
     
     if(isset($_POST["submit"])){
 		$name_catalog = $_POST["name_catalog"];
-		$parent_id = $_POST["parent_id"];
 		
 		$check = true;
         if(strlen($name_catalog) == 0){
@@ -16,14 +15,16 @@
 			$check = false;
 		}
         if($check){
-			$query="UPDATE catalog SET name_catalog='$name_catalog',parent_id='$parent_id'
+			$query="UPDATE catalog SET name_catalog='$name_catalog'
                     WHERE id_catalog='$userid'";
 			$result = mysqli_query($con,$query)or die("Error: ".mysqli_error($con));
 			if($result){
 				$msg = "Success";
-                header ('Location: ../catalog.php');
+                header ('Location: ../index.php?url=catalog');
 			}
 		}
+    }else if(isset($_POST["cancel"])){
+        header ('Location: ../index.php?url=catalog');
     }
 ?>
 
@@ -333,87 +334,7 @@
 
     <!--sidebar start-->
     <aside>
-        <div id="sidebar" class="nav-collapse ">
-            <!-- sidebar menu start-->
-            <ul class="sidebar-menu">
-                <li class="">
-                    <a class="" href="index.php">
-                        <i class="icon_house_alt"></i>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="icon_document_alt"></i>
-                        <span>Forms</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="form_component.php">Form Elements</a></li>
-                        <li><a class="" href="form_validation.php">Form Validation</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="icon_table"></i>
-                        <span>Accessories</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="../accessories_manager.php">Manager</a></li>
-                        <li><a class="active" href="../input_accessories.php">New Accessories</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="icon_table"></i>
-                        <span>Catalog</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="../html/catalog.php">Manager</a></li>
-                        <li><a class="active" href="../input_catalog.php">New Catalog</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="icon_table"></i>
-                        <span>Manufacturer</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="../manufacturer_manager.php">Manager</a></li>
-                        <li><a class="active" href="../input_manufacturer.php">New Manufacturer</a></li>
-                    </ul>
-                </li>
-
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="icon_table"></i>
-                        <span>Product</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="active" href="../basic_table.php">Basic Table</a></li>
-                        <li><a class="active" href="../input_product.php">New Product</a></li>
-                    </ul>
-                </li>
-
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="icon_documents_alt"></i>
-                        <span>Customer</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="customer_manager.php">Manager</a></li>
-                        <li><a class="" href="input_customer.php"><span>New Customer</span></a></li>
-                    </ul>
-                </li>
-
-            </ul>
-            <!-- sidebar menu end-->
-        </div>
+        <?php include "../overfile/menu2.php"?>
     </aside>
 
     <!--main content start-->
@@ -458,22 +379,14 @@
                                                 <input type="text" placeholder="Enter Name Manufacturer" name="name_catalog" class="form-control" id="name_catalog" value="<?php echo $row["name_catalog"]?>"/>
                                             </div>
                                         </div>
-                                        <!-- Decription -->
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-2" for="content">Decription</label>
-                                            <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter Name Manufacturer" name="parent_id" class="form-control" id="parent_id" value="<?php echo $row["parent_id"]?>"/>
-                                            </div>
-                                        </div>
                                         
 
                                         <!-- Buttons -->
                                         <div class="form-group">
                                             <!-- Buttons -->
                                             <div class="col-lg-offset-2 col-lg-9">
-                                                <input type="submit" value="Submit" name="submit" id="submit"/>
-                                                <button type="submit" class="btn btn-danger">Save Draft</button>
-                                                <button type="reset" class="btn btn-default">Reset</button>
+                                                <button type="submit" class="btn btn-danger" name="submit" id="submit">Save</button>
+                                                <button type="cancel" class="btn btn-default" name="cancel">Cancel</button>
                                             </div>
                                         </div>
                                     </form>

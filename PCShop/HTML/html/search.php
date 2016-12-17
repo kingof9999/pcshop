@@ -936,7 +936,7 @@
 
 		<!-- ============================================== CONTENT ============================================== -->
 		<div class="col-xs-12 col-sm-12 col-md-9 homebanner-holder">
-			<div id="product-tabs-slider" class="scroll-tabs outer-top-vs wow fadeInUp animated">
+			<div id="product-tabs-slider" class="scroll-tabs outer-top-vs wow fadeInUp">
             	<div class="more-info-tab clearfix ">
             	   <h3 class="new-product-title pull-left">New Products</h3>
             		<ul class="nav nav-tabs nav-tab-line pull-right" id="new-products-1">
@@ -946,7 +946,7 @@
             			<li><a data-transition-type="backSlide" href="#apple" data-toggle="tab">apple</a></li>
             		</ul><!-- /.nav-tabs -->
             	</div>
-
+                
                 <div class="clearfix filters-container m-t-10">
                     <div class="row">
                         <div class="col col-sm-6 col-md-2">
@@ -968,7 +968,7 @@
                                             <button data-toggle="dropdown" type="button" class="btn dropdown-toggle">
                                                 Position <span class="caret"></span>
                                             </button>
-
+            
                                             <ul role="menu" class="dropdown-menu">
                                                 <li role="presentation"><a href="#">position</a></li>
                                                 <li role="presentation"><a href="#">Price:Lowest first</a></li>
@@ -987,7 +987,7 @@
                                             <button data-toggle="dropdown" type="button" class="btn dropdown-toggle">
                                                 1 <span class="caret"></span>
                                             </button>
-
+            
                                             <ul role="menu" class="dropdown-menu">
                                                 <li role="presentation"><a href="#">1</a></li>
                                                 <li role="presentation"><a href="#">2</a></li>
@@ -1102,13 +1102,8 @@
                                                 $query 	= "SELECT * FROM product WHERE id_mf='$hid'";
                                                 $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
                                                 $result	= mysqli_query($con,$query)or die("LOI LKSP: ".mysqli_error($con));
-                                                if(mysqli_num_rows($result) == 0){
-                                                    echo 'There are no items in the store.';
-                                                }else{
-                                                    $number = mysqli_num_rows($result);
-                                                    echo '<p>Find '.$number.' items</p>';
-                                                    while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
-                                                        echo '
+                                                while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                                                    echo '
                                                         <div class="col-sm-6 col-md-4 wow fadeInUp">
                                                             <div class="products">
                                 
@@ -1164,7 +1159,6 @@
                                                             </div><!-- /.products -->
                                                         </div><!-- /.item -->
                                                     ';
-                                                    }
                                                 }
                                             }else if($checkpr == 2){
                                                 $query 	= "SELECT * FROM product WHERE id_type='$hid'";

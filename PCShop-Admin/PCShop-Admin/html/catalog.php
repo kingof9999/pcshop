@@ -3,21 +3,20 @@ include_once ("overfile/connect.php");
 require_once("models/Setting.php");
 
 if(isset($_POST["add_mf"])){
-    $name_mf = $_POST["name_mf"];
-    $decription = $_POST["decription"];
+    $name_catalog = $_POST["name_catalog"];
 
     $check = true;
-    if(strlen($name_mf) == 0){
+    if(strlen($name_catalog) == 0){
         $name_mf_error = "Please Enter Name <br>";
         $check = false;
     }
     if($check){
-        $query="INSERT INTO manufacturer(name_mf,decription)
-				VALUES('$name_mf','$decription')";
+        $query="INSERT INTO catalog(name_catalog)
+				VALUES('$name_catalog')";
         $result = mysqli_query($con,$query)or die("Error: ".mysqli_error($con));
         if($result){
             $msg = "Success";
-            echo '<meta http-equiv="refresh" content="0.5;url=index.php?url=manufacturer" />';
+            echo '<meta http-equiv="refresh" content="0.5;url=index.php?url=catalog" />';
         }
     }
 }
@@ -25,7 +24,7 @@ if(isset($_POST["add_mf"])){
 <!--main content start-->
 <section id="main-content">
     <section class="wrapper">
-        <form name="form-admin-product" action="index.php?url=manufacturer" method="post">
+        <form name="form-admin-product" action="index.php?url=catalog" method="post">
             <div class="row">
                 <div class="col-md-6 portlets">
                     <div class="panel panel-default">
@@ -41,7 +40,7 @@ if(isset($_POST["add_mf"])){
                                     <div class="form-group">
                                         <label class="control-label col-lg-2" for="title">Name</label>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" id="title" name="search_name_mf"/>
+                                            <input type="text" class="form-control" id="title" name="search_name_catalog"/>
                                         </div>
                                     </div>
 
@@ -63,7 +62,7 @@ if(isset($_POST["add_mf"])){
                 <div class="col-md-6 portlets">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <div class="pull-left">New Manufacturer</div>
+                            <div class="pull-left">New Catalog</div>
                             <div class="clearfix"></div>
                         </div>
                         <div class="panel-body">
@@ -74,14 +73,7 @@ if(isset($_POST["add_mf"])){
                                     <div class="form-group">
                                         <label class="control-label col-lg-2" for="title">Name</label>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" id="title" name="name_mf"/>
-                                        </div>
-                                    </div>
-                                    <!-- Decription -->
-                                    <div class="form-group">
-                                        <label class="control-label col-lg-2" for="content">Decription</label>
-                                        <div class="col-lg-10">
-                                            <textarea name="decription" value="" rows="5" cols="60" class="input-medium" id="decription"></textarea>
+                                            <input type="text" class="form-control" id="title" name="name_catalog"/>
                                         </div>
                                     </div>
                                     <!-- Buttons -->
@@ -113,8 +105,8 @@ if(isset($_POST["add_mf"])){
                         </header>
                         <?php
                         if(isset($_POST["btn_search"])){
-                            $name_mf = $_POST["search_name_mf"];
-                            $query = "SELECT * FROM manufacturer WHERE name_mf LIKE '%$name_mf%'";
+                            $name_catalog = $_POST["search_name_catalog"];
+                            $query = "SELECT * FROM catalog WHERE name_catalog LIKE '%$name_catalog%'";
                             $result = mysqli_query($con,$query)or die("LOI LIET KE: ".mysqli_error($con));
                             $num 	= mysqli_num_rows($result);
                             echo'
@@ -123,20 +115,18 @@ if(isset($_POST["add_mf"])){
                                             <tr>
                                               <th><i class=""></i> ID</th>
                                               <th><i class=""></i> Name</th>
-                                              <th><i class=""></i> Decription</th>
                                               <th><i class="icon_cogs"></i> Action</th>
                                             </tr>
                                     ';
                             while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
                                 echo'
                                             <tr>
-                                                <td>'.$row["id_mf"].'</td>
-                                                <td>'.$row["name_mf"].'</td>
-                                                <td>'.substr($row["decription"],0,20).'</td>
+                                                <td>'.$row["id_catalog"].'</td>
+                                                <td>'.$row["name_catalog"].'</td>
                                                 <td>
                                                     <div class="btn-group">
-                                                        <a class="btn btn-primary" href="action/update_manufacturer.php?id='.$row["id_mf"].'"><i class="icon_plus_alt2"></i></a>
-                                                        <a class="btn btn-danger" href="action/delete_manufacturer.php?id='.$row["id_mf"].'"><i class="icon_close_alt2"></i></a>
+                                                        <a class="btn btn-primary" href="action/update_catalog.php?id='.$row["id_catalog"].'"><i class="icon_plus_alt2"></i></a>
+                                                        <a class="btn btn-danger" href="action/delete_catalog.php?id='.$row["id_catalog"].'"><i class="icon_close_alt2"></i></a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -147,7 +137,7 @@ if(isset($_POST["add_mf"])){
                                         </table>
                                     ';
                         }else{
-                            $result		= Setting::adminManufac();
+                            $result		= Setting::adminCatal();
                         }
                         ?>
                     </section>
