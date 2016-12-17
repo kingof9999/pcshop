@@ -8,6 +8,6 @@
     
     if($result){
     	echo "Delete Success";
-    	header("Location: ../manufacturer_manager.php");
+    	header("Location: ../index.php?url=manufacturer");
     }
 ?>

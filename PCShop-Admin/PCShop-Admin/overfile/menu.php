@@ -18,28 +18,6 @@
                         <li><a class="active" href="input_accessories.php">New Accessories</a></li>
                     </ul>
                 </li>
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="icon_table"></i>
-                        <span>Catalog</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="catalog_manager.php">Manager</a></li>
-                        <li><a class="active" href="input_catalog.php">New Catalog</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="icon_table"></i>
-                        <span>Manufacturer</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="manufacturer_manager.php">Manager</a></li>
-                        <li><a class="active" href="input_manufacturer.php">New Manufacturer</a></li>
-                    </ul>
-                </li>
 
                 <li class="sub-menu">
                     <a href="javascript:;" class="">
@@ -48,8 +26,9 @@
                         <span class="menu-arrow arrow_carrot-right"></span>
                     </a>
                     <ul class="sub">
-                        <li><a class="" href="basic_table.php">Manager</a></li>
-                        <li><a class="active" href="input_product.php">New Product</a></li>
+                        <li><a class="" href="index.php?url=manufacturer">Manufacturer</a></li>
+                        <li><a class="active" href="index.php?url=product">Manager Product</a></li>
+                        <li><a class="" href="index.php?url=catalog">Catalog</a></li>
                     </ul>
                 </li>
                 

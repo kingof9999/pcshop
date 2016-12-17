@@ -7,144 +7,10 @@
 	<!-- ============================================== SIDEBAR ============================================== -->	
 		<div class="col-xs-12 col-sm-12 col-md-3 sidebar">
 			
-			<!-- ================================== TOP NAVIGATION ================================== -->
-<div class="side-menu animate-dropdown outer-bottom-xs">
-    <div class="head"><i class="icon fa fa-align-justify fa-fw"></i> Categories</div>        
-    <nav class="yamm megamenu-horizontal" role="navigation">
-        <ul class="nav">
-            <!-- /.menu-item -->
-            <li class="dropdown menu-item">
-                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-laptop fa-fw"></i>Laptop</a>
-                 <!-- ================================== MEGAMENU VERTICAL ================================== -->
-<ul class="dropdown-menu mega-menu">
-    <li class="yamm-content">
-        <div class="row">
-             <div class="col-xs-12 col-sm-12 col-lg-4">
-                <ul>
-                    <?php
-                        $query	= "SELECT * FROM manufacturer LIMIT 11";
-    					$result = mysqli_query($con,$query) or die("Error:" .mysqli_error($con));
-    					while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
-    						echo '<li><a href="index.php?url=search&hid='.$row["id_mf"].'">'.$row["name_mf"].'</a></li>';
-    					}
-                    ?>
-                </ul>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-lg-4">
-                <ul>
-                    <?php
-                        $query	= "SELECT * FROM manufacturer LIMIT 11,11";
-    					$result = mysqli_query($con,$query) or die("Error:" .mysqli_error($con));
-    					while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
-    						echo '<li><a href="index.php?url=search&hid='.$row["id_mf"].'">'.$row["name_mf"].'</a></li>';
-    					}
-                    ?>
-                </ul>
-            </div>
-            <div class="dropdown-banner-holder">
-                <a href="#"><img alt="" src="assets/images/banners/banner-side.png" /></a>
-            </div>
-        </div><!-- /.row -->
-    </li><!-- /.yamm-content -->                    
-</ul><!-- /.dropdown-menu -->
-<!-- ================================== MEGAMENU VERTICAL ================================== -->            </li><!-- /.menu-item -->
-            <li class="dropdown menu-item">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-history fa-fw"></i>Apple</a>
-                <!-- ================================== MEGAMENU VERTICAL ================================== -->
-<ul class="dropdown-menu mega-menu">
-    <li class="yamm-content">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-lg-4">
-                <ul>
-                    <li><a href="#">Computer Cases &amp; Accessories</a></li>
-                    <li><a href="#">CPUs, Processors</a></li>
-                    <li><a href="#">Fans, Heatsinks &amp; Cooling</a></li>
-                    <li><a href="#">Graphics, Video Cards</a></li>
-                    <li><a href="#">Interface, Add-On Cards</a></li>
-                    <li><a href="#">Laptop Replacement Parts</a></li>
-                    <li><a href="#">Memory (RAM)</a></li>
-                    <li><a href="#">Motherboards</a></li>
-                    <li><a href="#">Motherboard &amp; CPU Combos</a></li>
-                    <li><a href="#">Motherboard Components &amp; Accs</a></li>
-                </ul>
-            </div>
-
-            <div class="col-xs-12 col-sm-12 col-lg-4">
-                <ul>
-                    <li><a href="#">Power Supplies Power</a></li>
-                    <li><a href="#">Power Supply Testers Sound</a></li>
-                    <li><a href="#">Sound Cards (Internal)</a></li>
-                    <li><a href="#">Video Capture &amp; TV Tuner Cards</a></li>
-                    <li><a href="#">Other</a></li>
-                </ul>
-            </div>
-
-            <div class="dropdown-banner-holder">
-                <a href="#"><img alt="" src="assets/images/banners/banner-side.png" /></a>
-            </div>
-        </div><!-- /.row -->
-    </li><!-- /.yamm-content -->                    
-</ul><!-- /.dropdown-menu -->
-<!-- ================================== MEGAMENU VERTICAL ================================== -->            </li><!-- /.menu-item -->
-
-            <li class="dropdown menu-item">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon fa fa-microphone fa-fw"></i>Accessories</a>
-               <ul class="dropdown-menu mega-menu">
-    <li class="yamm-content">
-        <div class="row">
-            <div class="col-sm-12 col-md-3">
-                <ul class="links list-unstyled">
-                    <?php
-                        $query	= "SELECT * FROM accessories LIMIT 5";
-    					$result = mysqli_query($con,$query) or die("Error:" .mysqli_error($con));
-    					while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
-                            echo '<li><a href="#">'.$row["name_as"].'</a></li>';
-				   	    }
-                        //do{
-                        //   echo '<li><a href="#">'.$row["name_as"].'</a></li>'; 
-                        //}while($row=mysqli_fetch_array($result,MYSQLI_ASSOC) && $row["id_as"] <=5);
-                        //$row=mysqli_fetch_array($result,MYSQLI_ASSOC);
-                        //for($i = $row["id_as"]; $i <= 5; $i++){
-                            //echo '<li><a href="#">'.$row["name_as"].'</a></li>';
-                        //    echo '<li>'.$i.' '.$row["name_as"].'</li>';
-                        //}
-                        
-                    ?>   
-                </ul>
-        </div><!-- /.row -->
-        <div class="col-sm-12 col-md-3">
-                <ul class="links list-unstyled">
-                    <?php
-                        $query	= "SELECT * FROM accessories LIMIT 5,5";
-    					$result = mysqli_query($con,$query) or die("Error:" .mysqli_error($con));
-    					while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
-                            echo '<li><a href="#">'.$row["name_as"].'</a></li>';
-				   	    }
-                        
-                    ?>   
-                </ul>
-        </div><!-- /.row -->
-        <div class="col-sm-12 col-md-3">
-                <ul class="links list-unstyled">
-                    <?php
-                        $query	= "SELECT * FROM accessories LIMIT 10,5";
-    					$result = mysqli_query($con,$query) or die("Error:" .mysqli_error($con));
-    					while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
-                            echo '<li><a href="#">'.$row["name_as"].'</a></li>';
-				   	    }
-                        
-                    ?>   
-                </ul>
-        </div><!-- /.row -->
-    </li><!-- /.yamm-content -->                    
-</ul><!-- /.dropdown-menu -->            </li><!-- /.menu-item -->
-          
-        </ul><!-- /.nav -->
-    </nav><!-- /.megamenu-horizontal -->
-</div><!-- /.side-menu -->
+<!-- ================================== TOP NAVIGATION ================================== -->
 <!-- ================================== TOP NAVIGATION : END ================================== -->
-			<!-- ============================================== SPECIAL OFFER ============================================== -->
 
+<!-- ============================================== SPECIAL OFFER ============================================== -->
 <div class="sidebar-widget outer-bottom-small wow fadeInUp">
 	<h3 class="section-title">Special Offer</h3>
 	<div class="sidebar-widget-body outer-top-xs">
@@ -1070,7 +936,7 @@
 
 		<!-- ============================================== CONTENT ============================================== -->
 		<div class="col-xs-12 col-sm-12 col-md-9 homebanner-holder">
-			<div id="product-tabs-slider" class="scroll-tabs outer-top-vs wow fadeInUp">
+			<div id="product-tabs-slider" class="scroll-tabs outer-top-vs wow fadeInUp animated">
             	<div class="more-info-tab clearfix ">
             	   <h3 class="new-product-title pull-left">New Products</h3>
             		<ul class="nav nav-tabs nav-tab-line pull-right" id="new-products-1">
@@ -1080,7 +946,7 @@
             			<li><a data-transition-type="backSlide" href="#apple" data-toggle="tab">apple</a></li>
             		</ul><!-- /.nav-tabs -->
             	</div>
-                
+
                 <div class="clearfix filters-container m-t-10">
                     <div class="row">
                         <div class="col col-sm-6 col-md-2">
@@ -1102,7 +968,7 @@
                                             <button data-toggle="dropdown" type="button" class="btn dropdown-toggle">
                                                 Position <span class="caret"></span>
                                             </button>
-            
+
                                             <ul role="menu" class="dropdown-menu">
                                                 <li role="presentation"><a href="#">position</a></li>
                                                 <li role="presentation"><a href="#">Price:Lowest first</a></li>
@@ -1121,7 +987,7 @@
                                             <button data-toggle="dropdown" type="button" class="btn dropdown-toggle">
                                                 1 <span class="caret"></span>
                                             </button>
-            
+
                                             <ul role="menu" class="dropdown-menu">
                                                 <li role="presentation"><a href="#">1</a></li>
                                                 <li role="presentation"><a href="#">2</a></li>
@@ -1236,8 +1102,13 @@
                                                 $query 	= "SELECT * FROM product WHERE id_mf='$hid'";
                                                 $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
                                                 $result	= mysqli_query($con,$query)or die("LOI LKSP: ".mysqli_error($con));
-                                                while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
-                                                    echo '
+                                                if(mysqli_num_rows($result) == 0){
+                                                    echo 'There are no items in the store.';
+                                                }else{
+                                                    $number = mysqli_num_rows($result);
+                                                    echo '<p>Find '.$number.' items</p>';
+                                                    while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                                                        echo '
                                                         <div class="col-sm-6 col-md-4 wow fadeInUp">
                                                             <div class="products">
                                 
@@ -1293,6 +1164,7 @@
                                                             </div><!-- /.products -->
                                                         </div><!-- /.item -->
                                                     ';
+                                                    }
                                                 }
                                             }else if($checkpr == 2){
                                                 $query 	= "SELECT * FROM product WHERE id_type='$hid'";

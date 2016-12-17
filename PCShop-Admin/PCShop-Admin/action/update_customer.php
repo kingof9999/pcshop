@@ -401,7 +401,7 @@
                         <span class="menu-arrow arrow_carrot-right"></span>
                     </a>
                     <ul class="sub">
-                        <li><a class="" href="../catalog_manager.php">Manager</a></li>
+                        <li><a class="" href="../html/catalog.php">Manager</a></li>
                         <li><a class="active" href="../input_catalog.php">New Catalog</a></li>
                     </ul>
                 </li>

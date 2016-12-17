@@ -19,8 +19,8 @@ class Setting{
                   <th><i class=""></i> CPU</th>
                   <th><i class=""></i> RAM</th>
                   <th><i class=""></i> VGA</th>
-                  <th><i class=""></i> HDH</th>
-                  <th><i class=""></i> PIN</th>
+                  <th><i class=""></i> OS</th>
+                  <th><i class=""></i> BATERRY</th>
                   <th><i class=""></i> Manufacturer</th>
                   <th><i class=""></i> Date Imp Pro</th>
                   <th><i class=""></i> Description</th>
