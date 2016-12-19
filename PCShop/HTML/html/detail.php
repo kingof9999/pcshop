@@ -245,17 +245,6 @@ if(isset($_POST["btn_comment"])){
 									</div>
 
 									<div class="col-sm-6">
-										<div class="favorite-button m-t-10">
-											<a class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Wishlist" href="#">
-											    <i class="fa fa-heart"></i>
-											</a>
-											<a class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Add to Compare" href="#">
-											   <i class="fa fa-retweet"></i>
-											</a>
-											<a class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="E-mail" href="#">
-											    <i class="fa fa-envelope"></i>
-											</a>
-										</div>
 									</div>
 
 								</div><!-- /.row -->
@@ -273,16 +262,6 @@ if(isset($_POST["btn_comment"])){
 							</div><!-- /.quantity-container -->
 
 							<div class="product-social-link m-t-20 text-right">
-								<span class="social-label">Share :</span>
-								<div class="social-icons">
-						            <ul class="list-inline">
-						                <li><a class="fa fa-facebook" href="http://facebook.com/transvelo"></a></li>
-						                <li><a class="fa fa-twitter" href="#"></a></li>
-						                <li><a class="fa fa-linkedin" href="#"></a></li>
-						                <li><a class="fa fa-rss" href="#"></a></li>
-						                <li><a class="fa fa-pinterest" href="#"></a></li>
-						            </ul><!-- /.social-icons -->
-						        </div>
 							</div>
 
 							

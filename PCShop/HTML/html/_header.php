@@ -22,10 +22,10 @@
 				<div class="col-xs-12 col-sm-12 col-md-6 top-search-holder">
 					<div class="contact-row">
     <div class="phone inline">
-        <i class="icon fa fa-phone"></i> (+84) 122 404 2443
+        <i class="icon fa fa-phone"></i> (+84) 126 304 9925
     </div>
     <div class="contact inline">
-        <i class="icon fa fa-envelope"></i> saleradmin@pcshop.com
+        <i class="icon fa fa-envelope"></i> lequangtin95@gmail.com
     </div>
 </div><!-- /.contact-row -->
 <!-- ============================================================= SEARCH AREA ============================================================= -->
@@ -46,7 +46,7 @@
                 </li>
             </ul>
                 <input type="text" class="search-field" placeholder="Search here..." id="txtsearch" name="keyword"/>
-                <input type="submit" id="searchSubmit" name="searchSubmit" value="Search"/>
+                <input type="submit" id="searchSubmit" name="searchSubmit" value="Search" />
         </div>
         <ul class="quick-results col-sm-offset-2" style="z-index: 1000; width: 60%;" id="quick-results">
             
@@ -306,20 +306,13 @@
 </div><!-- /.yamm-content -->					</li>
 				</ul>
 			</li>
-            <!--<li class="dropdown hidden-sm">
-                <a href="category.php">Sale
-                    <span class="menu-label hot-menu hidden-xs">hot</span>
-                </a>
+            <li class="dropdown">
+                <a href="index.php?url=contact">Contact</a>
             </li>
 
             <li class="dropdown">
-                <a href="contact.php">Contact</a>
+                <a href="index.php?url=faq">FAQ</a>
             </li>
-
-            <li class="dropdown">
-                <a href="faq.php">FAQS</a>
-            </li>-->
-			
 		</ul><!-- /.navbar-nav -->
 		<div class="clearfix"></div>				
 	</div><!-- /.nav-outer -->

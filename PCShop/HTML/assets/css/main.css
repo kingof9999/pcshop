@@ -551,10 +551,10 @@ a {
   color: #12cca7;
 }
 .header-style-1 .header-nav {
-  background: #12cca7;
+  background: #3498db;
 }
 .cnt-home .header-style-1 .header-nav .navbar .navbar-nav > li.active {
-  background: #0b816a;
+  background: #1d6ca1;
 }
 .cnt-home .header-style-1 .header-nav .navbar .navbar-nav > li > a:hover,
 .cnt-home .header-style-1 .header-nav .navbar .navbar-nav > li > a:focus {

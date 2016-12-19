@@ -31,11 +31,8 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body class="login-img3-body">
-
 <div class="container">
-
     <form class="login-form" action="<?php echo $_SERVER["PHP_SELF"] ?>" method="post">
         <?php 
             $result		= Setting::homeSignin();
@@ -45,9 +42,6 @@
             if(isset($password_signup_error)) echo $password_signup_error;
         ?>
     </form>
-
 </div>
-
-
 </body>
 </html>

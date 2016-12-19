@@ -41,6 +41,7 @@
                         $tongtien=0;
                         while($row=mysqli_fetch_assoc($result)){
                             echo '
+                                <form action="index.php?url=shopping-cart" method="post">
                     				<tr>
                     					<td class="romove-item"><a href="index.php?url=del_cart&masp='.$row["id_product"].'" title="cancel" class="icon"><i class="fa fa-trash-o fa-2x"></i></a></td>
                     					<td class="cart-image">
@@ -85,13 +86,15 @@
                                         
                     					echo'<td class="cart-product-grand-total"><span class="cart-grand-total-price">$'.$thanhtien.'</span></td>';
                                         $tongtien+=$thanhtien;
-                    				echo'</tr>';
+                    				echo'</tr>
+                                      </form>
+                                     ';
                                     
                             }
-                                    echo'<tr>';
-                                        echo'<td colspan="4" class="cart-product-grand-total">
+                                    echo'<tr align="right">';
+                                        echo'<td colspan="7" class="cart-product-grand-total">
                                                 <div class="cart-grand-total">
-                            						<b>Grand Total:</b><span class="inner-left-md ">'.$tongtien.'</span>
+                            						<span class="inner-left-md "><h4>Total: '.$tongtien.' VND</h4></span>
                             					</div>
                                              </td>
                                         ';

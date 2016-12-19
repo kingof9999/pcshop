@@ -11,668 +11,144 @@
 <!-- ================================== TOP NAVIGATION : END ================================== -->
 
 <!-- ============================================== SPECIAL OFFER ============================================== -->
-<div class="sidebar-widget outer-bottom-small wow fadeInUp">
-	<h3 class="section-title">Special Offer</h3>
-	<div class="sidebar-widget-body outer-top-xs">
-		<div class="owl-carousel sidebar-carousel special-offer custom-carousel owl-theme outer-top-xs">
-	        	        <div class="item">
-	        	<div class="products special-product">
-		        							<div class="product">
-							<div class="product-micro">
-	<div class="row product-micro-row">
-		<div class="col col-xs-5">
-			<div class="product-image">
-				<div class="image">
-					<a href="assets/images/products/sm1.jpg" data-lightbox="image-1" data-title="Nunc ullamcors">
-						<img data-echo="assets/images/products/sm1.jpg" src="assets/images/blank.gif" alt="">
-						<div class="zoom-overlay"></div>
-					</a>					
-				</div><!-- /.image -->
-											<div class="tag tag-micro hot">
-							<span>hot</span>
-						</div>
-					
-					
-								</div><!-- /.product-image -->
-		</div><!-- /.col -->
-		<div class="col col-xs-7">
-			<div class="product-info">
-				<h3 class="name"><a href="#">Simple Product</a></h3>
-				<div class="rating rateit-small"></div>
-				<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-				
-			</div><!-- /.product-price -->
-				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
-			</div>
-		</div><!-- /.col -->
-	</div><!-- /.product-micro-row -->
-</div><!-- /.product-micro -->
-      
-						</div>
-		        							<div class="product">
-							<div class="product-micro">
-	<div class="row product-micro-row">
-		<div class="col col-xs-5">
-			<div class="product-image">
-				<div class="image">
-					<a href="assets/images/products/sm2.jpg" data-lightbox="image-1" data-title="Nunc ullamcors">
-						<img data-echo="assets/images/products/sm2.jpg" src="assets/images/blank.gif" alt="">
-						<div class="zoom-overlay"></div>
-					</a>					
-				</div><!-- /.image -->
-					
-					
-								</div><!-- /.product-image -->
-		</div><!-- /.col -->
-		<div class="col col-xs-7">
-			<div class="product-info">
-				<h3 class="name"><a href="#">Canon EOS 60D</a></h3>
-				<div class="rating rateit-small"></div>
-				<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-				
-			</div><!-- /.product-price -->
-				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
-			</div>
-		</div><!-- /.col -->
-	</div><!-- /.product-micro-row -->
-</div><!-- /.product-micro -->
-      
-						</div>
-		        							<div class="product">
-							<div class="product-micro">
-	<div class="row product-micro-row">
-		<div class="col col-xs-5">
-			<div class="product-image">
-				<div class="image">
-					<a href="assets/images/products/sm3.jpg" data-lightbox="image-1" data-title="Nunc ullamcors">
-						<img data-echo="assets/images/products/sm3.jpg" src="assets/images/blank.gif" alt="">
-						<div class="zoom-overlay"></div>
-					</a>					
-				</div><!-- /.image -->
-					
-											<div class="tag tag-micro new">
-							<span>new</span>
-						</div>
-					
-								</div><!-- /.product-image -->
-		</div><!-- /.col -->
-		<div class="col col-xs-7">
-			<div class="product-info">
-				<h3 class="name"><a href="#">Sony Camera X30</a></h3>
-				<div class="rating rateit-small"></div>
-				<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-				
-			</div><!-- /.product-price -->
-				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
-			</div>
-		</div><!-- /.col -->
-	</div><!-- /.product-micro-row -->
-</div><!-- /.product-micro -->
-      
-						</div>
-		        		        	</div>
-	        </div>
-	    		        <div class="item">
-	        	<div class="products special-product">
-		        							<div class="product">
-							<div class="product-micro">
-	<div class="row product-micro-row">
-		<div class="col col-xs-5">
-			<div class="product-image">
-				<div class="image">
-					<a href="assets/images/products/sm1.jpg" data-lightbox="image-1" data-title="Nunc ullamcors">
-						<img data-echo="assets/images/products/sm1.jpg" src="assets/images/blank.gif" alt="">
-						<div class="zoom-overlay"></div>
-					</a>					
-				</div><!-- /.image -->
-					
-					
-								</div><!-- /.product-image -->
-		</div><!-- /.col -->
-		<div class="col col-xs-7">
-			<div class="product-info">
-				<h3 class="name"><a href="#">Simple Product</a></h3>
-				<div class="rating rateit-small"></div>
-				<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-				
-			</div><!-- /.product-price -->
-				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
-			</div>
-		</div><!-- /.col -->
-	</div><!-- /.product-micro-row -->
-</div><!-- /.product-micro -->
-      
-						</div>
-		        							<div class="product">
-							<div class="product-micro">
-	<div class="row product-micro-row">
-		<div class="col col-xs-5">
-			<div class="product-image">
-				<div class="image">
-					<a href="assets/images/products/sm2.jpg" data-lightbox="image-1" data-title="Nunc ullamcors">
-						<img data-echo="assets/images/products/sm2.jpg" src="assets/images/blank.gif" alt="">
-						<div class="zoom-overlay"></div>
-					</a>					
-				</div><!-- /.image -->
-					
-					
-											<div class="tag tag-micro sale">
-							<span>sale</span>
-						</div>
-								</div><!-- /.product-image -->
-		</div><!-- /.col -->
-		<div class="col col-xs-7">
-			<div class="product-info">
-				<h3 class="name"><a href="#">Canon EOS 60D</a></h3>
-				<div class="rating rateit-small"></div>
-				<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-				
-			</div><!-- /.product-price -->
-				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
-			</div>
-		</div><!-- /.col -->
-	</div><!-- /.product-micro-row -->
-</div><!-- /.product-micro -->
-      
-						</div>
-		        							<div class="product">
-							<div class="product-micro">
-	<div class="row product-micro-row">
-		<div class="col col-xs-5">
-			<div class="product-image">
-				<div class="image">
-					<a href="assets/images/products/sm3.jpg" data-lightbox="image-1" data-title="Nunc ullamcors">
-						<img data-echo="assets/images/products/sm3.jpg" src="assets/images/blank.gif" alt="">
-						<div class="zoom-overlay"></div>
-					</a>					
-				</div><!-- /.image -->
-					
-					
-								</div><!-- /.product-image -->
-		</div><!-- /.col -->
-		<div class="col col-xs-7">
-			<div class="product-info">
-				<h3 class="name"><a href="#">Sony Camera X30</a></h3>
-				<div class="rating rateit-small"></div>
-				<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-				
-			</div><!-- /.product-price -->
-				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
-			</div>
-		</div><!-- /.col -->
-	</div><!-- /.product-micro-row -->
-</div><!-- /.product-micro -->
-      
-						</div>
-		        		        	</div>
-	        </div>
-	    		        <div class="item">
-	        	<div class="products special-product">
-		        							<div class="product">
-							<div class="product-micro">
-	<div class="row product-micro-row">
-		<div class="col col-xs-5">
-			<div class="product-image">
-				<div class="image">
-					<a href="assets/images/products/sm1.jpg" data-lightbox="image-1" data-title="Nunc ullamcors">
-						<img data-echo="assets/images/products/sm1.jpg" src="assets/images/blank.gif" alt="">
-						<div class="zoom-overlay"></div>
-					</a>					
-				</div><!-- /.image -->
-					
-											<div class="tag tag-micro new">
-							<span>new</span>
-						</div>
-					
-								</div><!-- /.product-image -->
-		</div><!-- /.col -->
-		<div class="col col-xs-7">
-			<div class="product-info">
-				<h3 class="name"><a href="#">Simple Product</a></h3>
-				<div class="rating rateit-small"></div>
-				<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-				
-			</div><!-- /.product-price -->
-				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
-			</div>
-		</div><!-- /.col -->
-	</div><!-- /.product-micro-row -->
-</div><!-- /.product-micro -->
-      
-						</div>
-		        							<div class="product">
-							<div class="product-micro">
-	<div class="row product-micro-row">
-		<div class="col col-xs-5">
-			<div class="product-image">
-				<div class="image">
-					<a href="assets/images/products/sm2.jpg" data-lightbox="image-1" data-title="Nunc ullamcors">
-						<img data-echo="assets/images/products/sm2.jpg" src="assets/images/blank.gif" alt="">
-						<div class="zoom-overlay"></div>
-					</a>					
-				</div><!-- /.image -->
-											<div class="tag tag-micro hot">
-							<span>hot</span>
-						</div>
-					
-					
-								</div><!-- /.product-image -->
-		</div><!-- /.col -->
-		<div class="col col-xs-7">
-			<div class="product-info">
-				<h3 class="name"><a href="#">Canon EOS 60D</a></h3>
-				<div class="rating rateit-small"></div>
-				<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-				
-			</div><!-- /.product-price -->
-				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
-			</div>
-		</div><!-- /.col -->
-	</div><!-- /.product-micro-row -->
-</div><!-- /.product-micro -->
-      
-						</div>
-		        							<div class="product">
-							<div class="product-micro">
-	<div class="row product-micro-row">
-		<div class="col col-xs-5">
-			<div class="product-image">
-				<div class="image">
-					<a href="assets/images/products/sm3.jpg" data-lightbox="image-1" data-title="Nunc ullamcors">
-						<img data-echo="assets/images/products/sm3.jpg" src="assets/images/blank.gif" alt="">
-						<div class="zoom-overlay"></div>
-					</a>					
-				</div><!-- /.image -->
-					
-					
-								</div><!-- /.product-image -->
-		</div><!-- /.col -->
-		<div class="col col-xs-7">
-			<div class="product-info">
-				<h3 class="name"><a href="#">Sony Camera X30</a></h3>
-				<div class="rating rateit-small"></div>
-				<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-				
-			</div><!-- /.product-price -->
-				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
-			</div>
-		</div><!-- /.col -->
-	</div><!-- /.product-micro-row -->
-</div><!-- /.product-micro -->
-      
-						</div>
-		        		        	</div>
-	        </div>
-	    		    </div>
-	</div><!-- /.sidebar-widget-body -->
-</div><!-- /.sidebar-widget -->
+        <div class="sidebar-widget outer-bottom-small wow fadeInUp">
+                <h3 class="section-title">Accessories</h3>
+                <div class="sidebar-widget-body outer-top-xs">
+                    <div class="owl-carousel sidebar-carousel special-offer custom-carousel owl-theme outer-top-xs">
+                        <!-- day -->
+                        <div class="item">
+                            <div class="products special-product">
+                                <?php
+                                $query = "SELECT * FROM product_assosi ORDER BY day DESC LIMIT 3";
+                                $result = mysqli_query($con,$query)or die("LOI LIET KE: ".mysqli_error($con));
+                                while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                                    echo '
+                                <div class="product">
+    							<div class="product-micro">
+                                	<div class="row product-micro-row">
+                                		<div class="col col-xs-5">
+                                			<div class="product-image">
+                                				<div class="image">
+                                					<a href="index.php?url=detailas&asid='.$row["id_product_as"].'" data-lightbox="image-1" data-title="Nunc ullamcors">
+                                						<img data-echo="../../PCShop-Admin/PCShop-Admin/images/'.$row["image"].'" src="assets/images/blank.gif" alt="" height="100" width="100">
+                                						<div class="zoom-overlay"></div>
+                                					</a>					
+                                				</div><!-- /.image -->
+                                					
+                                					
+                                								</div><!-- /.product-image -->
+                                		</div><!-- /.col -->
+                                		<div class="col col-xs-7">
+                                			<div class="product-info">
+                                				<h3 class="name"><a href="index.php?url=detailas&asid='.$row["id_product_as"].'">'.$row["name_product_as"].'</a></h3>
+                                				<div class="rating rateit-small"></div>
+                                				<div class="product-price">	
+                                				<span class="price">
+                                					'.$row["price"].' VND</span>
+                                				
+                                			</div><!-- /.product-price -->
+                                				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
+                                			</div>
+                                		</div><!-- /.col -->
+                                	</div><!-- /.product-micro-row -->
+                                </div><!-- /.product-micro -->
+                                      
+                                						</div>
+                            ';
+                                }
+                                ?>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="products special-product">
+                                <?php
+                                $query = "SELECT * FROM product_assosi ORDER BY day DESC LIMIT 3,3";
+                                $result = mysqli_query($con,$query)or die("LOI LIET KE: ".mysqli_error($con));
+                                while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                                    echo '
+                                <div class="product">
+    							<div class="product-micro">
+                                	<div class="row product-micro-row">
+                                		<div class="col col-xs-5">
+                                			<div class="product-image">
+                                				<div class="image">
+                                					<a href="assets/images/products/sm1.jpg" data-lightbox="image-1" data-title="Nunc ullamcors">
+                                						<img data-echo="../../PCShop-Admin/PCShop-Admin/images/'.$row["image"].'" src="assets/images/blank.gif" alt="" height="100" width="100">
+                                						<div class="zoom-overlay"></div>
+                                					</a>					
+                                				</div><!-- /.image -->
+                                					
+                                					
+                                								</div><!-- /.product-image -->
+                                		</div><!-- /.col -->
+                                		<div class="col col-xs-7">
+                                			<div class="product-info">
+                                				<h3 class="name"><a href="#">'.$row["name_product_as"].'</a></h3>
+                                				<div class="rating rateit-small"></div>
+                                				<div class="product-price">	
+                                				<span class="price">
+                                					'.$row["price"].'				</span>
+                                				
+                                			</div><!-- /.product-price -->
+                                				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
+                                			</div>
+                                		</div><!-- /.col -->
+                                	</div><!-- /.product-micro-row -->
+                                </div><!-- /.product-micro -->
+                                      
+                                						</div>
+                            ';
+                                }
+                                ?>
+                            </div>
+                        </div>
+                        <!-- day -->
+                    </div>
+                </div><!-- /.sidebar-widget-body -->
+            </div><!-- /.sidebar-widget -->
 <!-- ============================================== SPECIAL OFFER : END ============================================== -->
-			<!-- ============================================== PRODUCT TAGS ============================================== -->
-<div class="sidebar-widget product-tag wow fadeInUp">
-	<h3 class="section-title">Product tags</h3>
-	<div class="sidebar-widget-body outer-top-xs">
-		<div class="tag-list">
-            <a class="item" title="Phone" href="category.php">Phone</a>
-            <a class="item active" title="Vest" href="category.php">Speaker</a>
-            <a class="item" title="Smartphone" href="category.php">Smartphone</a>
-            <a class="item" title="Furniture" href="category.php">Furniture</a>
-            <a class="item" title="T-shirt" href="category.php">Mouses</a>
-            <a class="item" title="Sweatpants" href="category.php">Usb</a>
-            <a class="item" title="Sneaker" href="category.php">HDD - SSD</a>
-            <a class="item" title="Toys" href="category.php">Batterys</a>
-            <a class="item" title="Rose" href="category.php">Screens</a>
-		</div><!-- /.tag-list -->
-	</div><!-- /.sidebar-widget-body -->
-</div><!-- /.sidebar-widget -->
-<!-- ============================================== PRODUCT TAGS : END ============================================== -->
+            <!-- ============================================== FILTER ============================================== -->
+            <?php
+            if(isset($_POST['filter'])){
+                $selected_price = $_POST['price'];
+                $selected_purpose = $_POST['purpose'];
+
+                echo '<meta http-equiv="refresh" content="0;url=index.php?url=filter&fpr='.$selected_price.'&fpu='.$selected_purpose.'" />';
+            }
+            ?>
+            <div class="sidebar-widget product-tag wow fadeInUp">
+                <h3 class="section-title">Filter</h3>
+                <div class="sidebar-widget-body outer-top-xs">
+                    <form class="outer-top-xs" action="index.php?url=home" id="form-price" method="post">
+                        <h4>Filter by price: </h4>
+                        <select name="price" class="form-control unicase-form-control text-input">
+                            <optgroup label="Price">
+                                <option value="500"> Below 500 VND</option>
+                                <option value="1000"> Between 500 - 1000 VND</option>
+                                <option value="5000"> Between 1000 - 5000 VND</option>
+                                <option value="20000"> Between 5000 - 20000 VND</option>
+                                <option value="20001"> Over 20000 VND</option>
+                            </optgroup>
+                        </select>
+
+                        <h4 class="outer-top-xs">Filter by purpose: </h4>
+                        <select name="purpose" class="form-control unicase-form-control text-input">
+                            <optgroup label="For">
+                                <option value="1"> Work</option>
+                                <option value="2"> Home</option>
+                            </optgroup>
+                        </select>
+                        <input type="submit" value="Filter" class="btn btn-info outer-top-xs" id="filter" name="filter"/>
+                    </form>
+
+                </div><!-- /.sidebar-widget-body -->
+            </div><!-- /.sidebar-widget -->
+            <!-- ============================================== FILTER : END ============================================== -->
 			<!-- ============================================== SPECIAL DEALS ============================================== -->
 
-<div class="sidebar-widget outer-bottom-small wow fadeInUp">
-	<h3 class="section-title">Special Deals</h3>
-	<div class="sidebar-widget-body outer-top-xs">
-		<div class="owl-carousel sidebar-carousel special-offer custom-carousel owl-theme outer-top-xs">
-	        	        <div class="item">
-	        	<div class="products special-product">
-		        							<div class="product">
-							<div class="product-micro">
-	<div class="row product-micro-row">
-		<div class="col col-xs-5">
-			<div class="product-image">
-				<div class="image">
-					<a href="assets/images/products/sm4.jpg" data-lightbox="image-1" data-title="Nunc ullamcors">
-						<img data-echo="assets/images/products/sm4.jpg" src="assets/images/blank.gif" alt="">
-						<div class="zoom-overlay"></div>
-					</a>					
-				</div><!-- /.image -->
-											<div class="tag tag-micro hot">
-							<span>hot</span>
-						</div>
-					
-					
-								</div><!-- /.product-image -->
-		</div><!-- /.col -->
-		<div class="col col-xs-7">
-			<div class="product-info">
-				<h3 class="name"><a href="#">Simple Product</a></h3>
-				<div class="rating rateit-small"></div>
-				<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-				
-			</div><!-- /.product-price -->
-				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
-			</div>
-		</div><!-- /.col -->
-	</div><!-- /.product-micro-row -->
-</div><!-- /.product-micro -->
-      
-						</div>
-		        							<div class="product">
-							<div class="product-micro">
-	<div class="row product-micro-row">
-		<div class="col col-xs-5">
-			<div class="product-image">
-				<div class="image">
-					<a href="assets/images/products/sm5.jpg" data-lightbox="image-1" data-title="Nunc ullamcors">
-						<img data-echo="assets/images/products/sm5.jpg" src="assets/images/blank.gif" alt="">
-						<div class="zoom-overlay"></div>
-					</a>					
-				</div><!-- /.image -->
-					
-					
-								</div><!-- /.product-image -->
-		</div><!-- /.col -->
-		<div class="col col-xs-7">
-			<div class="product-info">
-				<h3 class="name"><a href="#">Simple Product</a></h3>
-				<div class="rating rateit-small"></div>
-				<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-				
-			</div><!-- /.product-price -->
-				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
-			</div>
-		</div><!-- /.col -->
-	</div><!-- /.product-micro-row -->
-</div><!-- /.product-micro -->
-      
-						</div>
-		        							<div class="product">
-							<div class="product-micro">
-	<div class="row product-micro-row">
-		<div class="col col-xs-5">
-			<div class="product-image">
-				<div class="image">
-					<a href="assets/images/products/sm6.jpg" data-lightbox="image-1" data-title="Nunc ullamcors">
-						<img data-echo="assets/images/products/sm6.jpg" src="assets/images/blank.gif" alt="">
-						<div class="zoom-overlay"></div>
-					</a>					
-				</div><!-- /.image -->
-					
-											<div class="tag tag-micro new">
-							<span>new</span>
-						</div>
-					
-								</div><!-- /.product-image -->
-		</div><!-- /.col -->
-		<div class="col col-xs-7">
-			<div class="product-info">
-				<h3 class="name"><a href="#">Sony Camera X30</a></h3>
-				<div class="rating rateit-small"></div>
-				<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-				
-			</div><!-- /.product-price -->
-				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
-			</div>
-		</div><!-- /.col -->
-	</div><!-- /.product-micro-row -->
-</div><!-- /.product-micro -->
-      
-						</div>
-		        		        	</div>
-	        </div>
-	    		        <div class="item">
-	        	<div class="products special-product">
-		        							<div class="product">
-							<div class="product-micro">
-	<div class="row product-micro-row">
-		<div class="col col-xs-5">
-			<div class="product-image">
-				<div class="image">
-					<a href="assets/images/products/sm1.jpg" data-lightbox="image-1" data-title="Nunc ullamcors">
-						<img data-echo="assets/images/products/sm1.jpg" src="assets/images/blank.gif" alt="">
-						<div class="zoom-overlay"></div>
-					</a>					
-				</div><!-- /.image -->
-					
-					
-								</div><!-- /.product-image -->
-		</div><!-- /.col -->
-		<div class="col col-xs-7">
-			<div class="product-info">
-				<h3 class="name"><a href="#">Sony Ericson Vaga</a></h3>
-				<div class="rating rateit-small"></div>
-				<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-				
-			</div><!-- /.product-price -->
-				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
-			</div>
-		</div><!-- /.col -->
-	</div><!-- /.product-micro-row -->
-</div><!-- /.product-micro -->
-      
-						</div>
-		        							<div class="product">
-							<div class="product-micro">
-	<div class="row product-micro-row">
-		<div class="col col-xs-5">
-			<div class="product-image">
-				<div class="image">
-					<a href="assets/images/products/sm2.jpg" data-lightbox="image-1" data-title="Nunc ullamcors">
-						<img data-echo="assets/images/products/sm2.jpg" src="assets/images/blank.gif" alt="">
-						<div class="zoom-overlay"></div>
-					</a>					
-				</div><!-- /.image -->
-					
-					
-											<div class="tag tag-micro sale">
-							<span>sale</span>
-						</div>
-								</div><!-- /.product-image -->
-		</div><!-- /.col -->
-		<div class="col col-xs-7">
-			<div class="product-info">
-				<h3 class="name"><a href="#">Sony Ericson Vaga</a></h3>
-				<div class="rating rateit-small"></div>
-				<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-				
-			</div><!-- /.product-price -->
-				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
-			</div>
-		</div><!-- /.col -->
-	</div><!-- /.product-micro-row -->
-</div><!-- /.product-micro -->
-      
-						</div>
-		        							<div class="product">
-							<div class="product-micro">
-	<div class="row product-micro-row">
-		<div class="col col-xs-5">
-			<div class="product-image">
-				<div class="image">
-					<a href="assets/images/products/sm3.jpg" data-lightbox="image-1" data-title="Nunc ullamcors">
-						<img data-echo="assets/images/products/sm3.jpg" src="assets/images/blank.gif" alt="">
-						<div class="zoom-overlay"></div>
-					</a>					
-				</div><!-- /.image -->
-					
-					
-								</div><!-- /.product-image -->
-		</div><!-- /.col -->
-		<div class="col col-xs-7">
-			<div class="product-info">
-				<h3 class="name"><a href="#">Sony Ericson Vaga</a></h3>
-				<div class="rating rateit-small"></div>
-				<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-				
-			</div><!-- /.product-price -->
-				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
-			</div>
-		</div><!-- /.col -->
-	</div><!-- /.product-micro-row -->
-</div><!-- /.product-micro -->
-      
-						</div>
-		        		        	</div>
-	        </div>
-	    		        <div class="item">
-	        	<div class="products special-product">
-		        							<div class="product">
-							<div class="product-micro">
-	<div class="row product-micro-row">
-		<div class="col col-xs-5">
-			<div class="product-image">
-				<div class="image">
-					<a href="assets/images/products/sm5.jpg" data-lightbox="image-1" data-title="Nunc ullamcors">
-						<img data-echo="assets/images/products/sm5.jpg" src="assets/images/blank.gif" alt="">
-						<div class="zoom-overlay"></div>
-					</a>					
-				</div><!-- /.image -->
-					
-											<div class="tag tag-micro new">
-							<span>new</span>
-						</div>
-					
-								</div><!-- /.product-image -->
-		</div><!-- /.col -->
-		<div class="col col-xs-7">
-			<div class="product-info">
-				<h3 class="name"><a href="#">Sony Ericson Vaga</a></h3>
-				<div class="rating rateit-small"></div>
-				<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-				
-			</div><!-- /.product-price -->
-				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
-			</div>
-		</div><!-- /.col -->
-	</div><!-- /.product-micro-row -->
-</div><!-- /.product-micro -->
-      
-						</div>
-		        							<div class="product">
-							<div class="product-micro">
-	<div class="row product-micro-row">
-		<div class="col col-xs-5">
-			<div class="product-image">
-				<div class="image">
-					<a href="assets/images/products/sm2.jpg" data-lightbox="image-1" data-title="Nunc ullamcors">
-						<img data-echo="assets/images/products/sm2.jpg" src="assets/images/blank.gif" alt="">
-						<div class="zoom-overlay"></div>
-					</a>					
-				</div><!-- /.image -->
-											<div class="tag tag-micro hot">
-							<span>hot</span>
-						</div>
-					
-					
-								</div><!-- /.product-image -->
-		</div><!-- /.col -->
-		<div class="col col-xs-7">
-			<div class="product-info">
-				<h3 class="name"><a href="#">Sony Ericson Vaga</a></h3>
-				<div class="rating rateit-small"></div>
-				<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-				
-			</div><!-- /.product-price -->
-				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
-			</div>
-		</div><!-- /.col -->
-	</div><!-- /.product-micro-row -->
-</div><!-- /.product-micro -->
-      
-						</div>
-		        							<div class="product">
-							<div class="product-micro">
-	<div class="row product-micro-row">
-		<div class="col col-xs-5">
-			<div class="product-image">
-				<div class="image">
-					<a href="assets/images/products/sm1.jpg" data-lightbox="image-1" data-title="Nunc ullamcors">
-						<img data-echo="assets/images/products/sm1.jpg" src="assets/images/blank.gif" alt="">
-						<div class="zoom-overlay"></div>
-					</a>					
-				</div><!-- /.image -->
-					
-					
-								</div><!-- /.product-image -->
-		</div><!-- /.col -->
-		<div class="col col-xs-7">
-			<div class="product-info">
-				<h3 class="name"><a href="#">Sony Ericson Vaga</a></h3>
-				<div class="rating rateit-small"></div>
-				<div class="product-price">	
-				<span class="price">
-					$650.99				</span>
-				
-			</div><!-- /.product-price -->
-				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
-			</div>
-		</div><!-- /.col -->
-	</div><!-- /.product-micro-row -->
-</div><!-- /.product-micro -->
-      
-						</div>
-		        		        	</div>
-	        </div>
-	    		    </div>
-	</div><!-- /.sidebar-widget-body -->
-</div><!-- /.sidebar-widget -->
 <!-- ============================================== SPECIAL DEALS : END ============================================== -->
 			<!-- ============================================== NEWSLETTER ============================================== -->
-<div class="sidebar-widget newsletter wow fadeInUp outer-bottom-small">
-	<h3 class="section-title">Newsletters</h3>
-	<div class="sidebar-widget-body outer-top-xs">
-		<p>Sign Up for Our Newsletter!</p>
-        <form role="form">
-        	 <div class="form-group">
-			    <label class="sr-only" for="exampleInputEmail1">Email address</label>
-			    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Subscribe to our newsletter">
-			  </div>
-			<button class="btn btn-primary">Subscribe</button>
-		</form>
-	</div><!-- /.sidebar-widget-body -->
-</div><!-- /.sidebar-widget -->
 <!-- ============================================== NEWSLETTER: END ============================================== -->
 			<!-- ============================================== HOT DEALS ============================================== -->
 <div class="sidebar-widget hot-deals wow fadeInUp">
@@ -723,10 +199,10 @@
 
 							<div class="product-price">	
 								<span class="price">
-									$600.00
+									VND600.00
 								</span>
 									
-							    <span class="price-before-discount">$800.00</span>					
+							    <span class="price-before-discount">VND800.00</span>
 							
 							</div><!-- /.product-price -->
 							
@@ -791,10 +267,10 @@
 
 							<div class="product-price">	
 								<span class="price">
-									$600.00
+									VND600.00
 								</span>
 									
-							    <span class="price-before-discount">$800.00</span>					
+							    <span class="price-before-discount">VND800.00</span>
 							
 							</div><!-- /.product-price -->
 							
@@ -859,10 +335,10 @@
 
 							<div class="product-price">	
 								<span class="price">
-									$600.00
+									VND600.00
 								</span>
 									
-							    <span class="price-before-discount">$800.00</span>					
+							    <span class="price-before-discount">VND800.00</span>
 							
 							</div><!-- /.product-price -->
 							
@@ -950,72 +426,15 @@
                 <div class="clearfix filters-container m-t-10">
                     <div class="row">
                         <div class="col col-sm-6 col-md-2">
-                            <div class="filter-tabs">
-                                <ul id="filter-tabs" class="nav nav-tabs nav-tab-box nav-tab-fa-icon">
-                                    <li class="active">
-                                        <a data-toggle="tab" href="#grid-container"><i class="icon fa fa-th-list"></i>Grid</a>
-                                    </li>
-                                    <li><a data-toggle="tab" href="#list-container"><i class="icon fa fa-th"></i>List</a></li>
-                                </ul>
-                            </div><!-- /.filter-tabs -->
                         </div><!-- /.col -->
                         <div class="col col-sm-12 col-md-6">
                             <div class="col col-sm-3 col-md-6 no-padding">
-                                <div class="lbl-cnt">
-                                    <span class="lbl">Sort by</span>
-                                    <div class="fld inline">
-                                        <div class="dropdown dropdown-small dropdown-med dropdown-white inline">
-                                            <button data-toggle="dropdown" type="button" class="btn dropdown-toggle">
-                                                Position <span class="caret"></span>
-                                            </button>
-            
-                                            <ul role="menu" class="dropdown-menu">
-                                                <li role="presentation"><a href="#">position</a></li>
-                                                <li role="presentation"><a href="#">Price:Lowest first</a></li>
-                                                <li role="presentation"><a href="#">Price:HIghest first</a></li>
-                                                <li role="presentation"><a href="#">Product Name:A to Z</a></li>
-                                            </ul>
-                                        </div>
-                                    </div><!-- /.fld -->
-                                </div><!-- /.lbl-cnt -->
                             </div><!-- /.col -->
                             <div class="col col-sm-3 col-md-6 no-padding">
-                                <div class="lbl-cnt">
-                                    <span class="lbl">Show</span>
-                                    <div class="fld inline">
-                                        <div class="dropdown dropdown-small dropdown-med dropdown-white inline">
-                                            <button data-toggle="dropdown" type="button" class="btn dropdown-toggle">
-                                                1 <span class="caret"></span>
-                                            </button>
-            
-                                            <ul role="menu" class="dropdown-menu">
-                                                <li role="presentation"><a href="#">1</a></li>
-                                                <li role="presentation"><a href="#">2</a></li>
-                                                <li role="presentation"><a href="#">3</a></li>
-                                                <li role="presentation"><a href="#">4</a></li>
-                                                <li role="presentation"><a href="#">5</a></li>
-                                                <li role="presentation"><a href="#">6</a></li>
-                                                <li role="presentation"><a href="#">7</a></li>
-                                                <li role="presentation"><a href="#">8</a></li>
-                                                <li role="presentation"><a href="#">9</a></li>
-                                                <li role="presentation"><a href="#">10</a></li>
-                                            </ul>
-                                        </div>
-                                    </div><!-- /.fld -->
-                                </div><!-- /.lbl-cnt -->
                             </div><!-- /.col -->
                         </div><!-- /.col -->
                         <div class="col col-sm-6 col-md-4 text-right">
-                            <div class="pagination-container">
-                                <ul class="list-inline list-unstyled">
-                                    <li class="prev"><a href="#"><i class="fa fa-angle-left"></i></a></li>
-                                    <li><a href="#">1</a></li>
-                                    <li class="active"><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li>
-                                </ul><!-- /.list-inline -->
-                            </div><!-- /.pagination-container -->		</div><!-- /.col -->
+         	            </div><!-- /.col -->
                     </div><!-- /.row -->
                 </div>
                 
@@ -1052,12 +471,12 @@
                             
                             
                                                                 <div class="product-info text-left">
-                                                                    <h3 class="name"><a href="detail.html">'.$row["name_product"].'</a></h3>
+                                                                    <h3 class="name"><a href="index.php?url=detail&spid='.$row["id_product"].'">'.$row["name_product"].'</a></h3>
                                                                     <div class="rating rateit-small"></div>
                                                                     <div class="description"></div>
                             
                                                                     <div class="product-price">
-                                                        				<span class="price">$'.$row["price"].'</span>
+                                                        				<span class="price">'.$row["price"].' VND</span>
                                                                         <!--<span class="price-before-discount">$ 800</span>-->
                             
                                                                     </div><!-- /.product-price -->
@@ -1070,21 +489,11 @@
                                                                                 <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
                                                                                     <i class="fa fa-shopping-cart"></i>
                                                                                 </button>
-                                                                                <button class="btn btn-primary" type="button">Add to cart</button>
+                                                                                    <a href="index.php?url=add_cart&masp='.$row["id_product"].'" class="btn btn-primary"> ADD TO CART</a>
                             
                                                                             </li>
                             
-                                                                            <li class="lnk wishlist">
-                                                                                <a class="add-to-cart" href="detail.html" title="Wishlist">
-                                                                                    <i class="icon fa fa-heart"></i>
-                                                                                </a>
-                                                                            </li>
-                            
-                                                                            <li class="lnk">
-                                                                                <a class="add-to-cart" href="detail.html" title="Compare">
-                                                                                    <i class="fa fa-retweet"></i>
-                                                                                </a>
-                                                                            </li>
+                      
                                                                         </ul>
                                                                     </div><!-- /.action -->
                                                                 </div><!-- /.cart -->
@@ -1096,11 +505,13 @@
                                             }
                                             }
                                         }else{
+                                            error_reporting(E_ALL & ~E_NOTICE);
                                             $hid = $_GET["hid"];
                                             $checkpr = $_GET["checkpr"];
-                                            if($checkpr == 1){
-                                                $query 	= "SELECT * FROM product WHERE id_mf='$hid'";
-                                                $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+                                            if($checkpr == null || $hid == null){
+                                                $hid = 0;
+                                                $checkpr = 0;
+                                                $query 	= "SELECT * FROM product";
                                                 $result	= mysqli_query($con,$query)or die("LOI LKSP: ".mysqli_error($con));
                                                 while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
                                                     echo '
@@ -1136,21 +547,62 @@
                                                                                     <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
                                                                                         <i class="fa fa-shopping-cart"></i>
                                                                                     </button>
-                                                                                    <button class="btn btn-primary" type="button">Add to cart</button>
+                                                                                        <a href="index.php?url=add_cart&masp='.$row["id_product"].'" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> ADD TO CART</a>
                                 
                                                                                 </li>
+        
+                                                                            </ul>
+                                                                        </div><!-- /.action -->
+                                                                    </div><!-- /.cart -->
+                                                                </div><!-- /.product -->
                                 
-                                                                                <li class="lnk wishlist">
-                                                                                    <a class="add-to-cart" href="detail.html" title="Wishlist">
-                                                                                        <i class="icon fa fa-heart"></i>
-                                                                                    </a>
-                                                                                </li>
+                                                            </div><!-- /.products -->
+                                                        </div><!-- /.item -->
+                                                    ';
+                                                }
+                                            }
+                                            if($checkpr == 1){
+                                                $query 	= "SELECT * FROM product WHERE id_mf='$hid'";
+                                                $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+                                                $result	= mysqli_query($con,$query)or die("LOI LKSP: ".mysqli_error($con));
+                                                while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                                                    echo '
+                                                        <div class="col-sm-6 col-md-4 wow fadeInUp">
+                                                            <div class="products">
                                 
-                                                                                <li class="lnk">
-                                                                                    <a class="add-to-cart" href="detail.html" title="Compare">
-                                                                                        <i class="fa fa-retweet"></i>
-                                                                                    </a>
+                                                                <div class="product">
+                                                                    <div class="product-image">
+                                                                        <div class="image">
+                                                                            <a href="index.php?url=detail&spid='.$row["id_product"].'"><img  src="assets/images/blank.gif" data-echo="../../PCShop-Admin/PCShop-Admin/images/'.$row["image"].'" alt="" height="347" width="270"></a>
+                                                                        </div><!-- /.image -->
+                                
+                                                                        <div class="tag new"><span>new</span></div>
+                                                                    </div><!-- /.product-image -->
+                                
+                                
+                                                                    <div class="product-info text-left">
+                                                                        <h3 class="name"><a href="detail.html">'.$row["name_product"].'</a></h3>
+                                                                        <div class="rating rateit-small"></div>
+                                                                        <div class="description"></div>
+                                
+                                                                        <div class="product-price">
+                                                            				<span class="price">'.$row["price"].' VND</span>
+                                                                            <!--<span class="price-before-discount">$ 800</span>-->
+                                
+                                                                        </div><!-- /.product-price -->
+                                
+                                                                    </div><!-- /.product-info -->
+                                                                    <div class="cart clearfix animate-effect">
+                                                                        <div class="action">
+                                                                            <ul class="list-unstyled">
+                                                                                <li class="add-cart-button btn-group">
+                                                                                    <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
+                                                                                        <i class="fa fa-shopping-cart"></i>
+                                                                                    </button>
+                                                                                        <a href="index.php?url=add_cart&masp='.$row["id_product"].'" class="btn btn-primary"> ADD TO CART</a>
+                                
                                                                                 </li>
+        
                                                                             </ul>
                                                                         </div><!-- /.action -->
                                                                     </div><!-- /.cart -->
@@ -1185,7 +637,7 @@
                                                                         <div class="description"></div>
                                 
                                                                         <div class="product-price">
-                                                            				<span class="price">$'.$row["price"].'</span>
+                                                            				<span class="price">'.$row["price"].' VND</span>
                                                                             <!--<span class="price-before-discount">$ 800</span>-->
                                 
                                                                         </div><!-- /.product-price -->
@@ -1201,18 +653,7 @@
                                                                                     <button class="btn btn-primary" type="button">Add to cart</button>
                                 
                                                                                 </li>
-                                
-                                                                                <li class="lnk wishlist">
-                                                                                    <a class="add-to-cart" href="detail.html" title="Wishlist">
-                                                                                        <i class="icon fa fa-heart"></i>
-                                                                                    </a>
-                                                                                </li>
-                                
-                                                                                <li class="lnk">
-                                                                                    <a class="add-to-cart" href="detail.html" title="Compare">
-                                                                                        <i class="fa fa-retweet"></i>
-                                                                                    </a>
-                                                                                </li>
+             
                                                                             </ul>
                                                                         </div><!-- /.action -->
                                                                     </div><!-- /.cart -->
@@ -1242,12 +683,12 @@
                                 
                                 
                                                                     <div class="product-info text-left">
-                                                                        <h3 class="name"><a href="detail.html">'.$row["name_product_as"].'</a></h3>
+                                                                        <h3 class="name"><a href="index.php?url=detailas&asid='.$row["id_product_as"].'">'.$row["name_product_as"].'</a></h3>
                                                                         <div class="rating rateit-small"></div>
                                                                         <div class="description"></div>
                                 
                                                                         <div class="product-price">
-                                                            				<span class="price">$'.$row["price"].'</span>
+                                                            				<span class="price">'.$row["price"].' VND</span>
                                                                             <!--<span class="price-before-discount">$ 800</span>-->
                                 
                                                                         </div><!-- /.product-price -->
@@ -1264,17 +705,7 @@
                                 
                                                                                 </li>
                                 
-                                                                                <li class="lnk wishlist">
-                                                                                    <a class="add-to-cart" href="detail.html" title="Wishlist">
-                                                                                        <i class="icon fa fa-heart"></i>
-                                                                                    </a>
-                                                                                </li>
-                                
-                                                                                <li class="lnk">
-                                                                                    <a class="add-to-cart" href="detail.html" title="Compare">
-                                                                                        <i class="fa fa-retweet"></i>
-                                                                                    </a>
-                                                                                </li>
+                        
                                                                             </ul>
                                                                         </div><!-- /.action -->
                                                                     </div><!-- /.cart -->

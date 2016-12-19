@@ -18,7 +18,7 @@
         <!-- day -->
 	    	<div class="item">
 	        	<div class="products special-product">
-		        	<?php 
+		        	<?php
                         $query = "SELECT * FROM product_assosi ORDER BY day DESC LIMIT 3";
             		    $result = mysqli_query($con,$query)or die("LOI LIET KE: ".mysqli_error($con));
                         while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
@@ -56,13 +56,13 @@
                                 						</div>
                             ';
                         }
-                    ?>						
+                    ?>
 		        </div>
 	        </div>
-            
+
             <div class="item">
 	        	<div class="products special-product">
-		        	<?php 
+		        	<?php
                         $query = "SELECT * FROM product_assosi ORDER BY day DESC LIMIT 3,3";
             		    $result = mysqli_query($con,$query)or die("LOI LIET KE: ".mysqli_error($con));
                         while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
@@ -100,7 +100,7 @@
                                 						</div>
                             ';
                         }
-                    ?>						
+                    ?>
 		        </div>
 	        </div>
             <!-- day -->
@@ -108,37 +108,43 @@
 	</div><!-- /.sidebar-widget-body -->
 </div><!-- /.sidebar-widget -->
 <!-- ============================================== SPECIAL OFFER : END ============================================== -->
-			<!-- ============================================== PRODUCT TAGS ============================================== -->
-<div class="sidebar-widget product-tag wow fadeInUp">
+			<!-- ============================================== FILTER ============================================== -->
+<?php
+    if(isset($_POST['filter'])){
+        $selected_price = $_POST['price'];
+        $selected_purpose = $_POST['purpose'];
+
+        echo '<meta http-equiv="refresh" content="0;url=index.php?url=filter&fpr='.$selected_price.'&fpu='.$selected_purpose.'" />';
+    }
+?>
+ <div class="sidebar-widget product-tag wow fadeInUp">
 	<h3 class="section-title">Filter</h3>
 	<div class="sidebar-widget-body outer-top-xs">
-        <form class="outer-top-xs" action="" id="form-price">
+        <form class="outer-top-xs" action="index.php?url=home" id="form-price" method="post">
             <h4>Filter by price: </h4>
-            <select name="price" class="form-control unicase-form-control text-input">>
+            <select name="price" class="form-control unicase-form-control text-input">
                 <optgroup label="Price">
-                        <option value="100"> Below 100$</option>
-                        <option value="500"> Between 100$ - 500$</option>
-                        <option value="1000"> Between 500$ - 1000$</option>
-                        <option value="1500"> Between 1000$ - 1500$</option>
-                        <option value="15001"> Over 1500$</option>
-                    </optgroup>
+                        <option value="500"> Below 500 VND</option>
+                        <option value="1000"> Between 500 - 1000 VND</option>
+                        <option value="5000"> Between 1000 - 5000 VND</option>
+                        <option value="20000"> Between 5000 - 20000 VND</option>
+                        <option value="20001"> Over 20000 VND</option>
+                </optgroup>
             </select>
 
             <h4 class="outer-top-xs">Filter by purpose: </h4>
             <select name="purpose" class="form-control unicase-form-control text-input">
                 <optgroup label="For">
-                        <option value="work"> Work</option>
-                        <option value="study"> Study</option>
-                        <option value="game"> Game</option>
-                        <option value="graphic"> Graphics</option>
+                        <option value="1"> Work</option>
+                        <option value="2"> Home</option>
                     </optgroup>
             </select>
-            <input type="submit" value="Filter" class="btn btn-info outer-top-xs"/>
+            <input type="submit" value="Filter" class="btn btn-info outer-top-xs" id="filter" name="filter"/>
         </form>
 
 	</div><!-- /.sidebar-widget-body -->
 </div><!-- /.sidebar-widget -->
-<!-- ============================================== PRODUCT TAGS : END ============================================== -->
+<!-- ============================================== FILTER : END ============================================== -->
 <!-- ============================================== SPECIAL DEALS ============================================== -->
 <!-- ============================================== SPECIAL DEALS : END ============================================== -->
 <!-- ============================================== NEWSLETTER ============================================== -->
@@ -347,17 +353,6 @@
 													
 						</li>
 	                   
-		                <li class="lnk wishlist">
-							<a class="add-to-cart" href="detail.php" title="Wishlist">
-								 <i class="icon fa fa-heart"></i>
-							</a>
-						</li>
-
-						<li class="lnk">
-							<a class="add-to-cart" href="detail.php" title="Compare">
-							    <i class="fa fa-retweet"></i>
-							</a>
-						</li>
 					</ul>
 				</div><!-- /.action -->
 			</div><!-- /.cart -->
@@ -1420,60 +1415,8 @@
     <div class="clearfix filters-container m-t-10">
         <div class="row">
             <div class="col col-sm-6 col-md-2">
-                <div class="filter-tabs">
-                    <ul id="filter-tabs" class="nav nav-tabs nav-tab-box nav-tab-fa-icon">
-                        <li class="active">
-                            <a data-toggle="tab" href="#grid-container"><i class="icon fa fa-th-list"></i>Grid</a>
-                        </li>
-                        <li><a data-toggle="tab" href="#list-container"><i class="icon fa fa-th"></i>List</a></li>
-                    </ul>
-                </div><!-- /.filter-tabs -->
             </div><!-- /.col -->
             <div class="col col-sm-12 col-md-6">
-                <div class="col col-sm-3 col-md-6 no-padding">
-                    <div class="lbl-cnt">
-                        <span class="lbl">Sort by</span>
-                        <div class="fld inline">
-                            <div class="dropdown dropdown-small dropdown-med dropdown-white inline">
-                                <button data-toggle="dropdown" type="button" class="btn dropdown-toggle">
-                                    Position <span class="caret"></span>
-                                </button>
-
-                                <ul role="menu" class="dropdown-menu">
-                                    <li role="presentation"><a href="#">position</a></li>
-                                    <li role="presentation"><a href="#">Price:Lowest first</a></li>
-                                    <li role="presentation"><a href="#">Price:HIghest first</a></li>
-                                    <li role="presentation"><a href="#">Product Name:A to Z</a></li>
-                                </ul>
-                            </div>
-                        </div><!-- /.fld -->
-                    </div><!-- /.lbl-cnt -->
-                </div><!-- /.col -->
-                <div class="col col-sm-3 col-md-6 no-padding">
-                    <div class="lbl-cnt">
-                        <span class="lbl">Show</span>
-                        <div class="fld inline">
-                            <div class="dropdown dropdown-small dropdown-med dropdown-white inline">
-                                <button data-toggle="dropdown" type="button" class="btn dropdown-toggle">
-                                    1 <span class="caret"></span>
-                                </button>
-
-                                <ul role="menu" class="dropdown-menu">
-                                    <li role="presentation"><a href="#">1</a></li>
-                                    <li role="presentation"><a href="#">2</a></li>
-                                    <li role="presentation"><a href="#">3</a></li>
-                                    <li role="presentation"><a href="#">4</a></li>
-                                    <li role="presentation"><a href="#">5</a></li>
-                                    <li role="presentation"><a href="#">6</a></li>
-                                    <li role="presentation"><a href="#">7</a></li>
-                                    <li role="presentation"><a href="#">8</a></li>
-                                    <li role="presentation"><a href="#">9</a></li>
-                                    <li role="presentation"><a href="#">10</a></li>
-                                </ul>
-                            </div>
-                        </div><!-- /.fld -->
-                    </div><!-- /.lbl-cnt -->
-                </div><!-- /.col -->
             </div><!-- /.col -->
             <div class="col col-sm-6 col-md-4 text-right">
                 <div class="pagination-container">
@@ -1579,18 +1522,6 @@
                                                             <li class="add-cart-button btn-group">
                                                                 <a href="index.php?url=add_cart&masp='.$row["id_product"].'" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> ADD TO CART</a>
             
-                                                            </li>
-            
-                                                            <li class="lnk wishlist">
-                                                                <a class="add-to-cart" href="detail.html" title="Wishlist">
-                                                                    <i class="icon fa fa-heart"></i>
-                                                                </a>
-                                                            </li>
-            
-                                                            <li class="lnk">
-                                                                <a class="add-to-cart" href="detail.html" title="Compare">
-                                                                    <i class="fa fa-retweet"></i>
-                                                                </a>
                                                             </li>
                                                         </ul>
                                                     </div><!-- /.action -->

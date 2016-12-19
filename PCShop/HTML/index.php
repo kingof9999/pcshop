@@ -26,7 +26,7 @@
 	    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	    <!-- Customizable CSS -->
 	    <link rel="stylesheet" href="assets/css/main.css">
-	    <link rel="stylesheet" href="assets/css/green.css">
+<!--	    <link rel="stylesheet" href="assets/css/green.css">-->
 	    <link rel="stylesheet" href="assets/css/owl.carousel.css">
 		<link rel="stylesheet" href="assets/css/owl.transitions.css">
 		<!--<link rel="stylesheet" href="assets/css/owl.theme.css">-->
@@ -43,7 +43,7 @@
 		<link href="assets/css/blue.css" rel="alternate stylesheet" title="Blue color">
 		<link href="assets/css/red.css" rel="alternate stylesheet" title="Red color">
 		<link href="assets/css/orange.css" rel="alternate stylesheet" title="Orange color">
-		<link href="assets/css/dark-green.css" rel="alternate stylesheet" title="Darkgreen color">
+<!--		<link href="assets/css/dark-green.css" rel="alternate stylesheet" title="Darkgreen color">-->
 		<!-- Demo Purpose Only. Should be removed in production : END -->
 
 		
@@ -104,9 +104,18 @@
                         case "search":
 							include "html/search.php";
 							break;
+                        case "filter":
+                            include "html/filter.php";
+                            break;
                         case "edit_user":
 							include "html/edit_user.php";
 							break;
+                        case "contact":
+                            include "html/contact.php";
+                            break;
+                        case "faq":
+                            include "html/faq.php";
+                            break;
 
 					}
 			?>
@@ -119,54 +128,54 @@
 
 	<!-- For demo purposes – can be removed on production -->
 	
-	<div class="config open">
-		<div class="config-options">
-			<h4>Pages</h4>
-			<ul class="list-unstyled animate-dropdown">
-				<li class="dropdown">
-					<button class="dropdown-toggle btn btn-primary btn-block" data-toggle="dropdown">View Pages</button>
-					<ul class="dropdown-menu" role="menu">
-						<li role="presentation" class="dropdown-header">Home Pages</li>
-						<li><a href="index.php">Home</a></li>
-						<li><a href="home2.php">Home II</a></li>
-						<li><a href="home-furniture.php">Home Furniture</a></li>
-						<li><a href="homepage1.php">Home Page I</a></li>
-						<li><a href="homepage2.php">Home Page II</a></li>
-					  	<li class="divider"></li>
-					  	<li role="presentation" class="dropdown-header">Other Pages</li>
-						<li><a href="category.php">Category</a></li>
-						<li><a href="category-2.php">Category II</a></li>
-						<li><a href="checkout.php">Checkout</a></li>
-						<li><a href="contact.php">Contact</a></li>
-						<li><a href="detail.php">Detail</a></li>
-						<li><a href="detail2.php">Detail II</a></li>
-						<li><a href="shopping-cart.php">Shopping Cart Summary</a></li>						
-						
-					</ul>
-				</li>
-			</ul>
-			<h4>Header Styles</h4>
-			<ul class="list-unstyled">
-				<li><a href="index.php">Header 1</a></li>
-				<li><a href="homepage1.php">Header 2</a></li>
-				<li><a href="home-furniture.php">Header 3</a></li>
-			</ul>
-			<h4>Layouts</h4>
-			<ul class="list-unstyled">
-				<li><a href="homepage1.php">Full Width</a></li>
-				<li><a href="homepage2.php">Boxed</a></li>
-			</ul>
-			<h4>Colors</h4>
-			<ul>
-				<li><a class="changecolor green-text" href="#" title="Green color">Green</a></li>
-                <li><a class="changecolor blue-text" href="#" title="Blue color">Blue</a></li>
-                <li><a class="changecolor red-text" href="#" title="Red color">Red</a></li>
-                <li><a class="changecolor orange-text" href="#" title="Orange color">Orange</a></li>
-                <li><a class="changecolor dark-green-text" href="#" title="Darkgreen color">Dark Green</a></li>
-			</ul>
-		</div>
-		<a class="show-theme-options" href="#"><i class="fa fa-wrench"></i></a>
-	</div>
+<!--	<div class="config open">-->
+<!--		<div class="config-options">-->
+<!--			<h4>Pages</h4>-->
+<!--			<ul class="list-unstyled animate-dropdown">-->
+<!--				<li class="dropdown">-->
+<!--					<button class="dropdown-toggle btn btn-primary btn-block" data-toggle="dropdown">View Pages</button>-->
+<!--					<ul class="dropdown-menu" role="menu">-->
+<!--						<li role="presentation" class="dropdown-header">Home Pages</li>-->
+<!--						<li><a href="index.php">Home</a></li>-->
+<!--						<li><a href="home2.php">Home II</a></li>-->
+<!--						<li><a href="home-furniture.php">Home Furniture</a></li>-->
+<!--						<li><a href="homepage1.php">Home Page I</a></li>-->
+<!--						<li><a href="homepage2.php">Home Page II</a></li>-->
+<!--					  	<li class="divider"></li>-->
+<!--					  	<li role="presentation" class="dropdown-header">Other Pages</li>-->
+<!--						<li><a href="category.php">Category</a></li>-->
+<!--						<li><a href="category-2.php">Category II</a></li>-->
+<!--						<li><a href="checkout.php">Checkout</a></li>-->
+<!--						<li><a href="contact.php">Contact</a></li>-->
+<!--						<li><a href="detail.php">Detail</a></li>-->
+<!--						<li><a href="detail2.php">Detail II</a></li>-->
+<!--						<li><a href="shopping-cart.php">Shopping Cart Summary</a></li>						-->
+<!--						-->
+<!--					</ul>-->
+<!--				</li>-->
+<!--			</ul>-->
+<!--			<h4>Header Styles</h4>-->
+<!--			<ul class="list-unstyled">-->
+<!--				<li><a href="index.php">Header 1</a></li>-->
+<!--				<li><a href="homepage1.php">Header 2</a></li>-->
+<!--				<li><a href="home-furniture.php">Header 3</a></li>-->
+<!--			</ul>-->
+<!--			<h4>Layouts</h4>-->
+<!--			<ul class="list-unstyled">-->
+<!--				<li><a href="homepage1.php">Full Width</a></li>-->
+<!--				<li><a href="homepage2.php">Boxed</a></li>-->
+<!--			</ul>-->
+<!--			<h4>Colors</h4>-->
+<!--			<ul>-->
+<!--				<li><a class="changecolor green-text" href="#" title="Green color">Green</a></li>-->
+<!--                <li><a class="changecolor blue-text" href="#" title="Blue color">Blue</a></li>-->
+<!--                <li><a class="changecolor red-text" href="#" title="Red color">Red</a></li>-->
+<!--                <li><a class="changecolor orange-text" href="#" title="Orange color">Orange</a></li>-->
+<!--                <li><a class="changecolor dark-green-text" href="#" title="Darkgreen color">Dark Green</a></li>-->
+<!--			</ul>-->
+<!--		</div>-->
+<!--		<a class="show-theme-options" href="#"><i class="fa fa-wrench"></i></a>-->
+<!--	</div>-->
 	<!-- For demo purposes – can be removed on production : End -->
 
 	<!-- JavaScripts placed at the end of the document so the pages load faster -->
@@ -186,6 +195,7 @@
     <script src="assets/js/wow.min.js"></script>
 	<script src="assets/js/scripts.js"></script>
     <script src="assets/js/search.js"></script>
+    <script src="assets/js/filter.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/sortsearch.js"></script>
 

@@ -66,31 +66,7 @@
 	}
     class Setting{
         static function homeSignin(){
-            echo '
-                <!--<div class="col-md-6 col-sm-6 sign-in">
-            	<h4 class="">sign in</h4>
-            	<p class="">Hello, Welcome to your account.</p>
-            	<div class="social-sign-in outer-top-xs">
-            		<a href="#" class="facebook-sign-in"><i class="fa fa-facebook"></i> Sign In with Facebook</a>
-            		<a href="#" class="twitter-sign-in"><i class="fa fa-twitter"></i> Sign In with Twitter</a>
-            	</div>
-            	<form class="register-form outer-top-xs" role="form">
-            		<div class="form-group">
-            		    <label class="info-title" for="exampleInputEmail1">Email Address <span>*</span></label>
-            		    <input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail1" name="email"/>
-            		</div>
-            	  	<div class="form-group">
-            		    <label class="info-title" for="exampleInputPassword1">Password <span>*</span></label>
-            		    <input type="password" class="form-control unicase-form-control text-input" id="exampleInputPassword1" name="pass"/>
-            		</div>
-            		<div class="radio outer-xs">
-            		  	<label>
-            		    	<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" name="luu"/>Remember me!
-            		  	</label>
-            		  	<a href="#" class="forgot-password pull-right">Forgot your Password?</a>
-            		</div>
-            	  	<input id="btn-login" class="abc"type="submit" name="btn_login" value="Login"/>-->
-                    
+            echo '        
                     <div class="login-wrap">
                         <span class="pull-right"> <a href="index.php"> Home</a></span>
                         <p class="login-img">Login<i class="icon_lock_alt"></i></p>  
@@ -102,11 +78,12 @@
                             <span class="input-group-addon"><i class="icon_key_alt"></i></span>
                             <input type="password" class="form-control" placeholder="Password" name="pass">
                         </div>
-                        <label class="checkbox">
-                            <input type="checkbox" value="remember-me"> Remember me
+                        <!--<div class="input-group">
                             <span class="pull-right"> <a href="#"> Forgot Password?</a></span>
-                            <span class="pull-right"> <a href="register.php"> New member?</a></span>
-                        </label>
+                        </div>-->
+                        <div class="input-group">
+                           <span class="pull-right"> <a href="register.php"> New member?</a></span>
+                        </div>
                         <button class="btn btn-primary btn-lg btn-block" type="submit" name="btn_login">Login</button>
                     </div>
             ';
@@ -152,11 +129,12 @@
                             <span class="input-group-addon"><i class="icon_key_alt"></i></span>
                             <input type="password" class="form-control" placeholder="Password" name="pass">
                         </div>
-                        <label class="checkbox">
-                            <input type="checkbox" value="remember-me"> Remember me
+                        <!--<div class="input-group">
                             <span class="pull-right"> <a href="#"> Forgot Password?</a></span>
-                            <span class="pull-right"> <a href="login.php"> Alredy have account!</a></span>
-                        </label>
+                        </div>-->
+                        <div class="input-group">
+                           <span class="pull-right"> <a href="login.php"> Alredy have account!</a></span>
+                        </div>
                         <button class="btn btn-info btn-lg btn-block" type="submit" name="btn_signup">Signup</button>
                     </div>
             ';

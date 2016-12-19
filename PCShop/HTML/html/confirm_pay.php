@@ -1,6 +1,6 @@
 <?php
     require ("overfile/connect.php");
-    $query     = "SELECT MAX(id_customer) AS id_custom FROM customer";
+    $query     = "SELECT MAX(id_ca) AS id_custom FROM customer";
     $result    = mysqli_query($con,$query) or die ("Error: ".mysqli_error($con));
     $row       = mysqli_fetch_array($result,MYSQLI_ASSOC);
     $id_customers = $row["id_custom"] + 1;
@@ -27,7 +27,7 @@
         $row       = mysqli_fetch_array($result,MYSQLI_ASSOC);
         $id_order = $row["id_order"] + 1;
         $query2="INSERT INTO orders(id_order,id_customer,amount,status)
-			VALUES('$id_order','$idcustomer','$_SESSION[tongtien]',3)";
+			VALUES('$id_order','$id_customers','$_SESSION[tongtien]',3)";
         foreach($_SESSION['cart'] as $masp=>$soluong){
         $query3="INSERT INTO order_detail(id_product,id_order,number)
 			VALUES('$masp','$id_order','$soluong')";

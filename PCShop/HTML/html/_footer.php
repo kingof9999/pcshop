@@ -21,7 +21,7 @@
     
         <div class="social-icons">
             
-        <a href="http://facebook.com/transvelo" class='active'><i class="icon fa fa-facebook"></i></a>
+        <a href="https://www.facebook.com/PClaptop-1701004853547858/?skip_nax_wizard=true" class='active'><i class="icon fa fa-facebook"></i></a>
         <a href="#"><i class="icon fa fa-twitter"></i></a>
         <a href="#"><i class="icon fa fa-linkedin"></i></a>
         <a href="#"><i class="icon fa fa-rss"></i></a>
@@ -50,7 +50,7 @@
 				</tbody>
 			</table>
 		</div><!-- /.table-responsive -->
-		<p class='contact-number'>Hot Line:(400)888 868 848</p>
+		<p class='contact-number'>Hot Line: (+84) 126 304 9925</p>
 	</div><!-- /.module-body -->
 </div><!-- /.contact-timing -->
 <!-- ============================================================= CONTACT TIMING : END ============================================================= -->            	</div><!-- /.col -->
@@ -72,7 +72,7 @@
                     </span>
                 </div>
                 <div class="media-body">
-                    <a href="#">@pcshop</a> As a result of your previous recommendation :) 
+                    <a href="#"> lequangtin95@gmail.com</a> As a result of your previous recommendation :)
                     <span class="time">
                         12 hours ago
                     </span>
@@ -89,7 +89,7 @@
                     </span>
                 </div>
                 <div class="media-body">
-                    <a href="#">@pcshop</a> As a result of your previous recommendation :) 
+                    <a href="#"> lequangtin95@gmail.com</a> As a result of your previous recommendation :)
                     <span class="time">
                         12 hours ago
                     </span>
@@ -129,7 +129,7 @@
                     </span>
                 </div>
                 <div class="media-body">
-                    <p>(400) 0888 888 888<br>(400) 888 888 888</p>
+                    <p> (+84) 126 304 9925<br> (+84) 126 304 9925</p>
                 </div>
             </li>
 
@@ -141,8 +141,8 @@
                     </span>
                 </div>
                 <div class="media-body">
-                    <span><a href="#">Contact admin@pcshop.com</a></span><br>
-                    <span><a href="#">Sale admin@pcshop.com</a></span>
+                    <span><a href="#">Contact  lequangtin95@gmail.com</a></span><br>
+                    <span><a href="#">Sale  lequangtin95@gmail.com</a></span>
                 </div>
             </li>
               
@@ -154,81 +154,11 @@
         </div><!-- /.container -->
     </div><!-- /.links-social -->
 
-    <div class="footer-bottom inner-bottom-sm">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="module-heading outer-bottom-xs">
-                        <h4 class="module-title">category</h4>
-                    </div><!-- /.module-heading -->
-
-                    <div class="module-body">
-                        <ul class='list-unstyled'>
-                            <li><a href="#">Order History</a></li>
-                            <li><a href="#">Returns</a></li>
-                            <li><a href="#">Libero Sed rhoncus</a></li>
-                            <li><a href="#">Venenatis augue tellus</a></li>
-                            <li><a href="#">My Vouchers</a></li>
-                        </ul>
-                    </div><!-- /.module-body -->
-                </div><!-- /.col -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="module-heading outer-bottom-xs">
-                        <h4 class="module-title">my account</h4>
-                    </div><!-- /.module-heading -->
-
-                    <div class="module-body">
-                        <ul class='list-unstyled'>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">Customer Service</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Site Map</a></li>
-                            <li><a href="#">Search Terms</a></li>
-                        </ul>
-                    </div><!-- /.module-body -->
-                </div><!-- /.col -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="module-heading outer-bottom-xs">
-                        <h4 class="module-title">our services</h4>
-                    </div><!-- /.module-heading -->
-
-                    <div class="module-body">
-                        <ul class='list-unstyled'>
-                            <li><a href="#">Order History</a></li>
-                            <li><a href="#">Returns</a></li>
-                            <li><a href="#">Libero Sed rhoncus</a></li>
-                            <li><a href="#">Venenatis augue tellus</a></li>
-                            <li><a href="#">My Vouchers</a></li>
-                        </ul>
-                    </div><!-- /.module-body -->
-                </div><!-- /.col -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="module-heading outer-bottom-xs">
-                        <h4 class="module-title">help & support</h4>
-                    </div><!-- /.module-heading -->
-
-                    <div class="module-body">
-                        <ul class='list-unstyled'>
-                            <li><a href="#">Knowledgebase</a></li>
-                            <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Contact Support</a></li>
-                            <li><a href="#">Marketplace Blog</a></li>
-                            <li><a href="#">About Pc Shop</a></li>
-                        </ul>
-                    </div><!-- /.module-body -->
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="copyright-bar">
         <div class="container">
             <div class="col-xs-12 col-sm-6 no-padding">
                 <div class="copyright">
-                   Copyright © 2016
+                   Copyright ï¿½ 2016
                     <a href="index.php">Pc Shop.</a>
                     - All rights Reserved
                 </div>
