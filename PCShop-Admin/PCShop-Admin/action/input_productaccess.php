@@ -1,26 +1,26 @@
 <?php
-    include_once ("overfile/connect.php");
-	require_once("models/Setting.php");
-    
+    include_once("../overfile/connect.php");
+	require_once("../models/Setting.php");
     if(isset($_POST["submit"])){
 		$name_product_as = $_POST["name_product_as"];
+
 		$quantity = $_POST["quantity"];
 		$price = $_POST["price"];
-        $id_as = $_POST["id_as"];
+        $id_as = ["id_as"];
         $day = $_POST["day"];
         $description = $_POST["description"];
-        
         $file_name= $_FILES['file']['name'];
 		$file_type= $_FILES['file']['type'];
 		$file_size= $_FILES['file']['size'];
 		$file_tmp_name= $_FILES['file']['tmp_name'];
 		
 		$check = true;
-        
+
         if($file_name == ''){
-			echo"<script>alert('Please select an Image')</script>";
-		}else move_uploaded_file($file_tmp_name,"images/$file_name");	
-        
+            echo"<script>alert('Please select an Image')</script>";
+        }else{
+            move_uploaded_file($file_tmp_name,"../images/$file_name");
+        }
         if(strlen($name_product_as) == 0){
 			$name_product_as_error = "Please Enter Name <br>";
 			$check = false;
@@ -43,8 +43,13 @@
 			$result = mysqli_query($con,$query)or die("Error: ".mysqli_error($con));
 			if($result){
 				$msg = "Success";
+                header ('Location: ../index.php?url=accessories_product');
 			}
 		}
+    }else if(isset($_POST["cancel"])){
+        header ('Location: ../index.php?url=accessories_product');
+    }else if(isset($_POST["test"])){
+        echo"<script>alert('Please select an Image')</script>";
     }
 ?>
 
@@ -61,22 +66,22 @@
     <title>Basic Table | Creative - Bootstrap 3 Responsive Admin Template</title>
 
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- bootstrap theme -->
-    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
     <!--external css-->
     <!-- font icon -->
-    <link href="css/elegant-icons-style.css" rel="stylesheet"/>
-    <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../css/elegant-icons-style.css" rel="stylesheet"/>
+    <link href="../css/font-awesome.min.css" rel="stylesheet"/>
     <!-- Custom styles -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/style-responsive.css" rel="stylesheet"/>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/style-responsive.css" rel="stylesheet"/>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
     <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
+    <script src="../js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <script src="js/lte-ie7.js"></script>
+    <script src="../js/lte-ie7.js"></script>
     <![endif]-->
 </head>
 
@@ -91,7 +96,7 @@
         </div>
 
         <!--logo start-->
-        <a href="index.php" class="logo">PC Shop <span class="lite">Admin</span></a>
+        <a href="../index.php" class="logo">PC Shop <span class="lite">Admin</span></a>
         <!--logo end-->
 
         <div class="nav search-row" id="top_menu">
@@ -213,7 +218,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <span class="photo"><img alt="avatar" src="./img/avatar-mini.jpg"></span>
+                                <span class="photo"><img alt="avatar" src="../img/avatar-mini.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Greg  Martin</span>
                                     <span class="time">1 min</span>
@@ -225,7 +230,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <span class="photo"><img alt="avatar" src="./img/avatar-mini2.jpg"></span>
+                                <span class="photo"><img alt="avatar" src="../img/avatar-mini2.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Bob   Mckenzie</span>
                                     <span class="time">5 mins</span>
@@ -237,7 +242,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <span class="photo"><img alt="avatar" src="./img/avatar-mini3.jpg"></span>
+                                <span class="photo"><img alt="avatar" src="../img/avatar-mini3.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Phillip   Park</span>
                                     <span class="time">2 hrs</span>
@@ -249,7 +254,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <span class="photo"><img alt="avatar" src="./img/avatar-mini4.jpg"></span>
+                                <span class="photo"><img alt="avatar" src="../img/avatar-mini4.jpg"></span>
                                     <span class="subject">
                                     <span class="from">Ray   Munoz</span>
                                     <span class="time">1 day</span>
@@ -315,7 +320,7 @@
                 <li class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="profile-ava">
-                                <img alt="" src="img/avatar-mini2.jpg">
+                                <img alt="" src="../img/avatar-mini2.jpg">
                             </span>
                         <span class="username">Thuan</span>
                         <b class="caret"></b>
@@ -335,7 +340,7 @@
                             <a href="#"><i class="icon_chat_alt"></i> Chats</a>
                         </li>
                         <li>
-                            <a href="login.php"><i class="icon_key_alt"></i> Log Out</a>
+                            <a href="../login.php"><i class="icon_key_alt"></i> Log Out</a>
                         </li>
                         <li>
                             <a href="documentation.php"><i class="icon_key_alt"></i> Documentation</a>
@@ -354,7 +359,7 @@
 
     <!--sidebar start-->
     <aside>
-        <?php include "overfile/menu.php"?>
+        <?php include "../overfile/menu2.php" ?>
     </aside>
 
     <!--main content start-->
@@ -364,7 +369,7 @@
                 <div class="col-lg-12">
                     <h3 class="page-header"><i class="fa fa-table"></i> Table</h3>
                     <ol class="breadcrumb">
-                        <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
+                        <li><i class="fa fa-home"></i><a href="../index.php">Home</a></li>
                         <li><i class="fa fa-table"></i>Table</li>
                         <li><i class="fa fa-th-list"></i>Basic Table</li>
                     </ol>
@@ -434,21 +439,21 @@
                                         <div class="form-group">
                                             <label class="control-label col-lg-2" for="content">Quantity</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter Quantity" name="quantity" class="form-control" id="quantity"/>
+                                                <input type="number" placeholder="Enter Quantity" name="quantity" class="form-control" id="quantity" min="1"/>
                                             </div>
                                         </div>
                                         <!-- Price -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">Price</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter Price" name="price" class="form-control" id="price"/>
+                                                <input type="number" placeholder="Enter Price" name="price" class="form-control" id="price" step="0.01" min="0"/>
                                             </div>
                                         </div>
                                         <!-- Decription -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">Decription</label>
                                             <div class="col-lg-10">
-                                                <textarea name="description" value="" rows="10" cols="100" class="input-medium" id="description"></textarea>
+                                                <textarea name="description" value="" rows="10" cols="130" class="input-medium" id="description"></textarea>
                                             </div>
                                         </div>
 
@@ -456,26 +461,31 @@
                                         <div class="form-group">
                                             <!-- Buttons -->
                                             <div class="col-lg-offset-2 col-lg-9">
-                                                <input type="submit" value="Submit" name="submit" id="submit"/>
-                                                <button type="submit" class="btn btn-danger">Save Draft</button>
-                                                <button type="reset" class="btn btn-default">Reset</button>
+                                                <button type="submit" class="btn btn-danger" name="submit" id="submit">Add</button>
+                                                <button type="cancel" class="btn btn-default" name="cancel">Cancel</button>
+                                                <button type="cancel" class="btn btn-default" name="test">Test</button>
+                                            </div>
+                                        </div>
+                                        <!-- Error Message -->
+                                        <div class="form-group">
+                                            <div class="col-lg-offset-2 col-lg-9">
+                                                <span>
+                                                    <h5 style="color: red">
+                                                        <?php
+                                                        if(isset($name_product_as_error)) echo $name_product_as_error;
+                                                        if(isset($quantity_error)) echo $quantity_error;
+                                                        if(isset($price_error)) echo $price_error;
+                                                        if(isset($day_error)) echo $day_error;
+
+
+                                                        if(isset($msg)) echo $msg;
+                                                        ?>
+                                                    </h5>
+                                             </span>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
-                                <span>
-    								<h5>
-    									<?php 
-    										if(isset($name_product_as_error)) echo $name_product_as_error;
-    										if(isset($quantity_error)) echo $quantity_error;
-                                            if(isset($price_error)) echo $price_error;
-                                            if(isset($day_error)) echo $day_error;
-                                            
-    										
-    										if(isset($msg)) echo $msg;
-    									?>
-    								</h5>
-							     </span>	
                             </form>
                             </div>
                             <div class="widget-foot">
@@ -493,13 +503,13 @@
 </section>
 <!-- container section end -->
 <!-- javascripts -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <!-- nicescroll -->
-<script src="js/jquery.scrollTo.min.js"></script>
-<script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+<script src="../js/jquery.scrollTo.min.js"></script>
+<script src="../js/jquery.nicescroll.js" type="text/javascript"></script>
 <!--custome script for all page-->
-<script src="js/scripts.js"></script>
+<script src="../js/scripts.js"></script>
 
 
 </body>

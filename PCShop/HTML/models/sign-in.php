@@ -29,6 +29,7 @@
 	}else if(isset($_POST["btn_signup"])){
 	   $email_signup = $_POST["email"];
        $password_signup = $_POST["pass"];
+       $cus_name = $_POST["name"];
        $check = true;
        
        $query 	="SELECT * FROM customer_account WHERE email='$email_signup'";
@@ -48,9 +49,16 @@
         $check = false;
        }
        if($check){
-           $query = "INSERT INTO customer_account (email,password,status)
-    				VALUES('$email_signup','$password_signup',3)";
-            $result = mysqli_query($con,$query);
+           $query="INSERT INTO customer_account(email,password,status)
+				VALUES('$email_signup','$password_signup',3)";
+           $result = mysqli_query($con,$query)or die("Error: ".mysqli_error($con));
+           $query1     = "SELECT MAX(id_ca) AS id_ca FROM customer_account";
+           $result1    = mysqli_query($con,$query1) or die ("Error: ".mysqli_error($con));
+           $row       = mysqli_fetch_array($result1,MYSQLI_ASSOC);
+           $id_ca = $row["id_ca"];
+           $query2 = "INSERT INTO customer (id_ca,cus_name)
+    				VALUES('$id_ca','$cus_name')";
+           $result2 = mysqli_query($con,$query2)or die("Error: ".mysqli_error($con));
     	       if ($result){
     				$msg1= '<p style="color:blue"> Sign Up Successed!</p>';
                 }
@@ -135,6 +143,10 @@
                         <div class="input-group">
                             <span class="input-group-addon"><i class="icon_profile"></i></span>
                             <input type="email" class="form-control" placeholder="Email" name="email" autofocus>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="icon_profile"></i></span>
+                            <input type="text" class="form-control" placeholder="Name" name="name" autofocus>
                         </div>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="icon_key_alt"></i></span>

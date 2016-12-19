@@ -28,7 +28,7 @@
                         <span class="menu-arrow arrow_carrot-right"></span>
                     </a>
                     <ul class="sub">
-                        <li><a class="active" href="index.php?url=accessories_product">Manager Product</a></li>
+                        <li><a class="active" href="index.php?url=accessories_product">Manager Accessories</a></li>
                         <li><a class="" href="index.php?url=accessories">Accessories</a></li>
                     </ul>
                 </li>
@@ -40,8 +40,7 @@
                         <span class="menu-arrow arrow_carrot-right"></span>
                     </a>
                     <ul class="sub">
-                        <li><a class="" href="customer_manager.php">Manager</a></li>
-                        <li><a class="" href="input_customer.php"><span>New Customer</span></a></li>
+                        <li><a class="" href="index.php?url=customer">Customer Manager</a></li>
                     </ul>
                 </li>
                 
@@ -52,8 +51,7 @@
                         <span class="menu-arrow arrow_carrot-right"></span>
                     </a>
                     <ul class="sub">
-                        <li><a class="" href="order_manager.php">Order Manager</a></li>
-                        <li><a class="" href="form_validation.php">Form Validation</a></li>
+                        <li><a class="" href="index.php?url=order">Order Manager</a></li>
                     </ul>
                 </li>
 

@@ -20,6 +20,7 @@ class Setting{
                   <th><i class=""></i> RAM</th>
                   <th><i class=""></i> VGA</th>
                   <th><i class=""></i> OS</th>
+                  <th><i class=""></i> HDD/SSD</th>
                   <th><i class=""></i> BATERRY</th>
                   <th><i class=""></i> Manufacturer</th>
                   <th><i class=""></i> Date Imp Pro</th>
@@ -39,6 +40,7 @@ class Setting{
                     <td>'.substr($row["ram"],0,5).'</td>
                     <td>'.substr($row["vga"],0,5).'</td>
                     <td>'.substr($row["hdh"],0,5).'</td>
+                    <td>'.substr($row["hd"],0,5).'</td>
                     <td>'.substr($row["pin"],0,5).'</td>
                     <td>'.$row["id_mf"].'</td>
                     <td>'.$row["day"].'</td>
@@ -105,8 +107,8 @@ class Setting{
     
     static function adminCustomer(){
         global $con;
-        $query = "SELECT c.id_customer,c.id_ca,c.cus_type,c.phone,c.address,c.cus_name,ca.email,ca.user_name,ca.status,ca.password 
-                    FROM customer c,customer_account ca WHERE ca.id_ca=c.id_customer";
+        $query = "SELECT c.id_ca,c.cus_type,c.phone,c.address,c.cus_name,ca.email,ca.user_name,ca.status,ca.password,ca.id_ca 
+                    FROM customer c,customer_account ca WHERE ca.id_ca=c.id_ca";
         $result = mysqli_query($con,$query)or die("LOI LIET KE: ".mysqli_error($con));
         $num 	= mysqli_num_rows($result);
         echo'
@@ -126,16 +128,28 @@ class Setting{
                 </tr>
         ';
         while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
+            if($row["cus_type"] == 1){
+                $cus_type = "VIP";
+            }else if($row["cus_type"] == 2){
+                $cus_type = "Normal";
+            }
+            if($row["status"] == 1){
+                $status = "Admin";
+            }else if($row["status"] == 2){
+                $status = "Customer";
+            }else if($row["status"] == 3){
+                $status = "New Customer";
+            }
         echo'
                 <tr>
-                    <td>'.$row["id_customer"].'</td>
+                    <td>'.$row["id_ca"].'</td>
                     <td>'.$row["cus_name"].'</td>
                     <td>'.$row["email"].'</td>
                     <td>'.$row["password"].'</td>
-                    <td>'.$row["status"].'</td>
-                    <td>'.$row["cus_type"].'</td>
+                    <td>'.$status.'</td>
+                    <td>'.$cus_type.'</td>
                     <td>'.$row["phone"].'</td>
-                    <td>'.$row["address"].'</td>
+                    <td>'.substr($row["address"],0,26).'</td>
                     <td>'.$row["user_name"].'</td>
                     <td>
                         <div class="btn-group">
@@ -282,20 +296,17 @@ class Setting{
         echo'
                 <tr>
                     <td>'.$row["id_order"].'</td>
-                    <td>'.$row["id_customer"].'</td>
+                    <td>
+                        <a href="action/customer_detail.php?id='.$row["id_customer"].'">'.$row["id_customer"].' (Customer Detail)</a>
+                        
+                    </td>
                     <td>'.$row["amount"].'</td>
                     <td>
-                        <!--<select name="status" id="status">
-                            <option value="'.$row["status"].'">'.$status.'</option>
-                            <option value="1">Order Complete</option>
-                            <option value="2">Not Order Yet</option>
-                            <option value="3">Incoming Order</option>
-                        </select>-->
                         <a class="" href="action/edit_order.php?id='.$row["id_order"].'">'.$status.'</a>
                     </td>
                     <td>
                         <div class="btn-group">
-                            <a class="btn btn-primary" href="action/order_detail.php?id='.$row["id_order"].'"><i class="icon_plus_alt2"></i></a>
+                            <a class="btn btn-primary" href="action/order_detail.php?id='.$row["id_order"].'"><i class="icon_plus_alt2"></i>More Detail</a>
                         </div>
                     </td>
                 </tr>
@@ -358,5 +369,6 @@ class Setting{
 			echo '<option value="'.$i.'">'.$i.'</option>';
 		}
 	}
+
 }
 ?>

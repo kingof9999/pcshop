@@ -8,6 +8,6 @@
     
     if($result){
     	echo "Delete Success";
-    	header("Location: ../basic_table.php");
+    	header("Location: ../index.php?url=product");
     }
 ?>

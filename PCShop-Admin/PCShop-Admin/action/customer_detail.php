@@ -1,16 +1,6 @@
 <?php
     include_once ("../overfile/connect.php");
-    $userid = $_GET["id"];
-    if(isset($_POST["submit"])){
-        $check=$_POST["status"];
-        $query="UPDATE orders SET status='$check' WHERE id_order='$userid'";		
-        $result = mysqli_query($con,$query)or die("Error: ".mysqli_error($con));
-        if($result){
-				header("Location: ../index.php?url=order");
-        }
-    }else if(isset($_POST["cancel"])){
-        header("Location: ../index.php?url=order");
-    }
+    require_once("../models2/Setting.php");
 ?>
 
 <!DOCTYPE html>
@@ -72,11 +62,11 @@
         <section class="wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="page-header"><i class="fa fa-table"></i> Edit Status Order</h3>
+                    <h3 class="page-header"><i class="fa fa-table"></i> Customer Detail</h3>
                     <ol class="breadcrumb">
                         <li><i class="fa fa-home"></i><a href="../index.php">Home</a></li>
                         <li><i class="fa fa-table"></i><a href="../index.php?url=order">Order</a></li>
-                        <li><i class="fa fa-th-list"></i>Edit Status</li>
+                        <li><i class="fa fa-th-list"></i>Customer Detail</li>
                     </ol>
                 </div>
             </div>
@@ -84,45 +74,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <section class="panel">
-                        <header class="panel-heading">
-                            Edit Status
-                        </header>
-                        <form name="form-admin-order" action="edit_order.php?id=<?php echo $userid;?>" method="post">
+                        <form name="form-admin-product" action="<?php echo $_SERVER["PHP_SELF"] ?>" method="post">
                             <?php 
-    							$query = "SELECT * FROM orders WHERE id_order='$userid'";
-                                $result = mysqli_query($con,$query)or die("LOI LIET KE: ".mysqli_error($con));
-                                $num 	= mysqli_num_rows($result);
-                                $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-                                    if($row["status"] == 1){
-                                        $status = "Order Complete";
-                                    }else if($row["status"] == 2){
-                                        $status = "Not Order Yet";
-                                    }else if($row["status"] == 3){
-                                        $status = "Incoming Order";
-                                    }
-                                echo '
-                                    <table>
-                                        <tr>
-                                           <td>Edit Order</td>
-                                           <td>
-                                              <select name="status" id="status">
-                                                 <option value="'.$row["status"].'">'.$status.'</option>
-                                                 <option value="1">Order Complete</option>
-                                                 <option value="2">Not Order Yet</option>
-                                                 <option value="3">Incoming Order</option>
-                                              </select>
-                                           </td>
-                                        </tr>
-                                        <tr>
-                                            <td><?php $row["status"]?></td>
-                                            <td>
-                                                <button type="submit" class="btn btn-danger" name="submit" id="submit">Save</button>
-                                                <button type="cancel" class="btn btn-default" name="cancel">Cancel</button>
-                                            </td>                      
-                                        </tr>
-                                     </table>
-                                ';
-                             ?>
+                                $userid = $_GET["id"];
+    							$result		= Setting::adminCusDetail();
+    				        ?>
                         </form>
                     </section>
                 </div>

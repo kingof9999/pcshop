@@ -42,7 +42,7 @@
                         while($row=mysqli_fetch_assoc($result)){
                             echo '
                     				<tr>
-                    					<td class="romove-item"><a href="index.php?url=del_cart&masp='.$row["id_product"].'" title="cancel" class="icon"><i class="fa fa-trash-o"></i></a></td>
+                    					<td class="romove-item"><a href="index.php?url=del_cart&masp='.$row["id_product"].'" title="cancel" class="icon"><i class="fa fa-trash-o fa-2x"></i></a></td>
                     					<td class="cart-image">
                     						<a class="entry-thumbnail" href="index.php?url=detail&spid='.$row["id_product"].'">
                     						    <img src="../../PCShop-Admin/PCShop-Admin/images/'.$row["image"].'" alt="" height="146" width="154">
@@ -115,28 +115,6 @@
 		</table><!-- /table -->
 	</div>
 </div><!-- /.shopping-cart-table -->
-
-<div class="col-md-offset-8 col-sm-offset-12 cart-shopping-total">
-	<table class="table table-bordered">
-		<thead>
-			<tr>
-				<th>
-					
-				</th>
-			</tr>
-		</thead><!-- /thead -->
-		<tbody>
-				<tr>
-					<td>
-						<div class="cart-checkout-btn pull-right">
-							<button type="submit" class="btn btn-primary">PROCCED TO CHEKOUT</button>
-							<span class="">Checkout with multiples address!</span>
-						</div>
-					</td>
-				</tr>
-		</tbody><!-- /tbody -->
-	</table><!-- /table -->
-</div><!-- /.cart-shopping-total -->
 
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/cart.js"></script>

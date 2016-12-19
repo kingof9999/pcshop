@@ -5,16 +5,12 @@
     <!--main content start-->
     <section id="main-content">
         <section class="wrapper">
-            <form name="form-admin-product" action="productaccess_manager.php" method="post">
+            <form name="form-admin-product" action="index.php?url=accessories_product" method="post">
             <div class="row">
                 <div class="col-md-6 portlets">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <div class="pull-left">Quick Post</div>
-                            <div class="widget-icons pull-right">
-                                <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
-                                <a href="#" class="wclose"><i class="fa fa-times"></i></a>
-                            </div>
+                            <div class="pull-left">Search</div>
                             <div class="clearfix"></div>
                         </div>
                         <div class="panel-body">
@@ -66,7 +62,31 @@
                             </div>
                         </div>
                     </div>
-
+                </div>
+                <div class="col-md-4 col-sm-offset-1 portlets">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="pull-left">New Accessories Product</div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="padd">
+                                <div class="form quick-post">
+                                    <!-- Edit profile form (not working)-->
+                                    <!-- Buttons -->
+                                    <div class="form-group">
+                                        <!-- Buttons -->
+                                        <div class="col-lg-offset-4 col-lg-9">
+                                            <button type="submit" class="btn btn-primary" name="new_product">New Product</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-foot">
+                                <!-- Footer goes here -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- page start--> 
@@ -74,7 +94,7 @@
                 <div class="col-lg-12">
                     <section class="panel">
                         <header class="panel-heading">
-                            Product Manager
+                            Accessories Product Manager
                         </header>
                             <?php 
                                 if(isset($_POST["btn_search"])){
@@ -82,14 +102,17 @@
                                     if($id_as != 0){
                                         $name_productas = "";
                                         $query = "SELECT * FROM product_assosi WHERE id_as='$id_as'";
+                                        $result = mysqli_query($con,$query)or die("LOI LIET KE: ".mysqli_error($con));
+                                        $num 	= mysqli_num_rows($result);
                                     }else{
                                        $name_productas = $_POST["name_productas"];
+
                                        $query = "SELECT * FROM product_assosi WHERE name_product_as LIKE '%$name_productas%'";
+                                        $result = mysqli_query($con,$query)or die("LOI LIET KE: ".mysqli_error($con));
+                                        $num 	= mysqli_num_rows($result);
                                     }
-                                    $result = mysqli_query($con,$query)or die("LOI LIET KE: ".mysqli_error($con));
-                                    $num 	= mysqli_num_rows($result);
                                     echo'
-                                        <span>There are '.$num.' item found!</span>
+                                        <span style="color: red">There are '.$num.' item found!</span>
                                         <table class="table table-striped table-advance table-hover">
                                         <tbody>
                                             <tr>
@@ -126,6 +149,8 @@
                                         </tbody>
                                         </table>
                                     ';
+                                }else if(isset($_POST["new_product"])){
+                                    echo '<meta http-equiv="refresh" content="0;url=action/input_productaccess.php" />';
                                 }else{
                                     $result		= Setting::adminProdAS();
                                 }

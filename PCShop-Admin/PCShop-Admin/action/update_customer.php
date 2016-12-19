@@ -2,48 +2,35 @@
     include_once ("../overfile/connect.php");
     
     $userid = $_GET["id"];
-    $query = "SELECT c.id_customer,c.id_ca,c.cus_type,c.phone,c.address,c.cus_name,ca.email,ca.user_name,ca.status,ca.password 
-                    FROM customer c,customer_account ca WHERE ca.id_ca='$userid'";
+    $query = "SELECT c.id_ca,c.cus_type,c.phone,c.address,c.cus_name,ca.email,ca.user_name,ca.status,ca.password,ca.id_ca 
+                    FROM customer c,customer_account ca WHERE ca.id_ca='$userid' AND c.id_ca='$userid'";
 	$result = mysqli_query($con,$query) or die("Loi truy van: ".mysqli_error($con));
 	$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
     
     if(isset($_POST["submit"])){
 		$cus_type = $_POST["cus_type"];
 		$phone = $_POST["phone"];
+		$phone = trim($phone);
 		$address = $_POST["address"];
+		$address = trim($address);
         $cus_name = $_POST["cus_name"];
+        $cus_name = trim($cus_name);
         $user_name = $_POST["user_name"];
-        $email = $_POST["email"];
-        $password = $_POST["password"];
+        $user_name = trim($user_name);
         $status = $_POST["status"];
-		
-		$check = true;
-        /*if(strlen($name_product) == 0){
-			$name_product_error = "Please Enter Name <br>";
-			$check = false;
-		}
-		if(strlen($quantity) == 0){
-			$quantity_error = "Please Enter Quantity <br>";
-			$check = false;
-		}
-        if(strlen($price) == 0){
-			$price_error = "Please Enter Price <br>";
-			$check = false;
-		}
-        if(strlen($manufacturer) == 0){
-			$manufacturer_error = "Please Enter Manufacturer <br>";
-			$check = false;
-		}*/
+
+        $check = true;
+
         if($check){
-			$query="UPDATE customer_account SET user_name='$user_name',email='$email',password='$password',status='$status' 
+			$query="UPDATE customer_account SET user_name='$user_name',password='$password',status='$status' 
                     WHERE id_ca='$userid'";
             $query2="UPDATE customer SET cus_type='$cus_type',phone='$phone',address='$address',cus_name='$cus_name' 
                     WHERE id_ca='$userid'";
 			$result = mysqli_query($con,$query)or die("Error: ".mysqli_error($con));
-            $result = mysqli_query($con,$query2)or die("Error: ".mysqli_error($con));
-			if($result){
+            $result2 = mysqli_query($con,$query2)or die("Error: ".mysqli_error($con));
+			if($result && $result2){
 				$msg = "Success";
-                header ('Location: ../customer_manager.php');
+                header ('Location: ../index.php?url=customer');
 			}
 		}
         /*if($check){
@@ -54,6 +41,13 @@
 				$msg = "Success";
 			}
 		}*/
+    }else if(isset($_POST["cancel"])){
+        header ('Location: ../index.php?url=customer');
+    }else if(isset($_POST["resetpass"])){
+        $query="UPDATE customer_account SET password='123456'
+                    WHERE id_ca='$userid'";
+        $result = mysqli_query($con,$query)or die("Error: ".mysqli_error($con));
+        header ('Location: ../index.php?url=customer');
     }
 ?>
 
@@ -100,350 +94,15 @@
         </div>
 
         <!--logo start-->
-        <a href="index.php" class="logo">PC Shop <span class="lite">Admin</span></a>
+        <a href="../index.php" class="logo">PC Shop <span class="lite">Admin</span></a>
         <!--logo end-->
 
-        <div class="nav search-row" id="top_menu">
-            <!--  search form start -->
-            <ul class="nav top-menu">
-                <li>
-                    <form class="navbar-form">
-                        <input class="form-control" placeholder="Search" type="text">
-                    </form>
-                </li>
-            </ul>
-            <!--  search form end -->
-        </div>
-
-        <div class="top-nav notification-row">
-            <!-- notificatoin dropdown start-->
-            <ul class="nav pull-right top-menu">
-
-                <!-- task notificatoin start -->
-                <li id="task_notificatoin_bar" class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <span class="icon-task-l"></span></i>
-                        <span class="badge bg-important">5</span>
-                    </a>
-                    <ul class="dropdown-menu extended tasks-bar">
-                        <div class="notify-arrow notify-arrow-blue"></div>
-                        <li>
-                            <p class="blue">You have 5 pending tasks</p>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="task-info">
-                                    <div class="desc">Design PSD</div>
-                                    <div class="percent">90%</div>
-                                </div>
-                                <div class="progress progress-striped">
-                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90"
-                                         aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                                        <span class="sr-only">90% Complete (success)</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="task-info">
-                                    <div class="desc">
-                                        Project 1
-                                    </div>
-                                    <div class="percent">30%</div>
-                                </div>
-                                <div class="progress progress-striped">
-                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="30"
-                                         aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-                                        <span class="sr-only">30% Complete (warning)</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="task-info">
-                                    <div class="desc">Digital Marketing</div>
-                                    <div class="percent">80%</div>
-                                </div>
-                                <div class="progress progress-striped">
-                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80"
-                                         aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                        <span class="sr-only">80% Complete</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="task-info">
-                                    <div class="desc">Logo Designing</div>
-                                    <div class="percent">78%</div>
-                                </div>
-                                <div class="progress progress-striped">
-                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="78"
-                                         aria-valuemin="0" aria-valuemax="100" style="width: 78%">
-                                        <span class="sr-only">78% Complete (danger)</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="task-info">
-                                    <div class="desc">Mobile App</div>
-                                    <div class="percent">50%</div>
-                                </div>
-                                <div class="progress progress-striped active">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 50%">
-                                        <span class="sr-only">50% Complete</span>
-                                    </div>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="external">
-                            <a href="#">See All Tasks</a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- task notificatoin end -->
-                <!-- inbox notificatoin start-->
-                <li id="mail_notificatoin_bar" class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <i class="icon-envelope-l"></i>
-                        <span class="badge bg-important">5</span>
-                    </a>
-                    <ul class="dropdown-menu extended inbox">
-                        <div class="notify-arrow notify-arrow-blue"></div>
-                        <li>
-                            <p class="blue">You have 5 new messages</p>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="photo"><img alt="avatar" src="./img/avatar-mini.jpg"></span>
-                                    <span class="subject">
-                                    <span class="from">Greg  Martin</span>
-                                    <span class="time">1 min</span>
-                                    </span>
-                                    <span class="message">
-                                        I really like this admin panel.
-                                    </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="photo"><img alt="avatar" src="./img/avatar-mini2.jpg"></span>
-                                    <span class="subject">
-                                    <span class="from">Bob   Mckenzie</span>
-                                    <span class="time">5 mins</span>
-                                    </span>
-                                    <span class="message">
-                                     Hi, What is next project plan?
-                                    </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="photo"><img alt="avatar" src="./img/avatar-mini3.jpg"></span>
-                                    <span class="subject">
-                                    <span class="from">Phillip   Park</span>
-                                    <span class="time">2 hrs</span>
-                                    </span>
-                                    <span class="message">
-                                        I am like to buy this Admin Template.
-                                    </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="photo"><img alt="avatar" src="./img/avatar-mini4.jpg"></span>
-                                    <span class="subject">
-                                    <span class="from">Ray   Munoz</span>
-                                    <span class="time">1 day</span>
-                                    </span>
-                                    <span class="message">
-                                        Icon fonts are great.
-                                    </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">See all messages</a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- inbox notificatoin end -->
-                <!-- alert notification start-->
-                <li id="alert_notificatoin_bar" class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-
-                        <i class="icon-bell-l"></i>
-                        <span class="badge bg-important">7</span>
-                    </a>
-                    <ul class="dropdown-menu extended notification">
-                        <div class="notify-arrow notify-arrow-blue"></div>
-                        <li>
-                            <p class="blue">You have 4 new notifications</p>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="label label-primary"><i class="icon_profile"></i></span>
-                                Friend Request
-                                <span class="small italic pull-right">5 mins</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="label label-warning"><i class="icon_pin"></i></span>
-                                John location.
-                                <span class="small italic pull-right">50 mins</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="label label-danger"><i class="icon_book_alt"></i></span>
-                                Project 3 Completed.
-                                <span class="small italic pull-right">1 hr</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="label label-success"><i class="icon_like"></i></span>
-                                Mick appreciated your work.
-                                <span class="small italic pull-right"> Today</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">See all notifications</a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- alert notification end-->
-                <!-- user login dropdown start-->
-                <li class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="profile-ava">
-                                <img alt="" src="img/avatar-mini2.jpg">
-                            </span>
-                        <span class="username">Thuan</span>
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu extended logout">
-                        <div class="log-arrow-up"></div>
-                        <li class="eborder-top">
-                            <a href="#"><i class="icon_profile"></i> My Profile</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon_mail_alt"></i> My Inbox</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon_clock_alt"></i> Timeline</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon_chat_alt"></i> Chats</a>
-                        </li>
-                        <li>
-                            <a href="login.php"><i class="icon_key_alt"></i> Log Out</a>
-                        </li>
-                        <li>
-                            <a href="documentation.php"><i class="icon_key_alt"></i> Documentation</a>
-                        </li>
-                        <li>
-                            <a href="documentation.php"><i class="icon_key_alt"></i> Documentation</a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- user login dropdown end -->
-            </ul>
-            <!-- notificatoin dropdown end-->
-        </div>
     </header>
     <!--header end-->
 
     <!--sidebar start-->
     <aside>
-        <div id="sidebar" class="nav-collapse ">
-            <!-- sidebar menu start-->
-            <ul class="sidebar-menu">
-                <li class="">
-                    <a class="" href="index.php">
-                        <i class="icon_house_alt"></i>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="icon_document_alt"></i>
-                        <span>Forms</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="form_component.php">Form Elements</a></li>
-                        <li><a class="" href="form_validation.php">Form Validation</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="icon_table"></i>
-                        <span>Accessories</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="../html/accessories_manager.php">Manager</a></li>
-                        <li><a class="active" href="../input_accessories.php">New Accessories</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="icon_table"></i>
-                        <span>Catalog</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="../html/catalog.php">Manager</a></li>
-                        <li><a class="active" href="../input_catalog.php">New Catalog</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="icon_table"></i>
-                        <span>Manufacturer</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="../manufacturer_manager.php">Manager</a></li>
-                        <li><a class="active" href="../input_manufacturer.php">New Manufacturer</a></li>
-                    </ul>
-                </li>
-
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="icon_table"></i>
-                        <span>Product</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="active" href="../basic_table.php">Basic Table</a></li>
-                        <li><a class="active" href="input_product.php">New Product</a></li>
-                    </ul>
-                </li>
-
-                <li class="sub-menu">
-                    <a href="javascript:;" class="">
-                        <i class="icon_documents_alt"></i>
-                        <span>Customer</span>
-                        <span class="menu-arrow arrow_carrot-right"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="../customer_manager.php">Manager</a></li>
-                        <li><a class="" href="../input_customer.php"><span>New Customer</span></a></li>
-                    </ul>
-                </li>
-
-            </ul>
-            <!-- sidebar menu end-->
-        </div>
+        <?php include "../overfile/menu2.php"?>
     </aside>
 
     <!--main content start-->
@@ -451,11 +110,11 @@
         <section class="wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="page-header"><i class="fa fa-table"></i> Table</h3>
+                    <h3 class="page-header"><i class="fa fa-table"></i> Update Customer</h3>
                     <ol class="breadcrumb">
-                        <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
-                        <li><i class="fa fa-table"></i>Table</li>
-                        <li><i class="fa fa-th-list"></i>Basic Table</li>
+                        <li><i class="fa fa-home"></i><a href="../index.php">Home</a></li>
+                        <li><i class="fa fa-table"></i><a href="../index.php?url=customer">Customer Manager</a></li>
+                        <li><i class="fa fa-th-list"></i>Update Customer</li>
                     </ol>
                 </div>
             </div>
@@ -464,15 +123,11 @@
                 <div class="col-lg-12">
                     <section class="panel">
                         <header class="panel-heading">
-                            Input New Product
+
                         </header>
                         <div class="panel panel-default">
                         <div class="panel-heading">
-                            <div class="pull-left">Quick Post</div>
-                            <div class="widget-icons pull-right">
-                                <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
-                                <a href="#" class="wclose"><i class="fa fa-times"></i></a>
-                            </div>
+                            <div class="pull-left">Update Customer <?php echo $userid?></div>
                             <div class="clearfix"></div>
                         </div>
                         <div class="panel-body">
@@ -505,7 +160,7 @@
                                         <div class="form-group">
                                             <label class="control-label col-lg-2" for="content">Phone</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter Customer Phone" name="phone" class="form-control" id="phone" value="<?php echo $row["phone"]?>"/>
+                                                <input type="number" placeholder="Enter Customer Phone" name="phone" class="form-control" id="phone" value="<?php echo $row["phone"]?>"/>
                                             </div>
                                         </div>
                                         <!-- Address -->
@@ -533,14 +188,14 @@
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">Email</label>
                                             <div class="col-lg-10">
-                                                <input type="email" placeholder="Enter Email" name="email" class="form-control" id="email" value="<?php echo $row["email"]?>"/>
+                                                <input type="email" placeholder="Enter Email" name="email" class="form-control" id="email" value="<?php echo $row["email"]?>" disabled/>
                                             </div>
                                         </div>
                                         <!-- Password -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">Password</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter Pass" name="password" class="form-control" id="password" value="<?php echo $row["password"]?>"/>
+                                                <button type="submit" class="btn btn-compose" name="resetpass" id="resetpass">Reset Password</button>
                                             </div>
                                         </div>
                                         
@@ -549,24 +204,30 @@
                                         <div class="form-group">
                                             <!-- Buttons -->
                                             <div class="col-lg-offset-2 col-lg-9">
-                                                <input type="submit" value="Submit" name="submit" id="submit"/>
-                                                <button type="submit" class="btn btn-danger">Save Draft</button>
-                                                <button type="reset" class="btn btn-default">Reset</button>
+                                                <button type="submit" class="btn btn-danger" name="submit" id="submit">Save</button>
+                                                <button type="cancel" class="btn btn-default" name="cancel">Cancel</button>
+                                            </div>
+                                        </div>
+
+                                        <!-- Error Massage -->
+                                        <div class="form-group">
+                                            <div class="col-lg-offset-2 col-lg-9">
+                                                <span>
+                                                    <h5>
+                                                        <?php
+                                                        if(isset($name_product_error)) echo $name_product_error;
+                                                        if(isset($quantity_error)) echo $quantity_error;
+                                                        if(isset($price_error)) echo $price_error;
+                                                        if(isset($manufacturer_error)) echo $manufacturer_error;
+
+                                                        if(isset($msg)) echo $msg;
+                                                        ?>
+                                                    </h5>
+                                                 </span>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
-    								<h5>
-    									<?php 
-    										if(isset($name_product_error)) echo $name_product_error;
-    										if(isset($quantity_error)) echo $quantity_error;
-                                            if(isset($price_error)) echo $price_error;
-                                            if(isset($manufacturer_error)) echo $manufacturer_error;
-    										
-    										if(isset($msg)) echo $msg;
-    									?>
-    								</h5>
-							     </span>	
                             </form>
                             </div>
                             <div class="widget-foot">

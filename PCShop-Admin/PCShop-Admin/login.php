@@ -1,8 +1,10 @@
-<?php 
+<?php
+
      if(isset($_POST["submit"])){
        $username = $_POST["username"];
        $username = trim($username);
-       if(preg_match_all("/[^a-zA-Z@\._0-9]+/",$username,$matches)){
+       $checklengn = strlen($username);
+       if(preg_match_all("/[^a-zA-Z@\._0-9]+/",$username,$matches) || $checklengn < 5){
         print_r($matches);
         if($matches>0){
             echo 'false';
@@ -10,7 +12,7 @@
        }else{
             echo 'true';
        }
-    } 
+    }
     
 ?>
 <!DOCTYPE html>
@@ -53,7 +55,7 @@
             <p class="login-img"><i class="icon_lock_alt"></i></p>
             <div class="input-group">
                 <span class="input-group-addon"><i class="icon_profile"></i></span>
-                <input type="text" class="form-control" placeholder="Username" name="username" autofocus>
+                <input type="email" class="form-control" placeholder="Username" name="username" autofocus>
             </div>
             <div class="input-group">
                 <span class="input-group-addon"><i class="icon_key_alt"></i></span>

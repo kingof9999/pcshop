@@ -10,10 +10,6 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <div class="pull-left">Search Product</div>
-                            <div class="widget-icons pull-right">
-                                <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
-                                <a href="#" class="wclose"><i class="fa fa-times"></i></a>
-                            </div>
                             <div class="clearfix"></div>
                         </div>
                         <div class="panel-body">
@@ -67,10 +63,6 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <div class="pull-left">New Product</div>
-                            <div class="widget-icons pull-right">
-                                <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
-                                <a href="#" class="wclose"><i class="fa fa-times"></i></a>
-                            </div>
                             <div class="clearfix"></div>
                         </div>
                         <div class="panel-body">
@@ -110,12 +102,13 @@
                                         $num 	= mysqli_num_rows($result);
                                     }else{
                                        $name_product = $_POST["name_product"];
+                                       $name_product = trim($name_product);
                                        $query = "SELECT * FROM product WHERE name_product LIKE '%$name_product%'";
                                         $result = mysqli_query($con,$query)or die("LOI LIET KE: ".mysqli_error($con));
                                         $num 	= mysqli_num_rows($result);
                                     }
                                     echo'
-                                        <span>There are '.$num.' item found!</span>
+                                        <span style="color: red">There are '.$num.' item found!</span>
                                         <table class="table table-striped table-advance table-hover">
                                         <tbody>
                                             <tr>
@@ -128,6 +121,7 @@
                                               <th><i class=""></i> RAM</th>
                                               <th><i class=""></i> VGA</th>
                                               <th><i class=""></i> OS</th>
+                                              <th><i class=""></i> HDD/SSD</th>
                                               <th><i class=""></i> BATERRY</th>
                                               <th><i class=""></i> Manufacturer</th>
                                               <th><i class=""></i> Date Imp Pro</th>
@@ -147,6 +141,7 @@
                                                 <td>'.substr($row["ram"],0,5).'</td>
                                                 <td>'.substr($row["vga"],0,5).'</td>
                                                 <td>'.substr($row["hdh"],0,5).'</td>
+                                                <td>'.substr($row["hd"],0,5).'</td>
                                                 <td>'.substr($row["pin"],0,5).'</td>
                                                 <td>'.$row["id_mf"].'</td>
                                                 <td>'.$row["day"].'</td>

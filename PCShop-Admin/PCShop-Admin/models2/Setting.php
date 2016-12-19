@@ -180,6 +180,47 @@ class Setting{
             </table>
         ';
     }
+
+    static function adminCusDetail(){
+        global $con;
+        global $userid;
+        $query = "SELECT c.id_ca,c.cus_type,c.phone,c.address,c.cus_name,ca.email,ca.user_name,ca.status,ca.password,ca.id_ca 
+                         FROM customer c,customer_account ca WHERE c.id_ca=ca.id_ca AND c.id_ca='$userid'";
+        $result = mysqli_query($con,$query)or die("LOI LIET KE: ".mysqli_error($con));
+        $num 	= mysqli_num_rows($result);
+        echo'
+            <div>ID User: '.$userid.'</div>
+            <table class="table table-striped table-advance table-hover">
+            <tbody>
+                <tr>
+                    <th><i class=""></i> Email </th>
+                    <th><i class=""></i> Name</th>
+                    <th><i class=""></i> Customer Type</th>
+                    <th><i class=""></i> Address</th>
+                    <th><i class=""></i> Phone</th>
+                </tr>
+        ';
+        while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
+            if($row["cus_type"] == 1){
+                $cus_type = "VIP";
+            }else if($row["cus_type"] == 2){
+                $cus_type = "Normal";
+            }
+            echo'
+                <tr>
+                    <td>'.$row["email"].'</td>
+                    <td>'.$row["cus_name"].'</td>
+                    <td>'.$cus_type.'</td>
+                    <td>'.$row["address"].'</td>
+                    <td>'.$row["phone"].'</td>
+                </tr>
+        ';
+        }
+        echo'
+            </tbody>
+            </table>
+        ';
+    }
     
     
     

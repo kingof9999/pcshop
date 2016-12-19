@@ -2,13 +2,21 @@
 include_once ("overfile/connect.php");
 require_once("models/Setting.php");
 
-if(isset($_POST["add_mf"])){
+if(isset($_POST["add_catalog"])){
     $name_catalog = $_POST["name_catalog"];
+    $name_catalog = trim($name_catalog);
 
     $check = true;
     if(strlen($name_catalog) == 0){
-        $name_mf_error = "Please Enter Name <br>";
+        $name_catalog_error = "Enter Name <br>";
         $check = false;
+    }
+
+    $checklengn = strlen($name_catalog);
+    if($checklengn < 1){
+        $check = false;
+    }else{
+        $check = true;
     }
     if($check){
         $query="INSERT INTO catalog(name_catalog)
@@ -80,16 +88,17 @@ if(isset($_POST["add_mf"])){
                                     <div class="form-group">
                                         <!-- Buttons -->
                                         <div class="col-lg-offset-2 col-lg-9">
-                                            <button type="submit" class="btn btn-primary" name="add_mf">Add</button>
+                                            <button type="submit" class="btn btn-primary" name="add_catalog">Add</button>
+                                            <?php
+                                            if(isset($name_catalog_error)) echo $name_catalog_error;
+                                            if(isset($msg)) echo $msg;
+                                            ?>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="widget-foot">
-                                <?php
-                                if(isset($name_product_error)) echo $name_mf_error;
-                                if(isset($msg)) echo $msg;
-                                ?>
+
                             </div>
                         </div>
                     </div>
@@ -101,15 +110,24 @@ if(isset($_POST["add_mf"])){
                 <div class="col-lg-12">
                     <section class="panel">
                         <header class="panel-heading">
-                            Product Manager
+                            Catalog Manager
                         </header>
                         <?php
                         if(isset($_POST["btn_search"])){
                             $name_catalog = $_POST["search_name_catalog"];
+                            $name_catalog = trim($name_catalog);
+
                             $query = "SELECT * FROM catalog WHERE name_catalog LIKE '%$name_catalog%'";
                             $result = mysqli_query($con,$query)or die("LOI LIET KE: ".mysqli_error($con));
                             $num 	= mysqli_num_rows($result);
-                            echo'
+                            if($num == 0){
+                                echo '
+                                        <span style="color: red"> 
+                                            No items found!
+                                        </span>
+                                ';
+                            }else{
+                                echo'
                                         <table class="table table-striped table-advance table-hover">
                                         <tbody>
                                             <tr>
@@ -118,8 +136,8 @@ if(isset($_POST["add_mf"])){
                                               <th><i class="icon_cogs"></i> Action</th>
                                             </tr>
                                     ';
-                            while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
-                                echo'
+                                while($row=mysqli_fetch_array($result,MYSQLI_ASSOC)){
+                                    echo'
                                             <tr>
                                                 <td>'.$row["id_catalog"].'</td>
                                                 <td>'.$row["name_catalog"].'</td>
@@ -131,11 +149,12 @@ if(isset($_POST["add_mf"])){
                                                 </td>
                                             </tr>
                                     ';
-                            }
-                            echo'
+                                }
+                                echo'
                                         </tbody>
                                         </table>
                                     ';
+                            }
                         }else{
                             $result		= Setting::adminCatal();
                         }
