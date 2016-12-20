@@ -15,7 +15,7 @@
                 <span class="menu-arrow arrow_carrot-right"></span>
             </a>
             <ul class="sub">
-                <li><a class="active" href="../index.php?url=product">Manager Product</a></li>
+                <li><a class="active" href="../index.php?url=product">Manage Product</a></li>
                 <li><a class="" href="../index.php?url=manufacturer">Manufacturer</a></li>
                 <li><a class="" href="../index.php?url=catalog">Catalog</a></li>
             </ul>
@@ -28,7 +28,7 @@
                 <span class="menu-arrow arrow_carrot-right"></span>
             </a>
             <ul class="sub">
-                <li><a class="" href="../index.php?url=accessories_product">Manager Accessories</a></li>
+                <li><a class="" href="../index.php?url=accessories_product">Manage Accessories</a></li>
                 <li><a class="active" href="../index.php?url=accessories">Accessories</a></li>
             </ul>
         </li>

@@ -155,7 +155,7 @@
                                         <div class="form-group">
                                             <label class="control-label col-lg-2" for="title">Name Product</label>
                                             <div class="col-lg-10">
-                                                <input pattern="[a-zA-Z0-9- ]+" type="text" placeholder="Enter Name Product" name="name_product_as" class="form-control" id="name_product_as" value="<?php echo $row["name_product_as"]?>"/>
+                                                <input pattern="[a-zA-Z0-9 ./\\,()]+" type="text" placeholder="Enter Name Product" name="name_product_as" class="form-control" id="name_product_as" value="<?php echo $row["name_product_as"]?>"/>
                                             </div>
                                         </div>
                                         <!-- Quantity -->

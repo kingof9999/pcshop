@@ -81,7 +81,7 @@
                                         <div class="form-group">
                                             <label class="control-label col-lg-2" for="title">Name</label>
                                             <div class="col-lg-10">
-                                               <input type="text" class="form-control" id="title" name="name_mf" pattern="[a-zA-Z0-9- ]+"/>
+                                               <input type="text" class="form-control" id="title" name="name_mf" pattern="[a-zA-Z0-9 ./\\,()]+"/>
                                             </div>
                                         </div>
                                         <!-- Decription -->
@@ -116,7 +116,7 @@
                 <div class="col-lg-12">
                     <section class="panel">
                         <header class="panel-heading">
-                            Manufacturer Manager
+                            Manufacturer Management
                         </header>
                             <?php 
                                 if(isset($_POST["btn_search"])) {

@@ -223,7 +223,7 @@
                include "overfile/connect.php";
             ?>
            <div class="col-xs-12 col-sm-12 col-md-4">
-                <h2 class="title">Computer Laptops</h2>
+                <h2 class="title">Laptops</h2>
                 <ul class="links">
                     <?php 
                         $query	= "SELECT * FROM manufacturer LIMIT 6";
@@ -236,7 +236,7 @@
             </div><!-- /.col -->
 
             <div class="col-xs-12 col-sm-12 col-md-4">
-                <h2 class="title">Computer Laptops</h2>
+                <h2 class="title">Laptops</h2>
                 <ul class="links">
                     <?php
                         $query	= "SELECT * FROM manufacturer LIMIT 6,11";
@@ -249,7 +249,7 @@
             </div><!-- /.col -->
 
             <div class="col-xs-12 col-sm-12 col-md-4">
-                <h2 class="title">Laptop <br /> Type</h2>
+                <h2 class="title">Type</h2>
                 <ul class="links">
                     <?php 
                         $query	= "SELECT * FROM catalog";
@@ -277,7 +277,7 @@
                                 ?>
                                 <div class="col-sm-12 col-xs-12 col-md-12">
                                    <div class="col-xs-10 col-sm-10 col-md-4"  style="margin-right:80px">
-                                        <h2 class="title">Computer Laptops</h2>
+                                        <h2 class="title">Accessories</h2>
                                         <ul class="links">
                                             <?php 
                                                 $query	= "SELECT * FROM accessories LIMIT 7";
@@ -290,7 +290,7 @@
                                     </div><!-- /.col -->
                                     
                                     <div class="col-xs-10 col-sm-10 col-md-4">
-                                        <h2 class="title">Computer Laptops</h2>
+                                        <h2 class="title">Accessories(Continue)</h2>
                                         <ul class="links">
                                             <?php 
                                                 $query	= "SELECT * FROM accessories LIMIT 7,12";

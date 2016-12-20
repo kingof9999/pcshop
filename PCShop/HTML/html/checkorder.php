@@ -66,7 +66,7 @@
                                     <select name="shipping-1" id="shipping-1"
                                             class="form-control unicase-form-control text-input">
                                         <option value="free-1">Free shipping</option>
-                                        <option value="fast-1">Fast shipping (1 USD)</option>
+                                        <option value="fast-1">Fast shipping (1 VND)</option>
                                     </select>
                                     <div class="form-group outer-top-xs">
                                         <label class="info-title" for="phone">Payment method</label>
@@ -113,7 +113,7 @@
                                                             <tr>
                                                                 <td>'.$row["name_product"].'</td>
                                                                 <td>'.$soluong.'</td>
-                                                                <td>1000$</td>
+                                                                <td>'.$row["price"].' VND</td>
                                                             </tr>
                                                     ';
                                                 }

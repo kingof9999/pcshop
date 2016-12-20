@@ -94,7 +94,7 @@
                 <div class="col-lg-12">
                     <section class="panel">
                         <header class="panel-heading">
-                            Accessories Product Manager
+                            Accessories Product Management
                         </header>
                             <?php 
                                 if(isset($_POST["btn_search"])){

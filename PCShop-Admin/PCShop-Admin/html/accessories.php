@@ -83,7 +83,7 @@ if(isset($_POST["add_as"])){
                                     <div class="form-group">
                                         <label class="control-label col-lg-2" for="title">Name</label>
                                         <div class="col-lg-10">
-                                            <input pattern="[a-zA-Z0-9- ]+" type="text" class="form-control" id="title" name="name_as"/>
+                                            <input pattern="[a-zA-Z0-9 ./\\,()]+" type="text" class="form-control" id="title" name="name_as"/>
                                         </div>
                                     </div>
                                     <!-- Decription -->
@@ -120,7 +120,7 @@ if(isset($_POST["add_as"])){
                 <div class="col-lg-12">
                     <section class="panel">
                         <header class="panel-heading">
-                            Accessories Manager
+                            Accessories Management
                         </header>
                             <?php 
                                 if(isset($_POST["btn_search"])){

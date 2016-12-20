@@ -174,21 +174,21 @@
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">Customer Name</label>
                                             <div class="col-lg-10">
-                                                <input pattern="[a-zA-Z0-9- ]+" type="text" placeholder="Enter Customer Name" name="cus_name" class="form-control" id="cus_name" value="<?php echo $row["cus_name"]?>"/>
+                                                <input pattern="[a-zA-Z0-9 ./\\,()]+" type="text" placeholder="Enter Customer Name" name="cus_name" class="form-control" id="cus_name" value="<?php echo $row["cus_name"]?>"/>
                                             </div>
                                         </div>
                                         <!-- User Name -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">User Name</label>
                                             <div class="col-lg-10">
-                                                <input pattern="[a-zA-Z0-9- ]+" type="text" placeholder="Enter username" name="user_name" class="form-control" id="user_name" value="<?php echo $row["user_name"]?>"/>
+                                                <input pattern="[a-zA-Z0-9 ./\\,()]+" type="text" placeholder="Enter username" name="user_name" class="form-control" id="user_name" value="<?php echo $row["user_name"]?>"/>
                                             </div>
                                         </div>
                                         <!-- Email -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">Email</label>
                                             <div class="col-lg-10">
-                                                <input type="email" placeholder="Enter Email" name="email" class="form-control" id="email" value="<?php echo $row["email"]?>" disabled/>
+                                                <input pattern="[a-zA-Z0-9@_ .]+" type="email" placeholder="Enter Email" name="email" class="form-control" id="email" value="<?php echo $row["email"]?>" disabled/>
                                             </div>
                                         </div>
                                         <!-- Password -->

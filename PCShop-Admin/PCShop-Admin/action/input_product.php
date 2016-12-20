@@ -209,7 +209,7 @@
                                         <div class="form-group">
                                             <label class="control-label col-lg-2" for="title">Name Product</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter Name Product" name="name_product" class="form-control" id="name_product" pattern="[a-zA-Z0-9- ]+"/>
+                                                <input type="text" placeholder="Enter Name Product" name="name_product" class="form-control" id="name_product" pattern="[a-zA-Z0-9 ./\\,()]+"/>
                                             </div>
                                         </div>
                                         <!-- Quantity -->
@@ -230,49 +230,49 @@
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">Screen</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter Screen" name="screen" class="form-control" id="screen" pattern="[a-zA-Z0-9- ]+"/>
+                                                <input type="text" placeholder="Enter Screen" name="screen" class="form-control" id="screen" pattern="[a-zA-Z0-9 ./\\,()]+"/>
                                             </div>
                                         </div>
                                         <!-- CPU -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">CPU</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter CPU" name="cpu" class="form-control" id="cpu" pattern="[a-zA-Z0-9- ]+"/>
+                                                <input type="text" placeholder="Enter CPU" name="cpu" class="form-control" id="cpu" pattern="[a-zA-Z0-9 ./\\,()]+"/>
                                             </div>
                                         </div>
                                         <!-- RAM -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">RAM</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter RAM" name="ram" class="form-control" id="ram" pattern="[a-zA-Z0-9- ]+"/>
+                                                <input type="text" placeholder="Enter RAM" name="ram" class="form-control" id="ram" pattern="[a-zA-Z0-9 ./\\,()]+"/>
                                             </div>
                                         </div>
                                         <!-- VGA -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">VGA</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter VGA" name="vga" class="form-control" id="vga" pattern="[a-zA-Z0-9- ]+"/>
+                                                <input type="text" placeholder="Enter VGA" name="vga" class="form-control" id="vga" pattern="[a-zA-Z0-9 ./\\,()]+"/>
                                             </div>
                                         </div>
                                         <!-- OS -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">OS</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter HDH" name="hdh" class="form-control" id="hdh" pattern="[a-zA-Z0-9- ]+"/>
+                                                <input type="text" placeholder="Enter HDH" name="hdh" class="form-control" id="hdh" pattern="[a-zA-Z0-9 ./\\,()]+"/>
                                             </div>
                                         </div>
                                         <!-- HDD -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">HDD/SSD</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter HDD" name="hd" class="form-control" id="hd" pattern="[a-zA-Z0-9- ]+"/>
+                                                <input type="text" placeholder="Enter HDD" name="hd" class="form-control" id="hd" pattern="[a-zA-Z0-9 ./\\,()]+"/>
                                             </div>
                                         </div>
                                         <!-- PIN -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">BATERRY</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter PIN" name="pin" class="form-control" id="pin" pattern="[a-zA-Z0-9- ]+"/>
+                                                <input type="text" placeholder="Enter PIN" name="pin" class="form-control" id="pin" pattern="[a-zA-Z0-9 ./\\,()]+"/>
                                             </div>
                                         </div>
                                         <!-- Decription -->
