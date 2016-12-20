@@ -81,7 +81,7 @@
                                         <div class="form-group">
                                             <label class="control-label col-lg-2" for="title">Name</label>
                                             <div class="col-lg-10">
-                                               <input type="text" class="form-control" id="title" name="name_mf"/>
+                                               <input type="text" class="form-control" id="title" name="name_mf" pattern="[a-zA-Z0-9- ]+"/>
                                             </div>
                                         </div>
                                         <!-- Decription -->

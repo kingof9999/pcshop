@@ -116,9 +116,9 @@
                                     <form class="form-horizontal">
                                         <!-- Name Manufacturer -->
                                         <div class="form-group">
-                                            <label class="control-label col-lg-2" for="title">Name Manufacturer</label>
+                                            <label class="control-label col-lg-2" for="title">Name Catalog</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter Name Manufacturer" name="name_catalog" class="form-control" id="name_catalog" value="<?php echo $row["name_catalog"]?>"/>
+                                                <input pattern="[a-zA-Z0-9- ]+" type="text" placeholder="Enter Name Manufacturer" name="name_catalog" class="form-control" id="name_catalog" value="<?php echo $row["name_catalog"]?>"/>
                                             </div>
                                         </div>
                                         

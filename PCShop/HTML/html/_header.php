@@ -35,14 +35,15 @@
 
             <ul class="categories-filter animate-dropdown">
                 <li class="dropdown">
-
-                    <a class="dropdown-toggle"  data-toggle="dropdown" href="category.php">Categories <b class="caret"></b></a>
-
-                    <ul class="dropdown-menu" role="menu" >
+                    <!--<ul class="dropdown-menu" role="menu" >
                         <li class="menu-header">Search By</li>
-                        <li role="presentation"><input type="radio" id="checkcatalog1" name ="radio_1" value="1"/>Laptop</li>
-                        <li role="presentation"><input type="radio" id="checkcatalog2" name ="radio_2" value="2"/>Accosiess</li>
-                    </ul>
+                        <li role="presentation"><input type="radio" id="radio_ck1" name ="radio_ck" value="1" checked="checked"/>Laptop</li>
+                        <li role="presentation"><input type="radio" id="radio_ck2" name ="radio_ck" value="2"/>Accosiess</li>
+                    </ul>-->
+                    <select name="check" class=" unicase-form-control text-input" id="check">
+                            <option value="1"> Laptop</option>
+                            <option value="2"> Associese</option>
+                    </select>
                 </li>
             </ul>
                 <input type="text" class="search-field" placeholder="Search here..." id="txtsearch" name="keyword"/>

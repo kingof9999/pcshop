@@ -37,14 +37,16 @@
 <div class="container">
 
     <form class="login-form" action="<?php echo $_SERVER["PHP_SELF"] ?>" method="post">
-        <?php 
-            $result		= Setting::homeSignup();
-            if(isset($msg)) echo $msg;
-            if(isset($msg1)) echo $msg1;
-            if(isset($email_signup_error)) echo $email_signup_error;
-            if(isset($password_signup_error)) echo $password_signup_error;
-            if(isset($email_signup_error1)) echo $email_signup_error1;
-        ?>
+        <span style="color: red">
+            <?php
+                $result		= Setting::homeSignup();
+                if(isset($msg)) echo $msg;
+                if(isset($msg1)) echo $msg1;
+                if(isset($email_signup_error)) echo $email_signup_error;
+                if(isset($password_signup_error)) echo $password_signup_error;
+                if(isset($email_signup_error1)) echo $email_signup_error1;
+            ?>
+        </span>
     </form>
 
 </div>

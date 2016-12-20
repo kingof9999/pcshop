@@ -8,6 +8,6 @@
     
     if($result){
     	echo "Delete Success";
-    	header("Location: ../productaccess_manager.php");
+    	header("Location: ../index.php?url=accessories_product");
     }
 ?>

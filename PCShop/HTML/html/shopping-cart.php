@@ -6,7 +6,6 @@
 					<th class="cart-romove item">Remove</th>
 					<th class="cart-description item">Image</th>
 					<th class="cart-product-name item">Product Name</th>
-					<th class="cart-edit item">Edit</th>
 					<th class="cart-qty item">Quantity</th>
 					<th class="cart-sub-total item">Price</th>
 					<th class="cart-total last-item">Subtotal</th>
@@ -52,21 +51,8 @@
                     					<td class="cart-product-name-info">
                     						<h4 class="cart-product-description"><a href="index.php?url=detail&spid='.$row["id_product"].'">'.$row["name_product"].'</a></h4>
                     						<div class="row">
-                    							<div class="col-sm-4">
-                    								<div class="rating rateit-small"></div>
-                    							</div>
-                    							<div class="col-sm-8">
-                    								<div class="reviews">
-                    									(06 Reviews)
-                    								</div>
-                    							</div>
                     						</div><!-- /.row -->
-                    						<div class="cart-product-info">
-                    							<span class="product-imel">IMEL:<span>084628312</span></span><br>
-                    							<span class="product-color">COLOR:<span>Yellow</span></span>
-                    						</div>
                     					</td>
-                    					<td class="cart-product-edit"><a href="#" class="product-edit">Edit</a></td>
                     					<td class="cart-product-quantity">
                                         ';
                     				    echo'<select class="quantity" data-masp="'.$row["id_product"].'" style="border:1px solid #CCC;">';
@@ -109,7 +95,7 @@
 						<div class="shopping-cart-btn">
 							<span class="">
 								<a href="index.php" class="btn btn-upper btn-primary outer-left-xs">Continue Shopping</a>
-								<a href="index.php?url=confirm_pay" class="btn btn-upper btn-primary pull-right outer-right-xs">Pay</a>
+								<a href="index.php?url=checkorder" class="btn btn-upper btn-primary pull-right outer-right-xs">Pay</a>
 							</span>
 						</div><!-- /.shopping-cart-btn -->
 					</td>

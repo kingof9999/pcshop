@@ -28,7 +28,7 @@
                 					<li class="dropdown dropdown-small">
                 						<a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown"><span class="key">currency :</span><span class="value">USD </span><b class="caret"></b></a>
                 						<ul class="dropdown-menu">
-                							<li><a href="#">VÁS</a></li>
+                							<li><a href="#">Vï¿½S</a></li>
                 							<li><a href="#">VND</a></li>
                 							<li><a href="#">EUR</a></li>
                 						</ul>
@@ -57,7 +57,6 @@
                 				<ul class="list-unstyled">
                 					<li><a href="index.php?url=user"><i class="icon fa fa-user"></i>'.$email.'</a></li>
                 					<li><a href="index.php?url=shopping-cart"><i class="icon fa fa-shopping-cart"></i>Cart</a></li>
-                					<li><a href="checkout.php"><i class="icon fa fa-key"></i>Checkout</a></li>
                 					<li><a href="models/sign-out.php"><i class="icon fa fa-sign-in"></i>Logout</a></li>
                 				</ul>
                 			</div><!-- /.cnt-account -->

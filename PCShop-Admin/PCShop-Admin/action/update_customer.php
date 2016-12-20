@@ -174,14 +174,14 @@
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">Customer Name</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter Customer Name" name="cus_name" class="form-control" id="cus_name" value="<?php echo $row["cus_name"]?>"/>
+                                                <input pattern="[a-zA-Z0-9- ]+" type="text" placeholder="Enter Customer Name" name="cus_name" class="form-control" id="cus_name" value="<?php echo $row["cus_name"]?>"/>
                                             </div>
                                         </div>
                                         <!-- User Name -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">User Name</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter username" name="user_name" class="form-control" id="user_name" value="<?php echo $row["user_name"]?>"/>
+                                                <input pattern="[a-zA-Z0-9- ]+" type="text" placeholder="Enter username" name="user_name" class="form-control" id="user_name" value="<?php echo $row["user_name"]?>"/>
                                             </div>
                                         </div>
                                         <!-- Email -->

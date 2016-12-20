@@ -2,7 +2,7 @@
     <div class="container">
         <div class="breadcrumb-inner">
             <ul class="list-inline list-unstyled">
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li class='active'>FAQ</li>
             </ul>
         </div><!-- /.breadcrumb-inner -->
@@ -24,7 +24,7 @@
                             <div class="panel-heading">
                                 <h4 class="unicase-checkout-title">
                                     <a data-toggle="collapse" class="" data-parent="#accordion" href="#collapseOne">
-                                        <span>1</span>Do you Ship Internationally ?
+                                        <span>1</span>Why did our team develope this website ?
                                     </a>
                                 </h4>
                             </div>
@@ -34,7 +34,7 @@
 
                                 <!-- panel-body  -->
                                 <div class="panel-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis diam erat. Duis velit lectus, posuere a blandit sit amet, tempor at lorem. Donec ultricies, lorem sed ultrices interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis diam erat. Duis velit lectus, posuere a blandit sit amet, tempor at lorem. Donec ultricies, lorem sed ultrices interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis diam erat. Duis velit lectus, posuere a blandit sit amet, tempor at lorem. Donec ultricies, lorem sed ultrices interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis diam erat. Duis velit lectus, posuere a blandit sit amet, tempor at lorem.
+					We want to provide a good solution for laptop's buyer(save time, don't have knowledge about laptop,...). Beside, we hope this website will make satisfying for customers. 
                                 </div>
                                 <!-- panel-body  -->
 
@@ -46,13 +46,13 @@
                             <div class="panel-heading">
                                 <h4 class="unicase-checkout-title">
                                     <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseTwo">
-                                        <span>2</span>Who should I to contact if I have any queries?
+                                        <span>2</span>what types of product will our website provide for you?
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    Our website is only trading types of laptop. Beside, it's providing accessories for every laptop with cheapest price.
                                 </div>
                             </div>
                         </div>
@@ -63,13 +63,13 @@
                             <div class="panel-heading">
                                 <h4 class="unicase-checkout-title">
                                     <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseThree">
-                                        <span>3</span>How do I track my order ?
+                                        <span>3</span>what criteria did we make on?
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseThree" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    It's safe, fast, satisfaction.
                                 </div>
                             </div>
                         </div>
@@ -80,13 +80,13 @@
                             <div class="panel-heading">
                                 <h4 class="unicase-checkout-title">
                                     <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseFour">
-                                        <span>4</span>How can I cancel or change my order ?
+                                        <span>4</span>How will you payment?
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseFour" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    Through NganLuong website which is integrated in systems.
                                 </div>
                             </div>
                         </div>
@@ -97,85 +97,18 @@
                             <div class="panel-heading">
                                 <h4 class="unicase-checkout-title">
                                     <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseFive">
-                                        <span>5</span>How can I return a product
+                                        <span>5</span>How do you contact us ?
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseFive" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    We built "Contact us" function on website.
                                 </div>
                             </div>
                         </div>
                         <!-- checkout-step-05  -->
-
-                        <!-- checkout-step-06  -->
-                        <div class="panel panel-default checkout-step-06">
-                            <div class="panel-heading">
-                                <h4 class="unicase-checkout-title">
-                                    <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseSix">
-                                        <span>6</span>How long will it take to get my package ?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseSix" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- checkout-step-06  -->
-
-                        <!-- checkout-step-07  -->
-                        <div class="panel panel-default checkout-step-07">
-                            <div class="panel-heading">
-                                <h4 class="unicase-checkout-title">
-                                    <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseSeven">
-                                        <span>7</span>What Shipping methods are available ?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseSeven" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- checkout-step-07  -->
-
-                        <!-- checkout-step-08  -->
-                        <div class="panel panel-default checkout-step-08">
-                            <div class="panel-heading">
-                                <h4 class="unicase-checkout-title">
-                                    <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseEight">
-                                        <span>8</span>Do you provide any warranty ?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseEight" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- checkout-step-08  -->
-
-                        <!-- checkout-step-09  -->
-                        <div class="panel panel-default checkout-step-09">
-                            <div class="panel-heading">
-                                <h4 class="unicase-checkout-title">
-                                    <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseNine">
-                                        <span>9</span>Do you have replacement guarantee ?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseNine" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- checkout-step-09  -->
+                     
 
                     </div><!-- /.checkout-steps -->
                 </div>

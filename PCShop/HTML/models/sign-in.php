@@ -3,7 +3,9 @@
     include_once("overfile/connect.php");
 	if(isset($_POST["btn_login"])){
 		$email	=$_POST["email"];
+		$email = trim($email);
 		$pass	=$_POST["pass"];
+		$pass = trim($pass);
 		$query 	="SELECT * FROM customer_account WHERE email='$email' AND password='$pass'";
 		$result=mysqli_query($con,$query);
 		$num	=mysqli_num_rows($result);
@@ -56,8 +58,8 @@
            $result1    = mysqli_query($con,$query1) or die ("Error: ".mysqli_error($con));
            $row       = mysqli_fetch_array($result1,MYSQLI_ASSOC);
            $id_ca = $row["id_ca"];
-           $query2 = "INSERT INTO customer (id_ca,cus_name)
-    				VALUES('$id_ca','$cus_name')";
+           $query2 = "INSERT INTO customer (id_ca,cus_name,cus_type)
+    				VALUES('$id_ca','$cus_name',2)";
            $result2 = mysqli_query($con,$query2)or die("Error: ".mysqli_error($con));
     	       if ($result){
     				$msg1= '<p style="color:blue"> Sign Up Successed!</p>';
@@ -72,11 +74,11 @@
                         <p class="login-img">Login<i class="icon_lock_alt"></i></p>  
                         <div class="input-group">   
                             <span class="input-group-addon"><i class="icon_profile"></i></span>
-                            <input type="email" class="form-control" placeholder="Email" name="email" autofocus>
+                            <input pattern="[a-zA-Z0-9@_ .]+" type="email" class="form-control" placeholder="Email" name="email" autofocus>
                         </div>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-                            <input type="password" class="form-control" placeholder="Password" name="pass">
+                            <input pattern="[a-zA-Z0-9@_ .]{6,}" title="Password must have at least 6 characters and not have special characters" type="password" class="form-control" placeholder="Password" name="pass">
                         </div>
                         <!--<div class="input-group">
                             <span class="pull-right"> <a href="#"> Forgot Password?</a></span>
@@ -119,7 +121,7 @@
                         <p class="login-img">Register</i></p>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="icon_profile"></i></span>
-                            <input type="email" class="form-control" placeholder="Email" name="email" autofocus>
+                            <input pattern="[a-zA-Z0-9@_ .]+" type="email" class="form-control" placeholder="Email" name="email" autofocus>
                         </div>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="icon_profile"></i></span>
@@ -127,7 +129,7 @@
                         </div>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-                            <input type="password" class="form-control" placeholder="Password" name="pass">
+                            <input pattern="[a-zA-Z0-9@_ .]{6,}" title="Password must have at least 6 characters and not have special characters" type="password" class="form-control" placeholder="Password" name="pass">
                         </div>
                         <!--<div class="input-group">
                             <span class="pull-right"> <a href="#"> Forgot Password?</a></span>

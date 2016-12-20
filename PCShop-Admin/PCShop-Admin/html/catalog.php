@@ -81,7 +81,7 @@ if(isset($_POST["add_catalog"])){
                                     <div class="form-group">
                                         <label class="control-label col-lg-2" for="title">Name</label>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" id="title" name="name_catalog"/>
+                                            <input type="text" class="form-control" id="title" name="name_catalog" pattern="[a-zA-Z0-9- ]+"/>
                                         </div>
                                     </div>
                                     <!-- Buttons -->
@@ -116,6 +116,11 @@ if(isset($_POST["add_catalog"])){
                         if(isset($_POST["btn_search"])){
                             $name_catalog = $_POST["search_name_catalog"];
                             $name_catalog = trim($name_catalog);
+
+                            date_default_timezone_set('Asia/Ho_Chi_Minh');
+                            $day_created = date("Y-m-d");
+
+                            echo '<script>alert('.$day_created.');</script>';
 
                             $query = "SELECT * FROM catalog WHERE name_catalog LIKE '%$name_catalog%'";
                             $result = mysqli_query($con,$query)or die("LOI LIET KE: ".mysqli_error($con));

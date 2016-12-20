@@ -83,7 +83,7 @@ if(isset($_POST["add_as"])){
                                     <div class="form-group">
                                         <label class="control-label col-lg-2" for="title">Name</label>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" id="title" name="name_as"/>
+                                            <input pattern="[a-zA-Z0-9- ]+" type="text" class="form-control" id="title" name="name_as"/>
                                         </div>
                                     </div>
                                     <!-- Decription -->

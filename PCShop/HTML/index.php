@@ -116,6 +116,9 @@
                         case "faq":
                             include "html/faq.php";
                             break;
+                        case "checkorder":
+                            include "html/checkorder.php";
+                            break;
 
 					}
 			?>

@@ -1,29 +1,29 @@
 <?php
     include_once("../overfile/connect.php");
 	require_once("../models/Setting.php");
-    
+
     if(isset($_POST["submit"])){
-		$name_product = ["name_product"];
+		$name_product = $_POST["name_product"];
 		$name_product = trim($name_product);
 		$quantity = $_POST["quantity"];
 		$price = $_POST["price"];
-        $manufacturer = ["manufacturer"];
+        $manufacturer = $_POST["manufacturer"];
         $day = $_POST["day"];
-        $screen = ["screen"];
+        $screen = $_POST["screen"];
         $screen = trim($screen);
-        $cpu = ["cpu"];
+        $cpu = $_POST["cpu"];
         $cpu = trim($cpu);
-        $ram = ["ram"];
+        $ram = $_POST["ram"];
         $ram = trim($ram);
-        $vga = ["vga"];
+        $vga = $_POST["vga"];
         $vga = trim($vga);
-        $hdh = ["hdh"];
+        $hdh = $_POST["hdh"];
         $hdh = trim($hdh);
-        $pin = ["pin"];
+        $pin = $_POST["pin"];
         $pin = trim($pin);
-        $hd = ["hd"];
+        $hd = $_POST["hd"];
         $hd = trim($hd);
-        $description = ["description"];
+        $description = $_POST["description"];
 
 
 
@@ -67,22 +67,11 @@
             $check = false;
 		}else move_uploaded_file($file3_tmp_name,"../images/$file3_name");
         
-        if(strlen($name_product) == 0){
-			$name_product_error = "Please Enter Name <br>";
+        if($name_product == "" || strlen($quantity) == 0 || strlen($price) == 0 || $screen == "" || $cpu == "" || $ram == "" || $vga == ""|| $hdh == "" || $hd == "" || $pin == "" || strlen($day) == 0){
+			$name_product_error = "Please Fulfill All Information of Product <br>";
 			$check = false;
 		}
-		if(strlen($quantity) == 0){
-			$quantity_error = "Please Enter Quantity <br>";
-			$check = false;
-		}
-        if(strlen($price) == 0){
-			$price_error = "Please Enter Price <br>";
-			$check = false;
-		}
-        if(strlen($manufacturer) == 0){
-			$manufacturer_error = "Please Enter Manufacturer <br>";
-			$check = false;
-		}
+
         if($check){
 			$query="INSERT INTO product(name_product,quantity,price,id_mf,day,screen,cpu,ram,vga,hdh,pin,hd,description,image,image1,image2,imageqc)
 				VALUES('$name_product','$quantity','$price','$manufacturer','$day','$screen','$cpu','$ram','$vga','$hdh','$pin','$hd','$description','$file_name','$file1_name','$file2_name','$file3_name')";
@@ -220,7 +209,7 @@
                                         <div class="form-group">
                                             <label class="control-label col-lg-2" for="title">Name Product</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter Name Product" name="name_product" class="form-control" id="name_product"/>
+                                                <input type="text" placeholder="Enter Name Product" name="name_product" class="form-control" id="name_product" pattern="[a-zA-Z0-9- ]+"/>
                                             </div>
                                         </div>
                                         <!-- Quantity -->
@@ -241,49 +230,49 @@
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">Screen</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter Screen" name="screen" class="form-control" id="screen"/>
+                                                <input type="text" placeholder="Enter Screen" name="screen" class="form-control" id="screen" pattern="[a-zA-Z0-9- ]+"/>
                                             </div>
                                         </div>
                                         <!-- CPU -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">CPU</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter CPU" name="cpu" class="form-control" id="cpu"/>
+                                                <input type="text" placeholder="Enter CPU" name="cpu" class="form-control" id="cpu" pattern="[a-zA-Z0-9- ]+"/>
                                             </div>
                                         </div>
                                         <!-- RAM -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">RAM</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter RAM" name="ram" class="form-control" id="ram"/>
+                                                <input type="text" placeholder="Enter RAM" name="ram" class="form-control" id="ram" pattern="[a-zA-Z0-9- ]+"/>
                                             </div>
                                         </div>
                                         <!-- VGA -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">VGA</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter VGA" name="vga" class="form-control" id="vga"/>
+                                                <input type="text" placeholder="Enter VGA" name="vga" class="form-control" id="vga" pattern="[a-zA-Z0-9- ]+"/>
                                             </div>
                                         </div>
                                         <!-- OS -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">OS</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter HDH" name="hdh" class="form-control" id="hdh"/>
+                                                <input type="text" placeholder="Enter HDH" name="hdh" class="form-control" id="hdh" pattern="[a-zA-Z0-9- ]+"/>
                                             </div>
                                         </div>
                                         <!-- HDD -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">HDD/SSD</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter HDD" name="hd" class="form-control" id="hd"/>
+                                                <input type="text" placeholder="Enter HDD" name="hd" class="form-control" id="hd" pattern="[a-zA-Z0-9- ]+"/>
                                             </div>
                                         </div>
                                         <!-- PIN -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">BATERRY</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter PIN" name="pin" class="form-control" id="pin"/>
+                                                <input type="text" placeholder="Enter PIN" name="pin" class="form-control" id="pin" pattern="[a-zA-Z0-9- ]+"/>
                                             </div>
                                         </div>
                                         <!-- Decription -->

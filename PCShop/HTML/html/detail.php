@@ -208,10 +208,18 @@ if(isset($_POST["btn_comment"])){
                                     </tr>
                                     <tr>
                                         <td>
-                                            <b>HDH:</b>
+                                            <b>OS:</b>
                                         </td>
                                         <td>
                                             <span class="text-info"><?php echo $row["hdh"];?></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <b>HDD/SSD:</b>
+                                        </td>
+                                        <td>
+                                            <span class="text-info"><?php echo $row["hd"];?></span>
                                         </td>
                                     </tr>
                                     <tr>

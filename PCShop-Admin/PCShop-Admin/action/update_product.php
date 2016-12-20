@@ -26,26 +26,17 @@
         $hdh = trim($hdh);
         $pin = $_POST["pin"];
         $pin = trim($pin);
+        $hd = $_POST["hd"];
+        $hd = trim($hd);
         $description = $_POST["description"];
 		
 		$check = true;
-        
-        if(strlen($name_product) == 0){
-			$name_product_error = "Please Enter Name <br>";
-			$check = false;
-		}
-		if(strlen($quantity) == 0){
-			$quantity_error = "Please Enter Quantity <br>";
-			$check = false;
-		}
-        if(strlen($price) == 0){
-			$price_error = "Please Enter Price <br>";
-			$check = false;
-		}
-        if(strlen($manufacturer) == 0){
-			$manufacturer_error = "Please Enter Manufacturer <br>";
-			$check = false;
-		}
+
+        if($name_product == "" || strlen($quantity) == 0 || strlen($price) == 0 || $screen == "" || $cpu == "" || $ram == "" || $vga == ""|| $hdh == "" || $hd == "" || $pin == ""){
+            $name_product_error = "Please Fulfill All Information of Product <br>";
+            $check = false;
+        }
+
         if($check){
 			$query="UPDATE product SET name_product='$name_product',quantity='$quantity',price='$price',id_mf='$manufacturer',screen='$screen',cpu='$cpu',ram='$ram',vga='$vga',hdh='$hdh',pin='$pin',description='$description',day='$day' 
                     WHERE id_product='$userid'";
@@ -187,7 +178,7 @@
                                         <div class="form-group">
                                             <label class="control-label col-lg-2" for="title">Name Product</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter Name Product" name="name_product" class="form-control" id="name_product" value="<?php echo $row["name_product"]?>"/>
+                                                <input type="text" placeholder="Enter Name Product" name="name_product" class="form-control" id="name_product" value="<?php echo $row["name_product"]?>" pattern="[a-zA-Z0-9- ]+"/>
                                             </div>
                                         </div>
                                         <!-- Quantity -->
@@ -208,49 +199,49 @@
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">Screen</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter Screen" name="screen" class="form-control" id="screen" value="<?php echo $row["screen"]?>"/>
+                                                <input type="text" placeholder="Enter Screen" name="screen" class="form-control" id="screen" value="<?php echo $row["screen"]?>" pattern="[a-zA-Z0-9- ]+"/>
                                             </div>
                                         </div>
                                         <!-- CPU -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">CPU</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter CPU" name="cpu" class="form-control" id="cpu" value="<?php echo $row["cpu"]?>"/>
+                                                <input type="text" placeholder="Enter CPU" name="cpu" class="form-control" id="cpu" value="<?php echo $row["cpu"]?>" pattern="[a-zA-Z0-9- ]+"/>
                                             </div>
                                         </div>
                                         <!-- RAM -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">RAM</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter RAM" name="ram" class="form-control" id="ram" value="<?php echo $row["ram"]?>"/>
+                                                <input type="text" placeholder="Enter RAM" name="ram" class="form-control" id="ram" value="<?php echo $row["ram"]?>" pattern="[a-zA-Z0-9- ]+"/>
                                             </div>
                                         </div>
                                         <!-- VGA -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">VGA</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter VGA" name="vga" class="form-control" id="vga" value="<?php echo $row["vga"]?>"/>
+                                                <input type="text" placeholder="Enter VGA" name="vga" class="form-control" id="vga" value="<?php echo $row["vga"]?>" pattern="[a-zA-Z0-9- ]+"/>
                                             </div>
                                         </div>
                                         <!-- HDH -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">OS</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter OS" name="hdh" class="form-control" id="hdh" value="<?php echo $row["hdh"]?>"/>
+                                                <input type="text" placeholder="Enter OS" name="hdh" class="form-control" id="hdh" value="<?php echo $row["hdh"]?>" pattern="[a-zA-Z0-9- ]+"/>
                                             </div>
                                         </div>
                                         <!-- HDD -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">HDD/SSD</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter HHD/SSD" name="hd" class="form-control" id="hd" value="<?php echo $row["hd"]?>"/>
+                                                <input type="text" placeholder="Enter HHD/SSD" name="hd" class="form-control" id="hd" value="<?php echo $row["hd"]?>" pattern="[a-zA-Z0-9- ]+"/>
                                             </div>
                                         </div>
                                         <!-- PIN -->
                                         <div class="form-group">
                                             <label class="control-label col-lg-2">BATERRY</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter BATERRY" name="pin" class="form-control" id="pin" value="<?php echo $row["pin"]?>"/>
+                                                <input type="text" placeholder="Enter BATERRY" name="pin" class="form-control" id="pin" value="<?php echo $row["pin"]?>" pattern="[a-zA-Z0-9- ]+"/>
                                             </div>
                                         </div>
                                         <!-- Decription -->

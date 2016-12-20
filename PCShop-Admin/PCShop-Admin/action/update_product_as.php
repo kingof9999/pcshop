@@ -17,23 +17,11 @@
         $description = $_POST["description"];
 		
 		$check = true;
-        
-        if(strlen($name_product_as) == 0){
-			$name_product_as_error = "Please Enter Name <br>";
-			$check = false;
-		}
-		if(strlen($quantity) == 0){
-			$quantity_error = "Please Enter Quantity <br>";
-			$check = false;
-		}
-        if(strlen($price) == 0){
-			$price_error = "Please Enter Price <br>";
-			$check = false;
-		}
-        if(strlen($day) == 0){
-			$day_error = "Please Enter Day improve <br>";
-			$check = false;
-		}
+
+        if(strlen($name_product_as) == 0 || strlen($quantity) == 0 || strlen($price) == 0 ||strlen($day) == 0){
+            $name_product_as_error = "Please Fultill All of Product Accessories <br>";
+            $check = false;
+        }
         if($check){
 			$query="UPDATE product_assosi SET name_product_as='$name_product_as',quantity='$quantity',price='$price',id_as='$id_as',description='$description',day='$day'
                     WHERE id_product_as='$userid'";
@@ -167,7 +155,7 @@
                                         <div class="form-group">
                                             <label class="control-label col-lg-2" for="title">Name Product</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter Name Product" name="name_product_as" class="form-control" id="name_product_as" value="<?php echo $row["name_product_as"]?>"/>
+                                                <input pattern="[a-zA-Z0-9- ]+" type="text" placeholder="Enter Name Product" name="name_product_as" class="form-control" id="name_product_as" value="<?php echo $row["name_product_as"]?>"/>
                                             </div>
                                         </div>
                                         <!-- Quantity -->

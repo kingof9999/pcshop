@@ -67,11 +67,11 @@
                     <h4 class="checkout-subtitle"><a href="index.php?url=user">Edit My Account</a> | <a href="index.php?url=security">Change Password</a></h4>
                     <p class="text title-tag-line">Fill the form and click save.</p>
                         <h5>Your password:</h5>
-                        <input type="text" class="form-control unicase-form-control text-input" value="" name="old_password"/>
-                        <h5>Password</h5>
-                        <input type="text" class="form-control unicase-form-control text-input" value="" name="password"/>
-                        <h5>Confirm Password</h5>
-                        <input type="text" class="form-control unicase-form-control text-input" value="" name="cfpassword"/>
+                        <input pattern="[a-zA-Z0-9@_ .]{6,}" title="Password must have at least 6 characters and not have special characters" type="text" class="form-control unicase-form-control text-input" value="" name="old_password"/>
+                        <h5>New Password</h5>
+                        <input pattern="[a-zA-Z0-9@_ .]{6,}" title="Password must have at least 6 characters and not have special characters" type="text" class="form-control unicase-form-control text-input" value="" name="password"/>
+                        <h5>Confirm New Password</h5>
+                        <input pattern="[a-zA-Z0-9@_ .]{6,}" title="Password must have at least 6 characters and not have special characters" type="text" class="form-control unicase-form-control text-input" value="" name="cfpassword"/>
                             <input type="submit" value="Submit" name="submit" id="submit" class="btn btn-info outer-top-xs"/>
                             <div>
                                 <?php 

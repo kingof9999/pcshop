@@ -119,7 +119,7 @@
                                         <div class="form-group">
                                             <label class="control-label col-lg-2" for="title">Name Manufacturer</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter Name Manufacturer" name="name_mf" class="form-control" id="name_mf" value="<?php echo $row["name_mf"]?>"/>
+                                                <input pattern="[a-zA-Z0-9- ]+" type="text" placeholder="Enter Name Manufacturer" name="name_mf" class="form-control" id="name_mf" value="<?php echo $row["name_mf"]?>"/>
                                             </div>
                                         </div>
                                         <!-- Decription -->

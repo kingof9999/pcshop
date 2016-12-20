@@ -18,23 +18,12 @@
 
         if($file_name == ''){
             echo"<script>alert('Please select an Image')</script>";
+            $check = false;
         }else{
             move_uploaded_file($file_tmp_name,"../images/$file_name");
         }
-        if(strlen($name_product_as) == 0){
-			$name_product_as_error = "Please Enter Name <br>";
-			$check = false;
-		}
-		if(strlen($quantity) == 0){
-			$quantity_error = "Please Enter Quantity <br>";
-			$check = false;
-		}
-        if(strlen($price) == 0){
-			$price_error = "Please Enter Price <br>";
-			$check = false;
-		}
-        if(strlen($day) == 0){
-			$day_error = "Please Enter Day improve <br>";
+        if(strlen($name_product_as) == 0 || strlen($quantity) == 0 || strlen($price) == 0 ||strlen($day) == 0){
+			$name_product_as_error = "Please Fultill All of Product Accessories <br>";
 			$check = false;
 		}
         if($check){
@@ -367,11 +356,11 @@
         <section class="wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="page-header"><i class="fa fa-table"></i> Table</h3>
+                    <h3 class="page-header"><i class="fa fa-table"></i> Input new product accessories</h3>
                     <ol class="breadcrumb">
                         <li><i class="fa fa-home"></i><a href="../index.php">Home</a></li>
-                        <li><i class="fa fa-table"></i>Table</li>
-                        <li><i class="fa fa-th-list"></i>Basic Table</li>
+                        <li><i class="fa fa-table"></i><a href="../index.php?url=accessories_product">Product Accessories Manager</a></li>
+                        <li><i class="fa fa-th-list"></i>New Product Accessories</li>
                     </ol>
                 </div>
             </div>
@@ -380,17 +369,9 @@
                 <div class="col-lg-12">
                     <section class="panel">
                         <header class="panel-heading">
-                            Input New Product
+                            Input New Product Accessories
                         </header>
                         <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <div class="pull-left">Quick Post</div>
-                            <div class="widget-icons pull-right">
-                                <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a>
-                                <a href="#" class="wclose"><i class="fa fa-times"></i></a>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
                         <div class="panel-body">
                             <div class="padd">
                             <form name="form-admin-newproduct" action="<?php echo $_SERVER["PHP_SELF"] ?>" method="post" enctype="multipart/form-data">
@@ -432,7 +413,7 @@
                                         <div class="form-group">
                                             <label class="control-label col-lg-2" for="title">Name Product</label>
                                             <div class="col-lg-10">
-                                                <input type="text" placeholder="Enter Name Product" name="name_product_as" class="form-control" id="name_product_as"/>
+                                                <input pattern="[a-zA-Z0-9- ]+" type="text" placeholder="Enter Name Product" name="name_product_as" class="form-control" id="name_product_as"/>
                                             </div>
                                         </div>
                                         <!-- Quantity -->
@@ -463,7 +444,6 @@
                                             <div class="col-lg-offset-2 col-lg-9">
                                                 <button type="submit" class="btn btn-danger" name="submit" id="submit">Add</button>
                                                 <button type="cancel" class="btn btn-default" name="cancel">Cancel</button>
-                                                <button type="cancel" class="btn btn-default" name="test">Test</button>
                                             </div>
                                         </div>
                                         <!-- Error Message -->

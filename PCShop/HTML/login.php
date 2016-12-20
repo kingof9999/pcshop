@@ -34,13 +34,15 @@
 <body class="login-img3-body">
 <div class="container">
     <form class="login-form" action="<?php echo $_SERVER["PHP_SELF"] ?>" method="post">
-        <?php 
-            $result		= Setting::homeSignin();
-            if(isset($msg)) echo $msg;
-            if(isset($msg1)) echo $msg1;
-            if(isset($email_signup_error)) echo $email_signup_error;
-            if(isset($password_signup_error)) echo $password_signup_error;
-        ?>
+        <span style="color: red">
+            <?php
+                $result		= Setting::homeSignin();
+                if(isset($msg)) echo $msg;
+                if(isset($msg1)) echo $msg1;
+                if(isset($email_signup_error)) echo $email_signup_error;
+                if(isset($password_signup_error)) echo $password_signup_error;
+            ?>
+        </span>
     </form>
 </div>
 </body>

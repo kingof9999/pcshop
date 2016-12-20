@@ -155,7 +155,8 @@ class Setting{
     static function adminOrderDetail(){
         global $con;
         global $userid;
-        $query = "SELECT * FROM order_detail WHERE id_order='$userid'";
+        $query = "SELECT p.id_product,p.name_product,od.id_product,od.number 
+                    FROM product p,order_detail od WHERE p.id_product=od.id_product";
         $result = mysqli_query($con,$query)or die("LOI LIET KE: ".mysqli_error($con));
         $num 	= mysqli_num_rows($result);
         echo'
@@ -164,6 +165,7 @@ class Setting{
             <tbody>
                 <tr>
                   <th><i class=""></i> ID Product </th>
+                  <th><i class=""></i> Name Product </th>
                   <th><i class=""></i> Number</th>
                 </tr>
         ';
@@ -171,6 +173,7 @@ class Setting{
         echo'
                 <tr>
                     <td>'.$row["id_product"].'</td>
+                    <td>'.$row["name_product"].'</td>
                     <td>'.$row["number"].'</td>
                 </tr>
         ';

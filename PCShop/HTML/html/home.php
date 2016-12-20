@@ -41,7 +41,6 @@
                                 		<div class="col col-xs-7">
                                 			<div class="product-info">
                                 				<h3 class="name"><a href="index.php?url=detailas&asid='.$row["id_product_as"].'">'.$row["name_product_as"].'</a></h3>
-                                				<div class="rating rateit-small"></div>
                                 				<div class="product-price">	
                                 				<span class="price">
                                 					'.$row["price"].' VND</span>
@@ -85,10 +84,9 @@
                                 		<div class="col col-xs-7">
                                 			<div class="product-info">
                                 				<h3 class="name"><a href="#">'.$row["name_product_as"].'</a></h3>
-                                				<div class="rating rateit-small"></div>
                                 				<div class="product-price">	
                                 				<span class="price">
-                                					'.$row["price"].'				</span>
+                                					'.$row["price"].' VND				</span>
                                 				
                                 			</div><!-- /.product-price -->
                                 				<div class="action"><a href="#" class="lnk btn btn-primary">Add To Cart</a></div>
